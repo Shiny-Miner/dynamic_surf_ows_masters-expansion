@@ -1,4 +1,4 @@
-# dynamic_surf_ows
+# Dynamic surfing overworlds for FR
 
 =====================================================
 
