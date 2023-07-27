@@ -168,19 +168,77 @@ const struct SpriteTemplate sGolduckOverlay = surf_template(PAL_TAG_SURF_NEW, gS
 
 
 //=============== POLIWAG
-//extern const u32 poliwagTiles[];
-//extern const u16 poliwagPal[];
+extern const u32 poliwagTiles[];
+extern const u16 poliwagPal[];
 //extern const u16 poliwagShinyPal[];
 
+const struct SpriteFrameImage gSurfingOverworldPicTable_Poliwag[] = {
+    overworld_frame(&poliwagTiles[0], 4, 4, 1),
+    overworld_frame(&poliwagTiles[0], 4, 4, 0),
+    overworld_frame(&poliwagTiles[0], 4, 4, 3),
+    overworld_frame(&poliwagTiles[0], 4, 4, 2),
+    overworld_frame(&poliwagTiles[0], 4, 4, 5),
+    overworld_frame(&poliwagTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Poliwag[] = {
+    overworld_frame(&poliwagTiles[0], 4, 4, 7),
+    overworld_frame(&poliwagTiles[0], 4, 4, 6),
+    overworld_frame(&poliwagTiles[0], 4, 4, 9),
+    overworld_frame(&poliwagTiles[0], 4, 4, 8),
+    overworld_frame(&poliwagTiles[0], 4, 4, 11),
+    overworld_frame(&poliwagTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sPoliwagOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Poliwag, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPoliwagOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Poliwag, UpdateSurfMonOverlay);
+
 //=============== POLIWHIRL
-//extern const u32 poliwhirlTiles[];
-//extern const u16 poliwhirlPal[];
+extern const u32 poliwhirlTiles[];
+extern const u16 poliwhirlPal[];
 //extern const u16 poliwhirlShinyPal[];
 
+const struct SpriteFrameImage gSurfingOverworldPicTable_Poliwhirl[] = {
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 1),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 0),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 3),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 2),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 5),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Poliwhirl[] = {
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 7),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 6),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 9),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 8),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 11),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sPoliwhirlOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Poliwhirl, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPoliwhirlOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Poliwhirl, UpdateSurfMonOverlay);
+
 //=============== POLIWRATH
-//extern const u32 poliwrathTiles[];
-//extern const u16 poliwrathPal[];
+extern const u32 poliwrathTiles[];
+extern const u16 poliwrathPal[];
 //extern const u16 poliwrathShinyPal[];
+
+const struct SpriteFrameImage gSurfingOverworldPicTable_Poliwrath[] = {
+    overworld_frame(&poliwrathTiles[0], 4, 4, 1),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 0),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 3),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 2),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 5),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Poliwrath[] = {
+    overworld_frame(&poliwrathTiles[0], 4, 4, 7),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 6),
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 9),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 8),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 11),
+    overworld_frame(&poliwrathTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sPoliwrathOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Poliwrath, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPoliwrathOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Poliwrath, UpdateSurfMonOverlay);
+
 
 //=============== TENTACOOL
 extern const u32 tentacoolTiles[];
@@ -546,15 +604,51 @@ GEN II
 //extern const u16 feraligatrShinyPal[];
 
 //=============== SENTRET
-//extern const u32 sentretTiles[];
-//extern const u16 sentretPal[];
-//extern const u16 sentretShinyPal[];
+extern const u32 sentretTiles[];
+extern const u16 sentretPal[];
+extern const u16 sentretShinyPal[];
 
+const struct SpriteFrameImage gSurfingOverworldPicTable_Sentret[] = {
+    overworld_frame(&sentretTiles[0], 4, 4, 1),
+    overworld_frame(&sentretTiles[0], 4, 4, 0),
+    overworld_frame(&sentretTiles[0], 4, 4, 3),
+    overworld_frame(&sentretTiles[0], 4, 4, 2),
+    overworld_frame(&sentretTiles[0], 4, 4, 5),
+    overworld_frame(&sentretTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Sentret[] = {
+    overworld_frame(&sentretTiles[0], 4, 4, 7),
+    overworld_frame(&sentretTiles[0], 4, 4, 6),
+    overworld_frame(&sentretTiles[0], 4, 4, 9),
+    overworld_frame(&sentretTiles[0], 4, 4, 8),
+    overworld_frame(&sentretTiles[0], 4, 4, 11),
+    overworld_frame(&sentretTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sSentretOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Sentret, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sSentretOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Sentret, UpdateSurfMonOverlay);
 //=============== FURRET
-//extern const u32 furretTiles[];
-//extern const u16 furretPal[];
-//extern const u16 furretShinyPal[];
+extern const u32 furretTiles[];
+extern const u16 furretPal[];
+extern const u16 furretShinyPal[];
 
+const struct SpriteFrameImage gSurfingOverworldPicTable_Furret[] = {
+    overworld_frame(&furretTiles[0], 4, 4, 1),
+    overworld_frame(&furretTiles[0], 4, 4, 0),
+    overworld_frame(&furretTiles[0], 4, 4, 3),
+    overworld_frame(&furretTiles[0], 4, 4, 2),
+    overworld_frame(&furretTiles[0], 4, 4, 5),
+    overworld_frame(&furretTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Furret[] = {
+    overworld_frame(&furretTiles[0], 4, 4, 7),
+    overworld_frame(&furretTiles[0], 4, 4, 6),
+    overworld_frame(&furretTiles[0], 4, 4, 9),
+    overworld_frame(&furretTiles[0], 4, 4, 8),
+    overworld_frame(&furretTiles[0], 4, 4, 11),
+    overworld_frame(&furretTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sFurretOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Furret, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sFurretOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Furret, UpdateSurfMonOverlay);
 //=============== CHINCHOU
 //extern const u32 chinchouTiles[];
 //extern const u16 chinchouPal[];
@@ -576,9 +670,29 @@ GEN II
 //extern const u16 azumarillShinyPal[];
 
 //=============== POLITOED
-//extern const u32 politoedTiles[];
-//extern const u16 politoedPal[];
+extern const u32 politoedTiles[];
+extern const u16 politoedPal[];
 //extern const u16 politoedShinyPal[];
+
+const struct SpriteFrameImage gSurfingOverworldPicTable_Politoed[] = {
+    overworld_frame(&politoedTiles[0], 4, 4, 0),
+    overworld_frame(&politoedTiles[0], 4, 4, 1),
+    overworld_frame(&politoedTiles[0], 4, 4, 2),
+    overworld_frame(&politoedTiles[0], 4, 4, 3),
+    overworld_frame(&politoedTiles[0], 4, 4, 4),
+    overworld_frame(&politoedTiles[0], 4, 4, 5),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Politoed[] = {
+    overworld_frame(&politoedTiles[0], 4, 4, 6),
+    overworld_frame(&politoedTiles[0], 4, 4, 7),
+    overworld_frame(&politoedTiles[0], 4, 4, 8),
+    overworld_frame(&politoedTiles[0], 4, 4, 9),
+    overworld_frame(&politoedTiles[0], 4, 4, 10),
+    overworld_frame(&politoedTiles[0], 4, 4, 11),
+};
+const struct SpriteTemplate sPolitoedOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Politoed, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPolitoedOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Politoed, UpdateSurfMonOverlay);
+
 
 //=============== WOOPER
 //extern const u32 wooperTiles[];
@@ -684,9 +798,28 @@ GEN III
 //extern const u16 marshtompShinyPal[];
 
 //=============== SWAMPERT
-//extern const u32 swampertTiles[];
-//extern const u16 swampertPal[];
-//extern const u16 swampertShinyPal[];
+extern const u32 swampertTiles[];
+extern const u16 swampertPal[];
+extern const u16 swampertShinyPal[];
+
+const struct SpriteFrameImage gSurfingOverworldPicTable_Swampert[] = {
+    overworld_frame(&swampertTiles[0], 4, 4, 1),
+    overworld_frame(&swampertTiles[0], 4, 4, 0),
+    overworld_frame(&swampertTiles[0], 4, 4, 3),
+    overworld_frame(&swampertTiles[0], 4, 4, 2),
+    overworld_frame(&swampertTiles[0], 4, 4, 5),
+    overworld_frame(&swampertTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Swampert[] = {
+    overworld_frame(&swampertTiles[0], 4, 4, 7),
+    overworld_frame(&swampertTiles[0], 4, 4, 6),
+    overworld_frame(&swampertTiles[0], 4, 4, 9),
+    overworld_frame(&swampertTiles[0], 4, 4, 8),
+    overworld_frame(&swampertTiles[0], 4, 4, 11),
+    overworld_frame(&swampertTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sSwampertOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Swampert, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sSwampertOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Swampert, UpdateSurfMonOverlay);
 
 //=============== ZIGZAGOON
 //extern const u32 zigzagoonTiles[];
@@ -988,24 +1121,24 @@ const struct RideableMons gSurfablePokemon[] =
 	},
 	{
 		.species = SPECIES_POLIWAG,
-		.palAddr = 0,
+		.palAddr = &poliwagPal[0],
 		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.overworldGfx = &sPoliwagOverworld,
+		.overlayGfx = &sPoliwagOverlay,
 	},
 	{
 		.species = SPECIES_POLIWHIRL,
-		.palAddr = 0,
+		.palAddr = &poliwhirlPal[0],
 		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.overworldGfx = &sPoliwhirlOverworld,
+		.overlayGfx = &sPoliwhirlOverlay,
 	},
 	{
 		.species = SPECIES_POLIWRATH,
-		.palAddr = 0,
+		.palAddr = &poliwrathPal[0],
 		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.overworldGfx = &sPoliwrathOverworld,
+		.overlayGfx = &sPoliwrathOverlay,
 	},
 	{
 		.species = SPECIES_TENTACOOL,
@@ -1254,17 +1387,17 @@ const struct RideableMons gSurfablePokemon[] =
 	},
 	{
 		.species = SPECIES_SENTRET,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.palAddr = &sentretPal[0],
+		.shinyPalAddr = &sentretShinyPal[0],
+		.overworldGfx = &sSentretOverworld,
+		.overlayGfx = &sSentretOverlay,
 	},
 	{
 		.species = SPECIES_FURRET,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.palAddr = &furretPal[0],
+		.shinyPalAddr = &furretShinyPal[0],
+		.overworldGfx = &sFurretOverworld,
+		.overlayGfx = &sFurretOverlay,
 	},
 	{
 		.species = SPECIES_CHINCHOU,
@@ -1296,10 +1429,10 @@ const struct RideableMons gSurfablePokemon[] =
 	},
 	{
 		.species = SPECIES_POLITOED,
-		.palAddr = 0,
+		.palAddr = &politoedPal[0],
 		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.overworldGfx = &sPolitoedOverworld,
+		.overlayGfx = &sPolitoedOverlay,
 	},
 	{
 		.species = SPECIES_WOOPER,
@@ -1415,10 +1548,10 @@ const struct RideableMons gSurfablePokemon[] =
 	},
 	{
 		.species = SPECIES_SWAMPERT,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.palAddr = &swampertPal[0],
+		.shinyPalAddr = &swampertShinyPal[0],
+		.overworldGfx = &sSwampertOverworld,
+		.overlayGfx = &sSwampertOverlay,
 	},
 	{
 		.species = SPECIES_ZIGZAGOON,
