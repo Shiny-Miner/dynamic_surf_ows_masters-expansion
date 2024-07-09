@@ -1,4 +1,6 @@
-# Dynamic surfing overworlds for FR
+# Dynamic surfing overworlds for FR (expansion by Shiny miner, ansh)
+##Trying to complete gen 1-3 as soon as we can
+for any queries contact me on discord- shinyhunter08
 
 =====================================================
 
@@ -27,6 +29,9 @@ Important Notes:
 2. This feauture is currently missing a lot of necessary artwork. Any pokemon without art will default to the original surf blob. As art is added, either by the user or community, you can change this in src/surf_mons.h by changing the elements `.paletteTag` and `.images` of `const struct SpriteTemplate s[species]Overworld`
 
 3. Fire Red likes vertical images, and as such the sprites have to have all their frames lined up vertically, as opposed to the pokeem images that are layered horizontally. While annoying, changing the frame ordering isn't a big deal, and I hope this won't stand in the way of community art being shared.
+
+=====================================================
+Completed Pokemon:
 
 =====================================================
 
@@ -78,8 +83,8 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Popplio[] = {
     overworld_frame(&popplioTiles[0], 4, 4, 11),
 };
 
-sPopplioOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Popplio, UpdateSurfBlobFieldEffect)
-sPopplioOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Popplio, UpdateSurfMonOverlay)
+const struct SpriteTemplate sPopplioOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Popplio, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPopplioOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Popplio, UpdateSurfMonOverlay);
 ```
 
 4. If you do not have any overlay frames, the sprite sheet only needs to be 32x192 (6 frames), and do not need to define the `OverlayPicTable`. Also, if you want unique palette tags, `PAL_TAG_SURF_NEW` should be `PAL_TAG_POPPLIO_SURF` or whatever you want to call it, instead.
