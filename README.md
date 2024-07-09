@@ -31,8 +31,127 @@ Important Notes:
 3. Fire Red likes vertical images, and as such the sprites have to have all their frames lined up vertically, as opposed to the pokeem images that are layered horizontally. While annoying, changing the frame ordering isn't a big deal, and I hope this won't stand in the way of community art being shared.
 
 =====================================================
-Completed Pokemon:
+Completed Pokemon
+ ,here is the spriting progress:
+Gen I (35.7%)
+Spoiler: 
 
+Squirtle - Complete (emme97)
+Wartortle - Complete (Avara)
+Blastoise - Complete (emme97)
+Nidoqueen
+Nidoking
+Psyduck - Complete (ghoulslash)
+Golduck - Complete (ghoulslash)
+Poliwag
+Poliwhirl
+Poliwrath
+Tentacool - Complete (Avara)
+Tentacruel - Complete (Avara)
+Slowpoke - Complete (ghoulslash)
+Slowbro - Complete (ghoulslash)
+Seel - Complete (ghoulslash)
+Dewgong - Complete (ghoulslash)
+Shellder
+Cloyster
+Krabby
+Kingler
+Lickitung
+Rhydon
+Kangaskhan
+Horsea
+Seadra
+Goldeen
+Seaking
+Staryu - Complete (ghoulslash)
+Starmie - Complete (ghoulslash)
+Tauros
+Gyarados
+Lapras - Complete (Slawter666)
+Vaporeon - Complete (ghoulslash)
+Omanyte
+Omastar
+Kabuto
+Kabutops
+Snorlax
+Dratini
+Dragonair
+Dragonite
+Mew
+
+
+Gen II (4.1%)
+Spoiler: 
+
+Totodile
+Croconaw
+Feraligatr
+Sentret
+Furret
+Chinchou
+Lanturn
+Marill
+Azumarill
+Politoed
+Wooper
+Quagsire
+Slowking - Complete (ghoulslash)
+Qwilfish
+Sneasel
+Corsola
+Remoraid
+Octillery
+Mantine
+Kingdra
+Miltank
+Suicune
+Tyranitar
+Lugia
+
+
+Gen III (11.1%)
+Spoiler: 
+
+Mudkip
+Marshtomp
+Swampert
+Zigzagoon
+Linoone
+Lotad
+Lombre
+Ludicolo
+Pelipper
+Exploud
+Makuhita
+Hariyama
+Azurill
+Aggron
+Carvanha
+Sharpedo
+Wailmer - Complete (Hestia)
+Wailord
+Barboach
+Whiscash
+Corphish
+Crawdaunt
+Feebas
+Milotic
+Spheal - Complete (ghoulslash)
+Sealeo - Complete (ghoulslash)
+Walrein - Complete (ghoulslash)
+Clamperl
+Huntail
+Gorebyss
+Relicanth
+Luvdisc
+Latias
+Latios
+Kyogre
+Rayquaza
+
+
+Original thread (by ghoulslash):
+https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
 =====================================================
 
 How To Compile:
