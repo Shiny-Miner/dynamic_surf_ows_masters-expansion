@@ -206,7 +206,7 @@ const struct SpriteTemplate sPopplioOverlay = surf_template(PAL_TAG_SURF_NEW, gS
   .species = SPECIES_POPPLIO,
   .palAddr = &popplioPal[0],
   .shinyPalAddr = &popplioShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sPopplioOverword,
+  .overworldGfx = &sPopplioOverworld,
   .overlayGfx = &sPopplioOverlay,	// or 0 if it doesn't exist
 },
 ```
