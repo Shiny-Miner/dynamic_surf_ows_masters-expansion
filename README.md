@@ -32,10 +32,9 @@ Important Notes:
 
 =====================================================
 Completed Pokemon
- ,here is the spriting progress:
-Gen I (35.7%)
-Spoiler: 
-
+Here is the spriting progress:
+Gen I (40%)
+Gen 1:
 Squirtle - Complete (emme97)
 Wartortle - Complete (Avara)
 Blastoise - Complete (emme97)
@@ -79,19 +78,16 @@ Dragonair
 Dragonite
 Mew
 
-
-Gen II (4.1%)
-Spoiler: 
-
+Gen 2:(18%)
 Totodile
 Croconaw
 Feraligatr
-Sentret
-Furret
+Sentret - Complete (gota_csm)
+Furret - Complete (gota_csm)
 Chinchou
 Lanturn
 Marill
-Azumarill
+Azumarill- Complete(Shiny)
 Politoed
 Wooper
 Quagsire
@@ -108,13 +104,10 @@ Suicune
 Tyranitar
 Lugia
 
-
-Gen III (11.1%)
-Spoiler: 
-
+Gen 3: 15%
 Mudkip
 Marshtomp
-Swampert
+Swampert - Complete (Zhyruk)
 Zigzagoon
 Linoone
 Lotad
@@ -148,7 +141,6 @@ Latias
 Latios
 Kyogre
 Rayquaza
-
 
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
