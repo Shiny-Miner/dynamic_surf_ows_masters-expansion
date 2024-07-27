@@ -33,114 +33,114 @@ Important Notes:
 =====================================================
 Completed Pokemon
 Here is the spriting progress:
-Gen I (40%)
+Gen I : 99% (only dratini missing and gyrados sprite has a bug)
 Gen 1:
 Squirtle - Complete (emme97)
 Wartortle - Complete (Avara)
 Blastoise - Complete (emme97)
-Nidoqueen
-Nidoking
+Nidoqueen - complete
+Nidoking  - complete
 Psyduck - Complete (ghoulslash)
 Golduck - Complete (ghoulslash)
-Poliwag
-Poliwhirl
-Poliwrath
+Poliwag - complete
+Poliwhirl  - complete
+Poliwrath  - complete
 Tentacool - Complete (Avara)
 Tentacruel - Complete (Avara)
 Slowpoke - Complete (ghoulslash)
 Slowbro - Complete (ghoulslash)
 Seel - Complete (ghoulslash)
 Dewgong - Complete (ghoulslash)
-Shellder
-Cloyster
-Krabby
-Kingler
-Lickitung
-Rhydon
-Kangaskhan
-Horsea
-Seadra
-Goldeen
-Seaking
+Shellder - complete
+Cloyster - complete
+Krabby  - complete
+Kingler - complete
+Lickitung - complete
+Rhydon - complete
+Kangaskhan - complete
+Horsea  - complete
+Seadra - complete
+Goldeen - complete
+Seaking - complete
 Staryu - Complete (ghoulslash)
 Starmie - Complete (ghoulslash)
-Tauros
-Gyarados
+Tauros - complete
+Gyarados  - complete
 Lapras - Complete (Slawter666)
 Vaporeon - Complete (ghoulslash)
-Omanyte
-Omastar
-Kabuto
-Kabutops
-Snorlax
-Dratini
-Dragonair
-Dragonite
-Mew
+Omanyte - complete
+Omastar - complete
+Kabuto - complete
+Kabutops - complete
+Snorlax - complete
+Dratini - missing
+Dragonair - complete
+Dragonite - complete
+Mew - complete
 
-Gen 2:(18%)
-Totodile
-Croconaw
-Feraligatr
+Gen 2: 100%
+Totodile - complete
+Croconaw - complete
+Feraligatr - complete
 Sentret - Complete (gota_csm)
 Furret - Complete (gota_csm)
-Chinchou
-Lanturn
-Marill
+Chinchou - complete
+Lanturn - complete
+Marill - complete
 Azumarill- Complete(Shiny)
-Politoed
-Wooper
-Quagsire
+Politoed - complete
+Wooper - complete
+Quagsire - complete
 Slowking - Complete (ghoulslash)
-Qwilfish
-Sneasel
-Corsola
-Remoraid
-Octillery
-Mantine
-Kingdra
-Miltank
-Suicune
-Tyranitar
-Lugia
+Qwilfish - complete
+Sneasel - complete
+Corsola - complete
+Remoraid - complete
+Octillery - complete
+Mantine - complete
+Kingdra - complete
+Miltank - complete
+Suicune - complete
+Tyranitar - complete
+Lugia - complete
 
-Gen 3: 15%
-Mudkip
-Marshtomp
+Gen 3: 
+Mudkip - complete
+Marshtomp - complete
 Swampert - Complete (Zhyruk)
-Zigzagoon
-Linoone
-Lotad
-Lombre
-Ludicolo
-Pelipper
-Exploud
-Makuhita
-Hariyama
-Azurill
-Aggron
-Carvanha
-Sharpedo
+Zigzagoon - complete
+Linoone - complete
+Lotad - complete
+Lombre - complete
+Ludicolo - complete
+Pelipper - complete
+Exploud - complete
+Makuhita - complete
+Hariyama - complete
+Azurill - complete
+Aggron - missing
+Carvanha - missing
+Sharpedo - missing
 Wailmer - Complete (Hestia)
-Wailord
-Barboach
-Whiscash
-Corphish
-Crawdaunt
-Feebas
-Milotic
+Wailord - missing
+Barboach - missing
+Whiscash - missing
+Corphish - missing
+Crawdaunt - missing
+Feebas - missing
+Milotic - complete
 Spheal - Complete (ghoulslash)
 Sealeo - Complete (ghoulslash)
 Walrein - Complete (ghoulslash)
-Clamperl
-Huntail
-Gorebyss
-Relicanth
-Luvdisc
-Latias
-Latios
-Kyogre
-Rayquaza
+Clamperl - missing
+Huntail - missing
+Gorebyss - missing
+Relicanth - missing
+Luvdisc - missing
+Latias - missing
+Latios - missing
+Kyogre - missing
+Rayquaza - missing
 
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
