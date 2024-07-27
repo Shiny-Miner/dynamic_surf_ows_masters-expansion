@@ -260,7 +260,7 @@ const struct SpriteTemplate sPoliwhirlOverlay = surf_template(PAL_TAG_SURF_NEW, 
 //=============== POLIWRATH
 extern const u32 poliwrathTiles[];
 extern const u16 poliwrathPal[];
-//extern const u16 poliwrathShinyPal[];
+extern const u16 poliwrathShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Poliwrath[] = {
     overworld_frame(&poliwrathTiles[0], 4, 4, 1),
