@@ -102,7 +102,7 @@ Important Notes:
 - Tyranitar - complete
 - Lugia - complete
 
-### Gen 3: 
+### Gen 3: 55% or so
 - Mudkip - complete
 - Marshtomp - complete
 - Swampert - Complete (Zhyruk)
