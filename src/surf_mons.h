@@ -578,7 +578,7 @@ const struct SpriteTemplate sRhydonOverlay = surf_template(PAL_TAG_SURF_NEW, gSu
 //=============== RHYHORN
 extern const u32 rhyhornTiles[];
 extern const u16 rhyhornPal[];
-extern const u16 rhyhornShinyPal[];
+//extern const u16 rhyhornShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Rhyhorn[] = {
     overworld_frame(&rhyhornTiles[0], 4, 4, 0),
@@ -2429,7 +2429,7 @@ const struct RideableMons gSurfablePokemon[] =
 {
   .species = SPECIES_RHYHORN,
   .palAddr = &rhyhornPal[0],
-  .shinyPalAddr = &rhyhornShinyPal[0],	// or 0 if it doesn't exist
+  .shinyPalAddr = 0,	// or 0 if it doesn't exist
   .overworldGfx = &sRhyhornOverworld,
   .overlayGfx = &sRhyhornOverlay,	// or 0 if it doesn't exist
 },
