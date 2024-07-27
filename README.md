@@ -34,50 +34,50 @@ Important Notes:
 # Completed Pokemon
 ## Here is the spriting progress:
 ### Gen I : 99% (only dratini missing and gyrados sprite has a bug)
- Squirtle - Complete (emme97)
- Wartortle - Complete (Avara)
- Blastoise - Complete (emme97)
- Nidoqueen - complete
- Nidoking  - complete
- Psyduck - Complete (ghoulslash)
- Golduck - Complete (ghoulslash)
-Poliwag - complete
-Poliwhirl  - complete
-Poliwrath  - complete
-Tentacool - Complete (Avara)
-Tentacruel - Complete (Avara)
-Slowpoke - Complete (ghoulslash)
-Slowbro - Complete (ghoulslash)
-Seel - Complete (ghoulslash)
-Dewgong - Complete (ghoulslash)
-Shellder - complete
-Cloyster - complete
-Krabby  - complete
-Kingler - complete
-Lickitung - complete
-Rhydon - complete
-Kangaskhan - complete
-Horsea  - complete
-Seadra - complete
-Goldeen - complete
-Seaking - complete
-Staryu - Complete (ghoulslash)
-Starmie - Complete (ghoulslash)
-Tauros - complete
-Gyarados  - complete
-Lapras - Complete (Slawter666)
-Vaporeon - Complete (ghoulslash)
-Omanyte - complete
-Omastar - complete
-Kabuto - complete
-Kabutops - complete
-Snorlax - complete
-Dratini - missing
-Dragonair - complete
-Dragonite - complete
-Mew - complete
+- Squirtle - Complete (emme97)
+- Wartortle - Complete (Avara)
+- Blastoise - Complete (emme97)
+- Nidoqueen - complete
+- Nidoking  - complete
+- Psyduck - Complete (ghoulslash)
+- Golduck - Complete (ghoulslash)
+- Poliwag - complete
+- Poliwhirl  - complete
+- Poliwrath  - complete
+- Tentacool - Complete (Avara)
+- Tentacruel - Complete (Avara)
+- Slowpoke - Complete (ghoulslash)
+- Slowbro - Complete (ghoulslash)
+- Seel - Complete (ghoulslash)
+- Dewgong - Complete (ghoulslash)
+- Shellder - complete
+- Cloyster - complete
+- Krabby  - complete
+- Kingler - complete
+- Lickitung - complete
+- Rhydon - complete
+- Kangaskhan - complete
+- Horsea  - complete
+- Seadra - complete
+- Goldeen - complete
+- Seaking - complete
+- Staryu - Complete (ghoulslash)
+- Starmie - Complete (ghoulslash)
+- Tauros - complete
+- Gyarados  - complete
+- Lapras - Complete (Slawter666)
+- Vaporeon - Complete (ghoulslash)
+- Omanyte - complete
+- Omastar - complete
+- Kabuto - complete
+- Kabutops - complete
+- Snorlax - complete
+- Dratini - missing
+- Dragonair - complete
+- Dragonite - complete
+- Mew - complete
 
-Gen 2: 100%
+### Gen 2: 100%
 Totodile - complete
 Croconaw - complete
 Feraligatr - complete
