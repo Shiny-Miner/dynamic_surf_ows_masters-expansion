@@ -31,17 +31,16 @@ Important Notes:
 3. Fire Red likes vertical images, and as such the sprites have to have all their frames lined up vertically, as opposed to the pokeem images that are layered horizontally. While annoying, changing the frame ordering isn't a big deal, and I hope this won't stand in the way of community art being shared.
 
 =====================================================
-Completed Pokemon
-Here is the spriting progress:
-Gen I : 99% (only dratini missing and gyrados sprite has a bug)
-Gen 1:
-Squirtle - Complete (emme97)
-Wartortle - Complete (Avara)
-Blastoise - Complete (emme97)
-Nidoqueen - complete
-Nidoking  - complete
-Psyduck - Complete (ghoulslash)
-Golduck - Complete (ghoulslash)
+# Completed Pokemon
+## Here is the spriting progress:
+### Gen I : 99% (only dratini missing and gyrados sprite has a bug)
+ Squirtle - Complete (emme97)
+ Wartortle - Complete (Avara)
+ Blastoise - Complete (emme97)
+ Nidoqueen - complete
+ Nidoking  - complete
+ Psyduck - Complete (ghoulslash)
+ Golduck - Complete (ghoulslash)
 Poliwag - complete
 Poliwhirl  - complete
 Poliwrath  - complete
