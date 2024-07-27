@@ -116,25 +116,25 @@ extern const u16 nidoqueenPal[];
 extern const u16 nidoqueenShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Nidoqueen[] = {
-    overworld_frame(&nidoqueenTiles[0], 4, 4, 0),
     overworld_frame(&nidoqueenTiles[0], 4, 4, 1),
-    overworld_frame(&nidoqueenTiles[0], 4, 4, 2),
+    overworld_frame(&nidoqueenTiles[0], 4, 4, 0),
     overworld_frame(&nidoqueenTiles[0], 4, 4, 3),
-    overworld_frame(&nidoqueenTiles[0], 4, 4, 4),
+    overworld_frame(&nidoqueenTiles[0], 4, 4, 2),
     overworld_frame(&nidoqueenTiles[0], 4, 4, 5),
+    overworld_frame(&nidoqueenTiles[0], 4, 4, 4),
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Nidoqueen[] = {
-    overworld_frame(&nidoqueenTiles[0], 4, 4, 6),
     overworld_frame(&nidoqueenTiles[0], 4, 4, 7),
-    overworld_frame(&nidoqueenTiles[0], 4, 4, 8),
+    overworld_frame(&nidoqueenTiles[0], 4, 4, 6),
     overworld_frame(&nidoqueenTiles[0], 4, 4, 9),
-    overworld_frame(&nidoqueenTiles[0], 4, 4, 10),
+    overworld_frame(&nidoqueenTiles[0], 4, 4, 8),
     overworld_frame(&nidoqueenTiles[0], 4, 4, 11),
+    overworld_frame(&nidoqueenTiles[0], 4, 4, 10),
 };
 
 const struct SpriteTemplate sNidoqueenOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Nidoqueen, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sNidoqueenOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Nidoqueen, UpdateSurfMonOverlay);
+const struct SpriteTemplate sNidoqueenOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Nidoqueen, UpdateSurfMonOverlay);
 
 //=============== NIDOKING
 extern const u32 nidokingTiles[];
@@ -160,7 +160,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Nidoking[] = {
 };
 
 const struct SpriteTemplate sNidokingOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Nidoking, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sNidokingOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Nidoking, UpdateSurfMonOverlay);
+const struct SpriteTemplate sNidokingOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Nidoking, UpdateSurfMonOverlay);
 
 //=============== PSYDUCK
 extern const u32 psyduckTiles[];
@@ -444,7 +444,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Shellder[] = {
 };
 
 const struct SpriteTemplate sShellderOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Shellder, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sShellderOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Shellder, UpdateSurfMonOverlay);
+const struct SpriteTemplate sShellderOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Shellder, UpdateSurfMonOverlay);
 
 //=============== CLOYSTER
 extern const u32 cloysterTiles[];
@@ -470,7 +470,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Cloyster[] = {
 };
 
 const struct SpriteTemplate sCloysterOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Cloyster, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sCloysterOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Cloyster, UpdateSurfMonOverlay);
+const struct SpriteTemplate sCloysterOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Cloyster, UpdateSurfMonOverlay);
 //=============== KRABBY
 extern const u32 krabbyTiles[];
 extern const u16 krabbyPal[];
@@ -495,7 +495,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Krabby[] = {
 };
 
 const struct SpriteTemplate sKrabbyOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Krabby, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKrabbyOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Krabby, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKrabbyOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Krabby, UpdateSurfMonOverlay);
 
 //=============== KINGLER
 
@@ -522,7 +522,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kingler[] = {
 };
 
 const struct SpriteTemplate sKinglerOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingler, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKinglerOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingler, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKinglerOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kingler, UpdateSurfMonOverlay);
 //=============== LICKITUNG
 extern const u32 lickitungTiles[];
 extern const u16 lickitungPal[];
@@ -547,7 +547,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Lickitung[] = {
 };
 
 const struct SpriteTemplate sLickitungOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lickitung, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLickitungOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lickitung, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLickitungOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lickitung, UpdateSurfMonOverlay);
 
 //=============== RHYDON
 extern const u32 rhydonTiles[];
@@ -573,7 +573,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Rhydon[] = {
 };
 
 const struct SpriteTemplate sRhydonOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rhydon, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sRhydonOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rhydon, UpdateSurfMonOverlay);
+const struct SpriteTemplate sRhydonOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Rhydon, UpdateSurfMonOverlay);
 
 //=============== RHYHORN
 extern const u32 rhyhornTiles[];
@@ -599,7 +599,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Rhyhorn[] = {
 };
 
 const struct SpriteTemplate sRhyhornOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rhyhorn, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sRhyhornOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rhyhorn, UpdateSurfMonOverlay);
+const struct SpriteTemplate sRhyhornOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Rhyhorn, UpdateSurfMonOverlay);
 
 //=============== KANGASKHAN
 extern const u32 kangaskhanTiles[];
@@ -625,7 +625,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kangaskhan[] = {
 };
 
 const struct SpriteTemplate sKangaskhanOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kangaskhan, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKangaskhanOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kangaskhan, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKangaskhanOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kangaskhan, UpdateSurfMonOverlay);
 
 //=============== HORSEA
 extern const u32 horseaTiles[];
@@ -651,7 +651,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Horsea[] = {
 };
 
 const struct SpriteTemplate sHorseaOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Horsea, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sHorseaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Horsea, UpdateSurfMonOverlay);
+const struct SpriteTemplate sHorseaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Horsea, UpdateSurfMonOverlay);
 //=============== SEADRA
 extern const u32 seadraTiles[];
 extern const u16 seadraPal[];
@@ -676,7 +676,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Seadra[] = {
 };
 
 const struct SpriteTemplate sSeadraOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Seadra, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSeadraOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Seadra, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSeadraOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Seadra, UpdateSurfMonOverlay);
 
 //=============== GOLDEEN
 extern const u32 goldeenTiles[];
@@ -702,7 +702,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Goldeen[] = {
 };
 
 const struct SpriteTemplate sGoldeenOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Goldeen, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sGoldeenOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Goldeen, UpdateSurfMonOverlay);
+const struct SpriteTemplate sGoldeenOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Goldeen, UpdateSurfMonOverlay);
 
 //=============== SEAKING
 extern const u32 seakingTiles[];
@@ -728,7 +728,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Seaking[] = {
 };
 
 const struct SpriteTemplate sSeakingOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Seaking, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSeakingOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Seaking, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSeakingOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Seaking, UpdateSurfMonOverlay);
 
 //=============== STARYU
 extern const u32 staryuTiles[];
@@ -800,7 +800,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Tauros[] = {
 };
 
 const struct SpriteTemplate sTaurosOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Tauros, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sTaurosOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Tauros, UpdateSurfMonOverlay);
+const struct SpriteTemplate sTaurosOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Tauros, UpdateSurfMonOverlay);
 
 //=============== GYARADOS
 extern const u32 gyaradosTiles[];
@@ -826,7 +826,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Gyarados[] = {
 };
 
 const struct SpriteTemplate sGyaradosOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Gyarados, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sGyaradosOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Gyarados, UpdateSurfMonOverlay);
+const struct SpriteTemplate sGyaradosOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Gyarados, UpdateSurfMonOverlay);
 //=============== LAPRAS
 extern const u32 laprasTiles[];
 extern const u16 laprasPal[];
@@ -899,7 +899,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Omanyte[] = {
 };
 
 const struct SpriteTemplate sOmanyteOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Omanyte, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sOmanyteOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Omanyte, UpdateSurfMonOverlay);
+const struct SpriteTemplate sOmanyteOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Omanyte, UpdateSurfMonOverlay);
 
 //=============== OMASTAR
 extern const u32 omastarTiles[];
@@ -925,7 +925,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Omastar[] = {
 };
 
 const struct SpriteTemplate sOmastarOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Omastar, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sOmastarOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Omastar, UpdateSurfMonOverlay);
+const struct SpriteTemplate sOmastarOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Omastar, UpdateSurfMonOverlay);
 
 //=============== KABUTO
 extern const u32 kabutoTiles[];
@@ -951,7 +951,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kabuto[] = {
 };
 
 const struct SpriteTemplate sKabutoOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kabuto, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKabutoOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kabuto, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKabutoOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kabuto, UpdateSurfMonOverlay);
 
 //=============== KABUTOPS
 extern const u32 kabutopsTiles[];
@@ -977,7 +977,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kabutops[] = {
 };
 
 const struct SpriteTemplate sKabutopsOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kabutops, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKabutopsOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kabutops, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKabutopsOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kabutops, UpdateSurfMonOverlay);
 
 //=============== SNORLAX
 extern const u32 snorlaxTiles[];
@@ -1003,7 +1003,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Snorlax[] = {
 };
 
 const struct SpriteTemplate sSnorlaxOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Snorlax, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSnorlaxOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Snorlax, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSnorlaxOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Snorlax, UpdateSurfMonOverlay);
 
 //=============== DRATINI
 //extern const u32 dratiniTiles[];
@@ -1034,7 +1034,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Dragonair[] = {
 };
 
 const struct SpriteTemplate sDragonairOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Dragonair, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sDragonairOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Dragonair, UpdateSurfMonOverlay);
+const struct SpriteTemplate sDragonairOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Dragonair, UpdateSurfMonOverlay);
 
 //=============== DRAGONITE
 extern const u32 dragoniteTiles[];
@@ -1060,7 +1060,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Dragonite[] = {
 };
 
 const struct SpriteTemplate sDragoniteOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Dragonite, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sDragoniteOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Dragonite, UpdateSurfMonOverlay);
+const struct SpriteTemplate sDragoniteOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Dragonite, UpdateSurfMonOverlay);
 //=============== MEW
 extern const u32 mewTiles[];
 extern const u16 mewPal[];
@@ -1085,7 +1085,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Mew[] = {
 };
 
 const struct SpriteTemplate sMewOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Mew, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMewOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Mew, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMewOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Mew, UpdateSurfMonOverlay);
 
 /*==============================
 GEN II
@@ -1115,7 +1115,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Totodile[] = {
 };
 
 const struct SpriteTemplate sTotodileOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Totodile, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sTotodileOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Totodile, UpdateSurfMonOverlay);
+const struct SpriteTemplate sTotodileOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Totodile, UpdateSurfMonOverlay);
 
 
 //=============== CROCONAW
@@ -1142,7 +1142,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Croconaw[] = {
 };
 
 const struct SpriteTemplate sCroconawOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Croconaw, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sCroconawOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Croconaw, UpdateSurfMonOverlay);
+const struct SpriteTemplate sCroconawOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Croconaw, UpdateSurfMonOverlay);
 
 //=============== FERALIGATR
 extern const u32 feraligatrTiles[];
@@ -1168,7 +1168,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Feraligatr[] = {
 };
 
 const struct SpriteTemplate sFeraligatrOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Feraligatr, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sFeraligatrOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Feraligatr, UpdateSurfMonOverlay);
+const struct SpriteTemplate sFeraligatrOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Feraligatr, UpdateSurfMonOverlay);
 
 //=============== SENTRET
 extern const u32 sentretTiles[];
@@ -1240,7 +1240,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Chinchou[] = {
 };
 
 const struct SpriteTemplate sChinchouOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Chinchou, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sChinchouOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Chinchou, UpdateSurfMonOverlay);
+const struct SpriteTemplate sChinchouOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Chinchou, UpdateSurfMonOverlay);
 
 //=============== LANTURN
 extern const u32 lanturnTiles[];
@@ -1266,7 +1266,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Lanturn[] = {
 };
 
 const struct SpriteTemplate sLanturnOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lanturn, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLanturnOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lanturn, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLanturnOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lanturn, UpdateSurfMonOverlay);
 
 //=============== MARILL
 extern const u32 marillTiles[];
@@ -1292,7 +1292,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Marill[] = {
 };
 
 const struct SpriteTemplate sMarillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Marill, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Marill, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Marill, UpdateSurfMonOverlay);
 
 //=============== AZURILL
 extern const u32 azurillTiles[];
@@ -1318,7 +1318,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Azurill[] = {
 };
 
 const struct SpriteTemplate sAzurillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azurill, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sAzurillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azurill, UpdateSurfMonOverlay);
+const struct SpriteTemplate sAzurillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azurill, UpdateSurfMonOverlay);
 //=============== POLITOED
 extern const u32 politoedTiles[];
 extern const u16 politoedPal[];
@@ -1368,7 +1368,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Wooper[] = {
 };
 
 const struct SpriteTemplate sWooperOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wooper, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sWooperOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wooper, UpdateSurfMonOverlay);
+const struct SpriteTemplate sWooperOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wooper, UpdateSurfMonOverlay);
 
 //=============== QUAGSIRE
 extern const u32 quagsireTiles[];
@@ -1394,7 +1394,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Quagsire[] = {
 };
 
 const struct SpriteTemplate sQuagsireOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Quagsire, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sQuagsireOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Quagsire, UpdateSurfMonOverlay);
+const struct SpriteTemplate sQuagsireOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Quagsire, UpdateSurfMonOverlay);
 
 //=============== SLOWKING
 extern const u32 slowkingTiles[];
@@ -1444,7 +1444,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Qwilfish[] = {
 };
 
 const struct SpriteTemplate sQwilfishOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Qwilfish, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sQwilfishOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Qwilfish, UpdateSurfMonOverlay);
+const struct SpriteTemplate sQwilfishOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Qwilfish, UpdateSurfMonOverlay);
 
 //=============== SNEASEL
 extern const u32 sneaselTiles[];
@@ -1470,7 +1470,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Sneasel[] = {
 };
 
 const struct SpriteTemplate sSneaselOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Sneasel, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSneaselOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Sneasel, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSneaselOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Sneasel, UpdateSurfMonOverlay);
 
 //=============== CORSOLA
 extern const u32 corsolaTiles[];
@@ -1496,7 +1496,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Corsola[] = {
 };
 
 const struct SpriteTemplate sCorsolaOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Corsola, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sCorsolaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Corsola, UpdateSurfMonOverlay);
+const struct SpriteTemplate sCorsolaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Corsola, UpdateSurfMonOverlay);
 //=============== REMORAID
 extern const u32 remoraidTiles[];
 extern const u16 remoraidPal[];
@@ -1521,7 +1521,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Remoraid[] = {
 };
 
 const struct SpriteTemplate sRemoraidOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Remoraid, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sRemoraidOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Remoraid, UpdateSurfMonOverlay);
+const struct SpriteTemplate sRemoraidOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Remoraid, UpdateSurfMonOverlay);
 
 //=============== OCTILLERY
 extern const u32 octilleryTiles[];
@@ -1547,7 +1547,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Octillery[] = {
 };
 
 const struct SpriteTemplate sOctilleryOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Octillery, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sOctilleryOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Octillery, UpdateSurfMonOverlay);
+const struct SpriteTemplate sOctilleryOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Octillery, UpdateSurfMonOverlay);
 
 //=============== MANTINE
 extern const u32 mantineTiles[];
@@ -1573,7 +1573,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Mantine[] = {
 };
 
 const struct SpriteTemplate sMantineOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Mantine, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMantineOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Mantine, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMantineOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Mantine, UpdateSurfMonOverlay);
 
 //=============== KINGDRA
 extern const u32 kingdraTiles[];
@@ -1599,7 +1599,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kingdra[] = {
 };
 
 const struct SpriteTemplate sKingdraOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingdra, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKingdraOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingdra, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKingdraOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kingdra, UpdateSurfMonOverlay);
 
 //=============== MILTANK
 extern const u32 miltankTiles[];
@@ -1625,7 +1625,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Miltank[] = {
 };
 
 const struct SpriteTemplate sMiltankOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Miltank, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMiltankOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Miltank, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMiltankOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Miltank, UpdateSurfMonOverlay);
 
 //=============== SUICUNE
 extern const u32 suicuneTiles[];
@@ -1651,7 +1651,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Suicune[] = {
 };
 
 const struct SpriteTemplate sSuicuneOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Suicune, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSuicuneOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Suicune, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSuicuneOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Suicune, UpdateSurfMonOverlay);
 
 //=============== TYRANITAR
 extern const u32 tyranitarTiles[];
@@ -1677,7 +1677,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Tyranitar[] = {
 };
 
 const struct SpriteTemplate sTyranitarOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Tyranitar, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sTyranitarOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Tyranitar, UpdateSurfMonOverlay);
+const struct SpriteTemplate sTyranitarOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Tyranitar, UpdateSurfMonOverlay);
 
 //=============== LUGIA
 extern const u32 lugiaTiles[];
@@ -1703,7 +1703,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Lugia[] = {
 };
 
 const struct SpriteTemplate sLugiaOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lugia, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLugiaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lugia, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLugiaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lugia, UpdateSurfMonOverlay);
 
 
 /*==============================
@@ -1733,7 +1733,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Mudkip[] = {
 };
 
 const struct SpriteTemplate sMudkipOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Mudkip, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMudkipOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Mudkip, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMudkipOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Mudkip, UpdateSurfMonOverlay);
 //=============== MARSHTOMP
 extern const u32 marshtompTiles[];
 extern const u16 marshtompPal[];
@@ -1758,7 +1758,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Marshtomp[] = {
 };
 
 const struct SpriteTemplate sMarshtompOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Marshtomp, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMarshtompOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Marshtomp, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMarshtompOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Marshtomp, UpdateSurfMonOverlay);
 
 //=============== SWAMPERT
 extern const u32 swampertTiles[];
@@ -1808,7 +1808,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Zigzagoon[] = {
 };
 
 const struct SpriteTemplate sZigzagoonOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Zigzagoon, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sZigzagoonOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Zigzagoon, UpdateSurfMonOverlay);
+const struct SpriteTemplate sZigzagoonOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Zigzagoon, UpdateSurfMonOverlay);
 
 //=============== LINOONE
 extern const u32 linooneTiles[];
@@ -1834,7 +1834,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Linoone[] = {
 };
 
 const struct SpriteTemplate sLinooneOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Linoone, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLinooneOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Linoone, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLinooneOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Linoone, UpdateSurfMonOverlay);
 
 //=============== LOTAD
 extern const u32 lotadTiles[];
@@ -1860,7 +1860,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Lotad[] = {
 };
 
 const struct SpriteTemplate sLotadOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lotad, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLotadOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lotad, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLotadOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lotad, UpdateSurfMonOverlay);
 
 //=============== LOMBRE
 extern const u32 lombreTiles[];
@@ -1886,7 +1886,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Lombre[] = {
 };
 
 const struct SpriteTemplate sLombreOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lombre, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLombreOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lombre, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLombreOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lombre, UpdateSurfMonOverlay);
 
 //=============== LUDICOLO
 extern const u32 ludicoloTiles[];
@@ -1912,7 +1912,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Ludicolo[] = {
 };
 
 const struct SpriteTemplate sLudicoloOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Ludicolo, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLudicoloOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Ludicolo, UpdateSurfMonOverlay);
+const struct SpriteTemplate sLudicoloOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Ludicolo, UpdateSurfMonOverlay);
 
 //=============== PELIPPER
 extern const u32 pelipperTiles[];
@@ -1938,7 +1938,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Pelipper[] = {
 };
 
 const struct SpriteTemplate sPelipperOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Pelipper, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sPelipperOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Pelipper, UpdateSurfMonOverlay);
+const struct SpriteTemplate sPelipperOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Pelipper, UpdateSurfMonOverlay);
 
 //=============== EXPLOUD
 extern const u32 exploudTiles[];
@@ -1964,7 +1964,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Exploud[] = {
 };
 
 const struct SpriteTemplate sExploudOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Exploud, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sExploudOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Exploud, UpdateSurfMonOverlay);
+const struct SpriteTemplate sExploudOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Exploud, UpdateSurfMonOverlay);
 //=============== MAKUHITA
 extern const u32 makuhitaTiles[];
 extern const u16 makuhitaPal[];
@@ -1989,7 +1989,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Makuhita[] = {
 };
 
 const struct SpriteTemplate sMakuhitaOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Makuhita, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMakuhitaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Makuhita, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMakuhitaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Makuhita, UpdateSurfMonOverlay);
 //=============== HARIYAMA
 extern const u32 hariyamaTiles[];
 extern const u16 hariyamaPal[];
@@ -2014,7 +2014,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Hariyama[] = {
 };
 
 const struct SpriteTemplate sHariyamaOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Hariyama, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sHariyamaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Hariyama, UpdateSurfMonOverlay);
+const struct SpriteTemplate sHariyamaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Hariyama, UpdateSurfMonOverlay);
 
 //=============== AGGRON
 //extern const u32 aggronTiles[];
@@ -2108,7 +2108,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Milotic[] = {
 };
 
 const struct SpriteTemplate sMiloticOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Milotic, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sMiloticOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Milotic, UpdateSurfMonOverlay);
+const struct SpriteTemplate sMiloticOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Milotic, UpdateSurfMonOverlay);
 
 //=============== SPHEAL
 extern const u32 sphealTiles[];
@@ -2134,7 +2134,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Spheal[] = {
 };
 
 const struct SpriteTemplate sSphealOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Spheal, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSphealOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Spheal, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSphealOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Spheal, UpdateSurfMonOverlay);
 
 //=============== AZUMARILL
 extern const u32 azumarillTiles[];
@@ -2160,7 +2160,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Azumarill[] = {
 };
 
 const struct SpriteTemplate sAzumarillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azumarill, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sAzumarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azumarill, UpdateSurfMonOverlay);
+const struct SpriteTemplate sAzumarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azumarill, UpdateSurfMonOverlay);
 //=============== SEALEO
 extern const u32 sealeoTiles[];
 extern const u16 sealeoPal[];
