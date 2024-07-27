@@ -76,70 +76,69 @@ Important Notes:
 - Dragonair - complete
 - Dragonite - complete
 - Mew - complete
-
 ### Gen 2: 100%
-Totodile - complete
-Croconaw - complete
-Feraligatr - complete
-Sentret - Complete (gota_csm)
-Furret - Complete (gota_csm)
-Chinchou - complete
-Lanturn - complete
-Marill - complete
-Azumarill- Complete(Shiny)
-Politoed - complete
-Wooper - complete
-Quagsire - complete
-Slowking - Complete (ghoulslash)
-Qwilfish - complete
-Sneasel - complete
-Corsola - complete
-Remoraid - complete
-Octillery - complete
-Mantine - complete
-Kingdra - complete
-Miltank - complete
-Suicune - complete
-Tyranitar - complete
-Lugia - complete
+- Totodile - complete
+- Croconaw - complete
+- Feraligatr - complete
+- Sentret - Complete (gota_csm)
+- Furret - Complete (gota_csm)
+- Chinchou - complete
+- Lanturn - complete
+- Marill - complete
+- Azumarill- Complete(Shiny)
+- Politoed - complete
+- Wooper - complete
+- Quagsire - complete
+- Slowking - Complete (ghoulslash)
+- Qwilfish - complete
+- Sneasel - complete
+- Corsola - complete
+- Remoraid - complete
+- Octillery - complete
+- Mantine - complete
+- Kingdra - complete
+- Miltank - complete
+- Suicune - complete
+- Tyranitar - complete
+- Lugia - complete
 
-Gen 3: 
-Mudkip - complete
-Marshtomp - complete
-Swampert - Complete (Zhyruk)
-Zigzagoon - complete
-Linoone - complete
-Lotad - complete
-Lombre - complete
-Ludicolo - complete
-Pelipper - complete
-Exploud - complete
-Makuhita - complete
-Hariyama - complete
-Azurill - complete
-Aggron - missing
-Carvanha - missing
-Sharpedo - missing
-Wailmer - Complete (Hestia)
-Wailord - missing
-Barboach - missing
-Whiscash - missing
-Corphish - missing
-Crawdaunt - missing
-Feebas - missing
-Milotic - complete
-Spheal - Complete (ghoulslash)
-Sealeo - Complete (ghoulslash)
-Walrein - Complete (ghoulslash)
-Clamperl - missing
-Huntail - missing
-Gorebyss - missing
-Relicanth - missing
-Luvdisc - missing
-Latias - missing
-Latios - missing
-Kyogre - missing
-Rayquaza - missing
+### Gen 3: 
+- Mudkip - complete
+- Marshtomp - complete
+- Swampert - Complete (Zhyruk)
+- Zigzagoon - complete
+- Linoone - complete
+- Lotad - complete
+- Lombre - complete
+- Ludicolo - complete
+- Pelipper - complete
+- Exploud - complete
+- Makuhita - complete
+- Hariyama - complete
+- Azurill - complete
+- Aggron - missing
+- Carvanha - missing
+- Sharpedo - missing
+- Wailmer - Complete (Hestia)
+- Wailord - missing
+- Barboach - missing
+- Whiscash - missing
+- Corphish - missing
+- Crawdaunt - missing
+- Feebas - missing
+- Milotic - complete
+- Spheal - Complete (ghoulslash)
+- Sealeo - Complete (ghoulslash)
+- Walrein - Complete (ghoulslash)
+- Clamperl - missing
+- Huntail - missing
+- Gorebyss - missing
+- Relicanth - missing
+- Luvdisc - missing
+- Latias - missing
+- Latios - missing
+- Kyogre - missing
+- Rayquaza - missing
 
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
