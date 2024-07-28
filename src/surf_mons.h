@@ -808,21 +808,21 @@ extern const u16 gyaradosPal[];
 extern const u16 gyaradosShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Gyarados[] = {
+    overworld_frame(&gyaradosTiles[0], 4, 4, 3),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 2),
     overworld_frame(&gyaradosTiles[0], 4, 4, 0),
     overworld_frame(&gyaradosTiles[0], 4, 4, 1),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 2),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 3),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 4),
     overworld_frame(&gyaradosTiles[0], 4, 4, 5),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 4),
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Gyarados[] = {
-    overworld_frame(&gyaradosTiles[0], 4, 4, 6),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 7),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 8),
     overworld_frame(&gyaradosTiles[0], 4, 4, 9),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 8),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 6), // no overlay?
+    overworld_frame(&gyaradosTiles[0], 4, 4, 7),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 11), //??
     overworld_frame(&gyaradosTiles[0], 4, 4, 10),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 11),
 };
 
 const struct SpriteTemplate sGyaradosOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Gyarados, UpdateSurfBlobFieldEffect);
