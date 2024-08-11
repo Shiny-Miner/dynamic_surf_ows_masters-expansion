@@ -17,6 +17,7 @@
 
 #define overworld_frame(ptr, width, height, frame) {.data = (u8 *)ptr + (width * height * frame * 64)/2, .size = (width * height * 64)/2}
 #define surf_template(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+#define surf_template64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = gSurfablePokemonAnimTable, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 
 extern s32 gFieldEffectArguments[8];
 extern void UpdateSurfMonOverlay(struct Sprite *sprite);
@@ -808,21 +809,21 @@ extern const u16 gyaradosPal[];
 extern const u16 gyaradosShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Gyarados[] = {
+    overworld_frame(&gyaradosTiles[0], 4, 4, 1),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 0),
     overworld_frame(&gyaradosTiles[0], 4, 4, 3),
     overworld_frame(&gyaradosTiles[0], 4, 4, 2),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 0),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 1),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 5),
     overworld_frame(&gyaradosTiles[0], 4, 4, 4),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 5),
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Gyarados[] = {
-    overworld_frame(&gyaradosTiles[0], 4, 4, 9),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 8),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 6), // no overlay?
     overworld_frame(&gyaradosTiles[0], 4, 4, 7),
-    overworld_frame(&gyaradosTiles[0], 4, 4, 11), //??
-    overworld_frame(&gyaradosTiles[0], 4, 4, 10),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 6),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 9), // no overlay?
+    overworld_frame(&gyaradosTiles[0], 4, 4, 8),
+    overworld_frame(&gyaradosTiles[0], 4, 4, 10), //??
+    overworld_frame(&gyaradosTiles[0], 4, 4, 11),
 };
 
 const struct SpriteTemplate sGyaradosOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Gyarados, UpdateSurfBlobFieldEffect);
@@ -2017,9 +2018,29 @@ const struct SpriteTemplate sHariyamaOverworld = surf_template(PAL_TAG_SURF_NEW,
 const struct SpriteTemplate sHariyamaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Hariyama, UpdateSurfMonOverlay);
 
 //=============== AGGRON
-//extern const u32 aggronTiles[];
-//extern const u16 aggronPal[];
-//extern const u16 aggronShinyPal[];
+extern const u32 aggronTiles[];
+extern const u16 aggronPal[];
+extern const u16 aggronShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Aggron[] = {
+    overworld_frame(&aggronTiles[0], 4, 4, 0),
+    overworld_frame(&aggronTiles[0], 4, 4, 1),
+    overworld_frame(&aggronTiles[0], 4, 4, 2),
+    overworld_frame(&aggronTiles[0], 4, 4, 3),
+    overworld_frame(&aggronTiles[0], 4, 4, 5),
+    overworld_frame(&aggronTiles[0], 4, 4, 4),
+};
+
+const struct SpriteFrameImage gSurfingOverlayPicTable_Aggron[] = {
+    overworld_frame(&aggronTiles[0], 4, 4, 6),
+    overworld_frame(&aggronTiles[0], 4, 4, 7),
+    overworld_frame(&aggronTiles[0], 4, 4, 8),
+    overworld_frame(&aggronTiles[0], 4, 4, 9),
+    overworld_frame(&aggronTiles[0], 4, 4, 10),
+    overworld_frame(&aggronTiles[0], 4, 4, 11),
+};
+
+const struct SpriteTemplate sAggronOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Aggron, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sAggronOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Aggron, UpdateSurfMonOverlay);
 
 //=============== CARVANHA
 //extern const u32 carvanhaTiles[];
@@ -2245,9 +2266,19 @@ const struct SpriteTemplate sWalreinOverlay = surf_template(PAL_TAG_SURF_NEW, gS
 //extern const u16 latiosShinyPal[];
 
 //=============== KYOGRE
-//extern const u32 kyogreTiles[];
-//extern const u16 kyogrePal[];
-//extern const u16 kyogreShinyPal[];
+extern const u32 kyogreTiles[];
+extern const u16 kyogrePal[];
+extern const u16 kyogreShinyPal[]; 
+const struct SpriteFrameImage gSurfingOverworldPicTable_Kyogre[] = {
+    overworld_frame(&kyogreTiles[0], 8, 8, 2),
+    overworld_frame(&kyogreTiles[0], 8, 8, 3),
+    overworld_frame(&kyogreTiles[0], 8, 8, 0),
+    overworld_frame(&kyogreTiles[0], 8, 8, 1),
+    overworld_frame(&kyogreTiles[0], 8, 8, 4),
+    overworld_frame(&kyogreTiles[0], 8, 8, 5),
+};
+
+const struct SpriteTemplate sKyogreOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kyogre, UpdateSurfBlobFieldEffect);
 
 //=============== RAYQUAZA
 //extern const u32 rayquazaTiles[];
@@ -2841,10 +2872,10 @@ const struct RideableMons gSurfablePokemon[] =
 	},
 	{
 		.species = SPECIES_AGGRON,
-		.palAddr = 0,
+		.palAddr = &aggronPal[0],
 		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
+		.overworldGfx = &sAggronOverworld,
+		.overlayGfx = &sAggronOverlay,
 	},
 	{
 		.species = SPECIES_CARVANHA,
@@ -2988,9 +3019,9 @@ const struct RideableMons gSurfablePokemon[] =
 	},
 	{
 		.species = SPECIES_KYOGRE,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
+		.palAddr = &kyogrePal[0],
+		.shinyPalAddr = &kyogreShinyPal[0],
+		.overworldGfx = &sKyogreOverworld,
 		.overlayGfx = 0,
 	},
 	{

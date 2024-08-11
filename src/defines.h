@@ -64,8 +64,8 @@
     {.loop = {.type = AFFINEANIMCMDTYPE_LOOP, .count = _count}}
 #define AFFINEANIMCMD_JUMP(_target) \
     {.jump = {.type = AFFINEANIMCMDTYPE_JUMP, .target = _target}}
-	
 #define gEventObjectBaseOam_32x32 ((struct OamData*) 0x83A3718)
+#define	gObjectEventBaseOam_64x64 ((struct OamData*) 0x83A3720)
 #define gSurfablePokemonAnimTable ((const union AnimCmd* const*) 0x83A555C)
 #define gDummySpriteAffineAnimTable (const union AffineAnimCmd* const*) 0x8231CFC
 #define sDefaultSurfBlob ((const struct SpriteTemplate*) 0x83A556C)
