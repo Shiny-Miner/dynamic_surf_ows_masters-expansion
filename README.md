@@ -33,7 +33,7 @@ Important Notes:
 =====================================================
 # Completed Pokemon
 ## Here is the spriting progress:
-### Gen I : 99% (only dratini missing and gyrados sprite has a bug)
+### Gen I : 100%
 - Squirtle - Complete (emme97)
 - Wartortle - Complete (Avara)
 - Blastoise - Complete (emme97)
@@ -72,7 +72,7 @@ Important Notes:
 - Kabuto - complete
 - Kabutops - complete
 - Snorlax - complete
-- Dratini - missing
+- Dratini - complete (michelle soto)
 - Dragonair - complete
 - Dragonite - complete
 - Mew - complete
@@ -116,7 +116,7 @@ Important Notes:
 - Makuhita - complete
 - Hariyama - complete
 - Azurill - complete
-- Aggron - missing
+- Aggron - complete
 - Carvanha - missing
 - Sharpedo - missing
 - Wailmer - Complete (Hestia)
@@ -137,7 +137,7 @@ Important Notes:
 - Luvdisc - missing
 - Latias - missing
 - Latios - missing
-- Kyogre - missing
+- Kyogre - complete
 - Rayquaza - missing
 
 Original thread (by ghoulslash):
