@@ -1007,9 +1007,30 @@ const struct SpriteTemplate sSnorlaxOverworld = surf_template(PAL_TAG_SURF_NEW, 
 const struct SpriteTemplate sSnorlaxOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Snorlax, UpdateSurfMonOverlay);
 
 //=============== DRATINI
-//extern const u32 dratiniTiles[];
-//extern const u16 dratiniPal[];
-//extern const u16 dratiniShinyPal[];
+extern const u32 dratiniTiles[];
+extern const u16 dratiniPal[];
+extern const u16 dratiniShinyPal[];
+
+const struct SpriteFrameImage gSurfingOverworldPicTable_Dratini[] = {
+    overworld_frame(&dratiniTiles[0], 4, 4, 0),
+    overworld_frame(&dratiniTiles[0], 4, 4, 1),
+    overworld_frame(&dratiniTiles[0], 4, 4, 2),
+    overworld_frame(&dratiniTiles[0], 4, 4, 3),
+    overworld_frame(&dratiniTiles[0], 4, 4, 4),
+    overworld_frame(&dratiniTiles[0], 4, 4, 5),
+};
+
+const struct SpriteFrameImage gSurfingOverlayPicTable_Dratini[] = {
+    overworld_frame(&dratiniTiles[0], 4, 4, 6),
+    overworld_frame(&dratiniTiles[0], 4, 4, 7),
+    overworld_frame(&dratiniTiles[0], 4, 4, 8),
+    overworld_frame(&dratiniTiles[0], 4, 4, 9),
+    overworld_frame(&dratiniTiles[0], 4, 4, 10),
+    overworld_frame(&dratiniTiles[0], 4, 4, 11),
+};
+
+const struct SpriteTemplate sDratiniOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Dratini, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sDratiniOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Dratini, UpdateSurfMonOverlay);
 
 //=============== DRAGONAIR
 extern const u32 dragonairTiles[];
@@ -2577,12 +2598,12 @@ const struct RideableMons gSurfablePokemon[] =
   .overlayGfx = &sSnorlaxOverlay,	// or 0 if it doesn't exist
 },
 	{
-		.species = SPECIES_DRATINI,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
+  .species = SPECIES_DRATINI,
+  .palAddr = &dratiniPal[0],
+  .shinyPalAddr = &dratiniShinyPal[0],	// or 0 if it doesn't exist
+  .overworldGfx = &sDratiniOverworld,
+  .overlayGfx = &sDratiniOverlay,	// or 0 if it doesn't exist
+},
 	{
   .species = SPECIES_DRAGONAIR,
   .palAddr = &dragonairPal[0],
@@ -2873,7 +2894,7 @@ const struct RideableMons gSurfablePokemon[] =
 	{
 		.species = SPECIES_AGGRON,
 		.palAddr = &aggronPal[0],
-		.shinyPalAddr = 0,
+		.shinyPalAddr = &aggronShinyPal[0],
 		.overworldGfx = &sAggronOverworld,
 		.overlayGfx = &sAggronOverlay,
 	},
