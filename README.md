@@ -1,5 +1,5 @@
 # Dynamic surfing overworlds for FR (expansion by Shiny miner, ansh)
-##Trying to complete gen 1-3 as soon as we can
+## Trying to complete gen 1-3 as soon as we can
 for any queries contact me on discord- shinyhunter08
 
 =====================================================
@@ -31,114 +31,136 @@ Important Notes:
 3. Fire Red likes vertical images, and as such the sprites have to have all their frames lined up vertically, as opposed to the pokeem images that are layered horizontally. While annoying, changing the frame ordering isn't a big deal, and I hope this won't stand in the way of community art being shared.
 
 =====================================================
+
+TODOs:
+
+1. Verify that each Pokemon has a matching Shiny sprite
+
+2. Try to identify any missing credits via pokecommunity thread (or old repo), if possible
+
+3. Populate a list of tradebacks/tradeforwards for Surf (Gen 1-3 Pokemon that get Surf in a different Gen), including Events
+
+4. Populate a list of Gen 4-9 Pokemon that get Surf
+
+5. Test all sprites in-engine (see Tha Code Mining Hub's #surf-overworlds-expansion channel, and "Checking in-game" thread)
+
+6. Apply fixes from #6.
+
+=====================================================
 # Completed Pokemon
 ## Here is the spriting progress:
 ### Gen I : 100%
 - Squirtle - Complete (emme97)
 - Wartortle - Complete (Avara)
 - Blastoise - Complete (emme97)
-- Nidoqueen - complete
-- Nidoking  - complete
+- Pikachu - Complete (Nolo33LP, with some centering by Ansh860)
+- Raichu - Complete (Nolo33LP)
+- Nidoqueen - Complete
+- Nidoking  - Complete
 - Psyduck - Complete (ghoulslash)
 - Golduck - Complete (ghoulslash)
-- Poliwag - complete
-- Poliwhirl  - complete
-- Poliwrath  - complete
+- Poliwag - Complete
+- Poliwhirl  - Complete
+- Poliwrath  - Complete
 - Tentacool - Complete (Avara)
 - Tentacruel - Complete (Avara)
 - Slowpoke - Complete (ghoulslash)
 - Slowbro - Complete (ghoulslash)
 - Seel - Complete (ghoulslash)
 - Dewgong - Complete (ghoulslash)
-- Shellder - complete
-- Cloyster - complete
-- Krabby  - complete
-- Kingler - complete
-- Lickitung - complete
-- Rhydon - complete
-- Kangaskhan - complete
-- Horsea  - complete
-- Seadra - complete
-- Goldeen - complete
-- Seaking - complete
+- Shellder - Complete
+- Cloyster - Complete
+- Krabby  - Complete
+- Kingler - Complete
+- Lickitung - Complete
+- Rhydon - Complete
+- Kangaskhan - Complete
+- Horsea  - Complete
+- Seadra - Complete
+- Goldeen - Complete
+- Seaking - Complete
 - Staryu - Complete (ghoulslash)
 - Starmie - Complete (ghoulslash)
-- Tauros - complete
-- Gyarados  - complete
+- Tauros - Complete
+- Gyarados  - Complete
 - Lapras - Complete (Slawter666)
 - Vaporeon - Complete (ghoulslash)
-- Omanyte - complete
-- Omastar - complete
-- Kabuto - complete
-- Kabutops - complete
-- Snorlax - complete
-- Dratini - complete (michelle soto)
-- Dragonair - complete
-- Dragonite - complete
-- Mew - complete
+- Omanyte - Complete
+- Omastar - Complete
+- Kabuto - Complete
+- Kabutops - Complete
+- Snorlax - Complete
+- Dratini - Complete (michelle soto)
+- Dragonair - Complete
+- Dragonite - Complete
+- Mew - Complete
+
 ### Gen 2: 100%
-- Totodile - complete
-- Croconaw - complete
-- Feraligatr - complete
+- Totodile - Complete
+- Croconaw - Complete
+- Feraligatr - Complete
 - Sentret - Complete (gota_csm)
 - Furret - Complete (gota_csm)
-- Chinchou - complete
-- Lanturn - complete
-- Marill - complete
+- Pichu - Complete (Nolo33LP)
+- Chinchou - Complete
+- Lanturn - Complete
+- Marill - Complete
 - Azumarill- Complete(Shiny)
-- Politoed - complete
-- Wooper - complete
-- Quagsire - complete
+- Politoed - Complete
+- Wooper - Complete
+- Quagsire - Complete
 - Slowking - Complete (ghoulslash)
-- Qwilfish - complete
-- Sneasel - complete
-- Corsola - complete
-- Remoraid - complete
-- Octillery - complete
-- Mantine - complete
-- Kingdra - complete
-- Miltank - complete
-- Suicune - complete
-- Tyranitar - complete
-- Lugia - complete
+- Qwilfish - Complete
+- Sneasel - Complete
+- Corsola - Complete
+- Remoraid - Complete
+- Octillery - Complete
+- Mantine - Complete
+- Kingdra - Complete
+- Miltank - Complete
+- Suicune - Complete
+- Tyranitar - Complete
+- Lugia - Complete
 
 ### Gen 3: 55% or so
-- Mudkip - complete
-- Marshtomp - complete
+- Mudkip - Complete
+- Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
-- Zigzagoon - complete
-- Linoone - complete
-- Lotad - complete
-- Lombre - complete
-- Ludicolo - complete
-- Pelipper - complete
-- Exploud - complete
-- Makuhita - complete
-- Hariyama - complete
-- Azurill - complete
-- Aggron - complete
-- Carvanha - missing
-- Sharpedo - missing
+- Zigzagoon - Complete
+- Linoone - Complete
+- Lotad - Complete
+- Lombre - Complete
+- Ludicolo - Complete
+- Pelipper - Complete
+- Makuhita - Complete
+- Hariyama - Complete
+- Azurill - Complete
+- Aggron - Complete
+- Carvanha - Missing [Currently claimed by Shiny Miner's friend]
+- Sharpedo - Missing
 - Wailmer - Complete (Hestia)
-- Wailord - missing
-- Barboach - missing
-- Whiscash - missing
-- Corphish - missing
-- Crawdaunt - missing
-- Feebas - missing
-- Milotic - complete
+- Wailord - Missing
+- Barboach - Missing
+- Whiscash - Missing
+- Corphish - Missing
+- Crawdaunt - Missing
+- Feebas - Missing
+- Milotic - Complete
 - Spheal - Complete (ghoulslash)
 - Sealeo - Complete (ghoulslash)
 - Walrein - Complete (ghoulslash)
-- Clamperl - missing
-- Huntail - missing
-- Gorebyss - missing
-- Relicanth - missing
-- Luvdisc - missing
-- Latias - missing
-- Latios - missing
-- Kyogre - complete
-- Rayquaza - missing
+- Clamperl - Missing
+- Huntail - Missing
+- Gorebyss - Missing
+- Relicanth - Missing
+- Luvdisc - Missing
+- Latias - Missing
+- Latios - Missing
+- Kyogre - Complete
+- Rayquaza - Missing
+
+## Tradebacks (Receives Surf in a later gen)
+- Exploud - Complete
 
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
