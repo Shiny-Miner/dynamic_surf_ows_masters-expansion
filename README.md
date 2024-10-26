@@ -158,10 +158,10 @@ TODOs:
 - Rayquaza - Missing
 
 ## Tradebacks (Receives Surf in a later gen)
-### Gen 4
+### Gen 4: 100%
 - Exploud - Complete
 
-### Gen 9
+### Gen 9: 0%
 - Surskit - Missing
 - Masquerain - Missing
 - Zangoose - Missing
