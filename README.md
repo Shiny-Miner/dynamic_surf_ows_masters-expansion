@@ -38,13 +38,11 @@ TODOs:
 
 2. Try to identify any missing credits via pokecommunity thread (or old repo), if possible
 
-3. Populate a list of tradebacks/tradeforwards for Surf (Gen 1-3 Pokemon that get Surf in a different Gen), including Events
+3. Add Zangoose, Surskit, Masquerain as tradebacks
 
-4. Populate a list of Gen 4-9 Pokemon that get Surf
+4. Test all sprites in-engine (see Tha Code Mining Hub's #surf-overworlds-expansion channel, and "Checking in-game" thread)
 
-5. Test all sprites in-engine (see Tha Code Mining Hub's #surf-overworlds-expansion channel, and "Checking in-game" thread)
-
-6. Apply fixes from #6.
+5. Apply fixes from #6.
 
 =====================================================
 # Completed Pokemon
@@ -160,7 +158,13 @@ TODOs:
 - Rayquaza - Missing
 
 ## Tradebacks (Receives Surf in a later gen)
+### Gen 4
 - Exploud - Complete
+
+### Gen 9
+- Surskit - Missing
+- Masquerain - Missing
+- Zangoose - Missing
 
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
@@ -230,4 +234,5 @@ const struct SpriteTemplate sPopplioOverlay = surf_template(PAL_TAG_SURF_NEW, gS
   .overlayGfx = &sPopplioOverlay,	// or 0 if it doesn't exist
 },
 ```
+
 
