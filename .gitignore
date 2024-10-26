@@ -14,3 +14,5 @@ build/*
 *.ss3
 generatedrepoints
 *__pycache__
+graphics/*.h
+graphics/shiny/*.h

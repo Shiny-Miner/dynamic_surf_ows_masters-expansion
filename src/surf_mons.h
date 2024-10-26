@@ -111,6 +111,52 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Blastoise[] = {
 const struct SpriteTemplate sBlastoiseOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Blastoise, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sBlastoiseOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Blastoise, UpdateSurfMonOverlay);
 
+//=============== PIKACHU
+extern const u32 pikachuTiles[];
+extern const u16 pikachuPal[];
+extern const u16 pikachuShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Pikachu[] = {
+    overworld_frame(&pikachuTiles[0], 8, 8, 1),
+    overworld_frame(&pikachuTiles[0], 8, 8, 0),
+    overworld_frame(&pikachuTiles[0], 8, 8, 3),
+    overworld_frame(&pikachuTiles[0], 8, 8, 2),
+    overworld_frame(&pikachuTiles[0], 8, 8, 5),
+    overworld_frame(&pikachuTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Pikachu[] = {
+    overworld_frame(&pikachuTiles[0], 8, 8, 7),
+    overworld_frame(&pikachuTiles[0], 8, 8, 6),
+    overworld_frame(&pikachuTiles[0], 8, 8, 9),
+    overworld_frame(&pikachuTiles[0], 8, 8, 8),
+    overworld_frame(&pikachuTiles[0], 8, 8, 11),
+    overworld_frame(&pikachuTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sPikachuOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Pikachu, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPikachuOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Pikachu, UpdateSurfMonOverlay);
+
+//=============== RAICHU
+extern const u32 raichuTiles[];
+extern const u16 raichuPal[];
+extern const u16 raichuShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Raichu[] = {
+    overworld_frame(&raichuTiles[0], 8, 8, 1),
+    overworld_frame(&raichuTiles[0], 8, 8, 0),
+    overworld_frame(&raichuTiles[0], 8, 8, 3),
+    overworld_frame(&raichuTiles[0], 8, 8, 2),
+    overworld_frame(&raichuTiles[0], 8, 8, 5),
+    overworld_frame(&raichuTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Raichu[] = {
+    overworld_frame(&raichuTiles[0], 8, 8, 7),
+    overworld_frame(&raichuTiles[0], 8, 8, 6),
+    overworld_frame(&raichuTiles[0], 8, 8, 9),
+    overworld_frame(&raichuTiles[0], 8, 8, 8),
+    overworld_frame(&raichuTiles[0], 8, 8, 11),
+    overworld_frame(&raichuTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sRaichuOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Raichu, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sRaichuOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Raichu, UpdateSurfMonOverlay);
+
 //=============== NIDOQUEEN
 extern const u32 nidoqueenTiles[];
 extern const u16 nidoqueenPal[];
@@ -1215,6 +1261,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Sentret[] = {
 };
 const struct SpriteTemplate sSentretOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Sentret, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sSentretOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Sentret, UpdateSurfMonOverlay);
+
 //=============== FURRET
 extern const u32 furretTiles[];
 extern const u16 furretPal[];
@@ -1238,6 +1285,30 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Furret[] = {
 };
 const struct SpriteTemplate sFurretOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Furret, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sFurretOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Furret, UpdateSurfMonOverlay);
+
+//=============== PICHU
+extern const u32 pichuTiles[];
+extern const u16 pichuPal[];
+extern const u16 pichuShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Pichu[] = {
+    overworld_frame(&pichuTiles[0], 8, 8, 1),
+    overworld_frame(&pichuTiles[0], 8, 8, 0),
+    overworld_frame(&pichuTiles[0], 8, 8, 3),
+    overworld_frame(&pichuTiles[0], 8, 8, 2),
+    overworld_frame(&pichuTiles[0], 8, 8, 5),
+    overworld_frame(&pichuTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Pichu[] = {
+    overworld_frame(&pichuTiles[0], 8, 8, 7),
+    overworld_frame(&pichuTiles[0], 8, 8, 6),
+    overworld_frame(&pichuTiles[0], 8, 8, 9),
+    overworld_frame(&pichuTiles[0], 8, 8, 8),
+    overworld_frame(&pichuTiles[0], 8, 8, 11),
+    overworld_frame(&pichuTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sPichuOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Pichu, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sPichuOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Pichu, UpdateSurfMonOverlay);
+
 //=============== CHINCHOU
 extern const u32 chinchouTiles[];
 extern const u16 chinchouPal[];
@@ -2064,9 +2135,9 @@ const struct SpriteTemplate sAggronOverworld = surf_template(PAL_TAG_SURF_NEW, g
 const struct SpriteTemplate sAggronOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Aggron, UpdateSurfMonOverlay);
 
 //=============== CARVANHA
-//extern const u32 carvanhaTiles[];
-//extern const u16 carvanhaPal[];
-//extern const u16 carvanhaShinyPal[];
+// extern const u32 carvanhaTiles[];
+// extern const u16 carvanhaPal[];
+// extern const u16 carvanhaShinyPal[];
 
 //=============== SHARPEDO
 //extern const u32 sharpedoTiles[];
@@ -2323,733 +2394,754 @@ struct RideableMons
 };
 
 const struct RideableMons gSurfablePokemon[] =
-{
-	{
-		.species = SPECIES_SQUIRTLE,
-		.palAddr = &squirtlePal[0],
-		.shinyPalAddr = &squirtleShinyPal[0],
-		.overworldGfx = &sSquirtleOverworld,
-		.overlayGfx = &sSquirtleOverlay,
-	},
-	{
-		.species = SPECIES_WARTORTLE,
-		.palAddr = &wartortlePal[0],
-		.shinyPalAddr = &wartortleShinyPal[0],
-		.overworldGfx = &sWartortleOverworld,
-		.overlayGfx = &sWartortleOverlay,
-	},
-	{
-		.species = SPECIES_BLASTOISE,
-		.palAddr = &blastoisePal[0],
-		.shinyPalAddr = &blastoiseShinyPal[0],
-		.overworldGfx = &sBlastoiseOverworld,
-		.overlayGfx = &sBlastoiseOverlay,
-	},
-{
-  .species = SPECIES_NIDOQUEEN,
-  .palAddr = &nidoqueenPal[0],
-  .shinyPalAddr = &nidoqueenShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sNidoqueenOverworld,
-  .overlayGfx = &sNidoqueenOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_NIDOKING,
-  .palAddr = &nidokingPal[0],
-  .shinyPalAddr = &nidokingShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sNidokingOverworld,
-  .overlayGfx = &sNidokingOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_PSYDUCK,
-		.palAddr = &psyduckPal[0],
-		.shinyPalAddr = &psyduckShinyPal[0],
-		.overworldGfx = &sPsyduckOverworld,
-		.overlayGfx = &sPsyduckOverlay,
-	},
-	{
-		.species = SPECIES_GOLDUCK,
-		.palAddr = &golduckPal[0],
-		.shinyPalAddr = &golduckShinyPal[0],
-		.overworldGfx = &sGolduckOverworld,
-		.overlayGfx = &sGolduckOverlay,
-	},
-	{
-		.species = SPECIES_POLIWAG,
-		.palAddr = &poliwagPal[0],
-		.shinyPalAddr = &poliwagShinyPal[0],
-		.overworldGfx = &sPoliwagOverworld,
-		.overlayGfx = &sPoliwagOverlay,
-	},
-	{
-		.species = SPECIES_POLIWHIRL,
-		.palAddr = &poliwhirlPal[0],
-		.shinyPalAddr = &poliwhirlShinyPal[0],
-		.overworldGfx = &sPoliwhirlOverworld,
-		.overlayGfx = &sPoliwhirlOverlay,
-	},
-	{
-		.species = SPECIES_POLIWRATH,
-		.palAddr = &poliwrathPal[0],
-		.shinyPalAddr = &poliwrathShinyPal[0],
-		.overworldGfx = &sPoliwrathOverworld,
-		.overlayGfx = &sPoliwrathOverlay,
-	},
-	{
-		.species = SPECIES_TENTACOOL,
-		.palAddr = &tentacoolPal[0],
-		.shinyPalAddr = &tentacoolShinyPal[0],
-		.overworldGfx = &sTentacoolOverworld,
-		.overlayGfx = &sTentacoolOverlay,
-	},
-	{
-		.species = SPECIES_TENTACRUEL,
-		.palAddr = &tentacruelPal[0],
-		.shinyPalAddr = &tentacruelShinyPal[0],
-		.overworldGfx = &sTentacruelOverworld,
-		.overlayGfx = &sTentacruelOverlay,
-	},
-	{
-		.species = SPECIES_SLOWPOKE,
-		.palAddr = &slowpokePal[0],
-		.shinyPalAddr = &slowpokeShinyPal[0],
-		.overworldGfx = &sSlowpokeOverworld,
-		.overlayGfx = &sSlowpokeOverlay,
-	},
-	{
-		.species = SPECIES_SLOWBRO,
-		.palAddr = &slowbroPal[0],
-		.shinyPalAddr = &slowbroShinyPal[0],
-		.overworldGfx = &sSlowbroOverworld,
-		.overlayGfx = &sSlowbroOverlay,
-	},
-	{
-		.species = SPECIES_SEEL,
-		.palAddr = &seelPal[0],
-		.shinyPalAddr = &seelShinyPal[0],
-		.overworldGfx = &sSeelOverworld,
-		.overlayGfx = &sSeelOverlay,
-	},
-	{
-		.species = SPECIES_DEWGONG,
-		.palAddr = &dewgongPal[0],
-		.shinyPalAddr = &dewgongShinyPal[0],
-		.overworldGfx = &sDewgongOverworld,
-		.overlayGfx = &sDewgongOverlay,
-	},
-	{
-  .species = SPECIES_SHELLDER,
-  .palAddr = &shellderPal[0],
-  .shinyPalAddr = &shellderShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sShellderOverworld,
-  .overlayGfx = &sShellderOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_CLOYSTER,
-		.palAddr = &cloysterPal[0],
-		.shinyPalAddr = &cloysterShinyPal[0],
-		.overworldGfx = &sCloysterOverworld,
-		.overlayGfx = &sCloysterOverlay,
-	},
-{
-  .species = SPECIES_KRABBY,
-  .palAddr = &krabbyPal[0],
-  .shinyPalAddr = &krabbyShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sKrabbyOverworld,
-  .overlayGfx = &sKrabbyOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_KINGLER,
-  .palAddr = &kinglerPal[0],
-  .shinyPalAddr = &kinglerShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sKinglerOverworld,
-  .overlayGfx = &sKinglerOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_LICKITUNG,
-  .palAddr = &lickitungPal[0],
-  .shinyPalAddr = &lickitungShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLickitungOverworld,
-  .overlayGfx = &sLickitungOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_RHYDON,
-  .palAddr = &rhydonPal[0],
-  .shinyPalAddr = &rhydonShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sRhydonOverworld,
-  .overlayGfx = &sRhydonOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_RHYHORN,
-  .palAddr = &rhyhornPal[0],
-  .shinyPalAddr = 0,	// or 0 if it doesn't exist
-  .overworldGfx = &sRhyhornOverworld,
-  .overlayGfx = &sRhyhornOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_KANGASKHAN,
-  .palAddr = &kangaskhanPal[0],
-  .shinyPalAddr = &kangaskhanShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sKangaskhanOverworld,
-  .overlayGfx = &sKangaskhanOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_HORSEA,
-  .palAddr = &horseaPal[0],
-  .shinyPalAddr = &horseaShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sHorseaOverworld,
-  .overlayGfx = &sHorseaOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_SEADRA,
-  .palAddr = &seadraPal[0],
-  .shinyPalAddr = &seadraShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sSeadraOverworld,
-  .overlayGfx = &sSeadraOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_GOLDEEN,
-  .palAddr = &goldeenPal[0],
-  .shinyPalAddr = &goldeenShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sGoldeenOverworld,
-  .overlayGfx = &sGoldeenOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_SEAKING,
-  .palAddr = &seakingPal[0],
-  .shinyPalAddr = &seakingShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sSeakingOverworld,
-  .overlayGfx = &sSeakingOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_STARYU,
-		.palAddr = &staryuPal[0],
-		.shinyPalAddr = &staryuShinyPal[0],
-		.overworldGfx = &sStaryuOverworld,
-		.overlayGfx = &sStaryuOverlay,
-	},
-	{
-		.species = SPECIES_STARMIE,
-		.palAddr = &starmiePal[0],
-		.shinyPalAddr = &starmieShinyPal[0],
-		.overworldGfx = &sStarmieOverworld,
-		.overlayGfx = &sStarmieOverlay,
-	},
-	{
-  .species = SPECIES_TAUROS,
-  .palAddr = &taurosPal[0],
-  .shinyPalAddr = &taurosShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sTaurosOverworld,
-  .overlayGfx = &sTaurosOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_GYARADOS,
-  .palAddr = &gyaradosPal[0],
-  .shinyPalAddr = &gyaradosShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sGyaradosOverworld,
-  .overlayGfx = &sGyaradosOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_LAPRAS,
-		.palAddr = &laprasPal[0],
-		.shinyPalAddr = &laprasShinyPal[0],
-		.overworldGfx = &sLaprasOverworld,
-		.overlayGfx = &sLaprasOverlay,
-	},
-	{
-		.species = SPECIES_VAPOREON,
-		.palAddr = &vaporeonPal[0],
-		.shinyPalAddr = &vaporeonShinyPal[0],
-		.overworldGfx = &sVaporeonOverworld,
-		.overlayGfx = &sVaporeonOverlay,
-	},
-	{
-  .species = SPECIES_OMANYTE,
-  .palAddr = &omanytePal[0],
-  .shinyPalAddr = &omanyteShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sOmanyteOverworld,
-  .overlayGfx = &sOmanyteOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_OMASTAR,
-  .palAddr = &omastarPal[0],
-  .shinyPalAddr = &omastarShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sOmastarOverworld,
-  .overlayGfx = &sOmastarOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_KABUTO,
-  .palAddr = &kabutoPal[0],
-  .shinyPalAddr = &kabutoShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sKabutoOverworld,
-  .overlayGfx = &sKabutoOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_KABUTOPS,
-  .palAddr = &kabutopsPal[0],
-  .shinyPalAddr = &kabutopsShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sKabutopsOverworld,
-  .overlayGfx = &sKabutopsOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_SNORLAX,
-  .palAddr = &snorlaxPal[0],
-  .shinyPalAddr = &snorlaxShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sSnorlaxOverworld,
-  .overlayGfx = &sSnorlaxOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_DRATINI,
-  .palAddr = &dratiniPal[0],
-  .shinyPalAddr = &dratiniShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sDratiniOverworld,
-  .overlayGfx = &sDratiniOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_DRAGONAIR,
-  .palAddr = &dragonairPal[0],
-  .shinyPalAddr = &dragonairShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sDragonairOverworld,
-  .overlayGfx = &sDragonairOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_DRAGONITE,
-  .palAddr = &dragonitePal[0],
-  .shinyPalAddr = &dragoniteShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sDragoniteOverworld,
-  .overlayGfx = &sDragoniteOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_MEW,
-  .palAddr = &mewPal[0],
-  .shinyPalAddr = &mewShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMewOverworld,
-  .overlayGfx = &sMewOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_TOTODILE,
-  .palAddr = &totodilePal[0],
-  .shinyPalAddr = &totodileShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sTotodileOverworld,
-  .overlayGfx = &sTotodileOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_CROCONAW,
-  .palAddr = &croconawPal[0],
-  .shinyPalAddr = &croconawShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sCroconawOverworld,
-  .overlayGfx = &sCroconawOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_FERALIGATR,
-  .palAddr = &feraligatrPal[0],
-  .shinyPalAddr = &feraligatrShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sFeraligatrOverworld,
-  .overlayGfx = &sFeraligatrOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_SENTRET,
-		.palAddr = &sentretPal[0],
-		.shinyPalAddr = &sentretShinyPal[0],
-		.overworldGfx = &sSentretOverworld,
-		.overlayGfx = &sSentretOverlay,
-	},
-	{
-		.species = SPECIES_FURRET,
-		.palAddr = &furretPal[0],
-		.shinyPalAddr = &furretShinyPal[0],
-		.overworldGfx = &sFurretOverworld,
-		.overlayGfx = &sFurretOverlay,
-	},
-	{
-		.species = SPECIES_CHINCHOU,
-		.palAddr = &chinchouPal[0],
-		.shinyPalAddr = &chinchouShinyPal[0],
-		.overworldGfx = &sChinchouOverworld,
-		.overlayGfx = &sChinchouOverlay,
-	},
-	{
-  .species = SPECIES_LANTURN,
-  .palAddr = &lanturnPal[0],
-  .shinyPalAddr = &lanturnShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLanturnOverworld,
-  .overlayGfx = &sLanturnOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_AZURILL,
-  .palAddr = &azurillPal[0],
-  .shinyPalAddr = &azurillShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sAzurillOverworld,
-  .overlayGfx = &sAzurillOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_MARILL,
-  .palAddr = &marillPal[0],
-  .shinyPalAddr = &marillShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMarillOverworld,
-  .overlayGfx = &sMarillOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_AZUMARILL,
-  .palAddr = &azumarillPal[0],
-  .shinyPalAddr = &azumarillShinyPal[0],
-  .overworldGfx = &sAzumarillOverworld,
-  .overlayGfx = &sAzumarillOverlay,
-  },
-	{
-		.species = SPECIES_POLITOED,
-		.palAddr = &politoedPal[0],
-		.shinyPalAddr = &politoedShinyPal[0],
-		.overworldGfx = &sPolitoedOverworld,
-		.overlayGfx = &sPolitoedOverlay,
-	},
-	{
-  .species = SPECIES_WOOPER,
-  .palAddr = &wooperPal[0],
-  .shinyPalAddr = &wooperShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sWooperOverworld,
-  .overlayGfx = &sWooperOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_QUAGSIRE,
-  .palAddr = &quagsirePal[0],
-  .shinyPalAddr = &quagsireShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sQuagsireOverworld,
-  .overlayGfx = &sQuagsireOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_SLOWKING,
-		.palAddr = &slowkingPal[0],
-		.shinyPalAddr = &slowkingShinyPal[0],
-		.overworldGfx = &sSlowkingOverworld,
-		.overlayGfx = &sSlowkingOverlay,
-	},
-	{
-  .species = SPECIES_QWILFISH,
-  .palAddr = &qwilfishPal[0],
-  .shinyPalAddr = &qwilfishShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sQwilfishOverworld,
-  .overlayGfx = &sQwilfishOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_SNEASEL,
-  .palAddr = &sneaselPal[0],
-  .shinyPalAddr = &sneaselShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sSneaselOverworld,
-  .overlayGfx = &sSneaselOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_CORSOLA,
-  .palAddr = &corsolaPal[0],
-  .shinyPalAddr = &corsolaShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sCorsolaOverworld,
-  .overlayGfx = &sCorsolaOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_REMORAID,
-  .palAddr = &remoraidPal[0],
-  .shinyPalAddr = &remoraidShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sRemoraidOverworld,
-  .overlayGfx = &sRemoraidOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_OCTILLERY,
-  .palAddr = &octilleryPal[0],
-  .shinyPalAddr = &octilleryShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sOctilleryOverworld,
-  .overlayGfx = &sOctilleryOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_MANTINE,
-  .palAddr = &mantinePal[0],
-  .shinyPalAddr = &mantineShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMantineOverworld,
-  .overlayGfx = &sMantineOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_KINGDRA,
-  .palAddr = &kingdraPal[0],
-  .shinyPalAddr = &kingdraShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sKingdraOverworld,
-  .overlayGfx = &sKingdraOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_MILTANK,
-  .palAddr = &miltankPal[0],
-  .shinyPalAddr = &miltankShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMiltankOverworld,
-  .overlayGfx = &sMiltankOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_SUICUNE,
-  .palAddr = &suicunePal[0],
-  .shinyPalAddr = &suicuneShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sSuicuneOverworld,
-  .overlayGfx = &sSuicuneOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_TYRANITAR,
-  .palAddr = &tyranitarPal[0],
-  .shinyPalAddr = &tyranitarShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sTyranitarOverworld,
-  .overlayGfx = &sTyranitarOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_LUGIA,
-  .palAddr = &lugiaPal[0],
-  .shinyPalAddr = &lugiaShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLugiaOverworld,
-  .overlayGfx = &sLugiaOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_MUDKIP,
-  .palAddr = &mudkipPal[0],
-  .shinyPalAddr = &mudkipShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMudkipOverworld,
-  .overlayGfx = &sMudkipOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_MARSHTOMP,
-  .palAddr = &marshtompPal[0],
-  .shinyPalAddr = &marshtompShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMarshtompOverworld,
-  .overlayGfx = &sMarshtompOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_SWAMPERT,
-		.palAddr = &swampertPal[0],
-		.shinyPalAddr = &swampertShinyPal[0],
-		.overworldGfx = &sSwampertOverworld,
-		.overlayGfx = &sSwampertOverlay,
-	},
-	{
-  .species = SPECIES_ZIGZAGOON,
-  .palAddr = &zigzagoonPal[0],
-  .shinyPalAddr = &zigzagoonShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sZigzagoonOverworld,
-  .overlayGfx = &sZigzagoonOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_LINOONE,
-  .palAddr = &linoonePal[0],
-  .shinyPalAddr = &linooneShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLinooneOverworld,
-  .overlayGfx = &sLinooneOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_LOTAD,
-  .palAddr = &lotadPal[0],
-  .shinyPalAddr = &lotadShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLotadOverworld,
-  .overlayGfx = &sLotadOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_LOMBRE,
-  .palAddr = &lombrePal[0],
-  .shinyPalAddr = &lombreShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLombreOverworld,
-  .overlayGfx = &sLombreOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_LUDICOLO,
-  .palAddr = &ludicoloPal[0],
-  .shinyPalAddr = &ludicoloShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sLudicoloOverworld,
-  .overlayGfx = &sLudicoloOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_PELIPPER,
-  .palAddr = &pelipperPal[0],
-  .shinyPalAddr = &pelipperShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sPelipperOverworld,
-  .overlayGfx = &sPelipperOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_EXPLOUD,
-  .palAddr = &exploudPal[0],
-  .shinyPalAddr = &exploudShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sExploudOverworld,
-  .overlayGfx = &sExploudOverlay,	// or 0 if it doesn't exist
-},
-	{
-  .species = SPECIES_MAKUHITA,
-  .palAddr = &makuhitaPal[0],
-  .shinyPalAddr = &makuhitaShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMakuhitaOverworld,
-  .overlayGfx = &sMakuhitaOverlay,	// or 0 if it doesn't exist
-},
-{
-  .species = SPECIES_HARIYAMA,
-  .palAddr = &hariyamaPal[0],
-  .shinyPalAddr = &hariyamaShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sHariyamaOverworld,
-  .overlayGfx = &sHariyamaOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_AZURILL,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_AGGRON,
-		.palAddr = &aggronPal[0],
-		.shinyPalAddr = &aggronShinyPal[0],
-		.overworldGfx = &sAggronOverworld,
-		.overlayGfx = &sAggronOverlay,
-	},
-	{
-		.species = SPECIES_CARVANHA,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_SHARPEDO,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_WAILMER,
-		.palAddr = &wailmerPal[0],
-		.shinyPalAddr = &wailmerShinyPal[0],
-		.overworldGfx = &sWailmerOverworld,
-		.overlayGfx = &sWailmerOverlay,
-	},
-	{
-		.species = SPECIES_WAILORD,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_BARBOACH,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_WHISCASH,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_CORPHISH,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_CRAWDAUNT,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_FEEBAS,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-  .species = SPECIES_MILOTIC,
-  .palAddr = &miloticPal[0],
-  .shinyPalAddr = &miloticShinyPal[0],	// or 0 if it doesn't exist
-  .overworldGfx = &sMiloticOverworld,
-  .overlayGfx = &sMiloticOverlay,	// or 0 if it doesn't exist
-},
-	{
-		.species = SPECIES_SPHEAL,
-		.palAddr = &sphealPal[0],
-		.shinyPalAddr = &sphealShinyPal[0],
-		.overworldGfx = &sSphealOverworld,
-		.overlayGfx = &sSphealOverlay,
-	},
-	{
-		.species = SPECIES_SEALEO,
-		.palAddr = &sealeoPal[0],
-		.shinyPalAddr = &sealeoShinyPal[0],
-		.overworldGfx = &sSealeoOverworld,
-		.overlayGfx = &sSealeoOverlay,
-	},
-	{
-		.species = SPECIES_WALREIN,
-		.palAddr = &walreinPal[0],
-		.shinyPalAddr = &walreinShinyPal[0],
-		.overworldGfx = &sWalreinOverworld,
-		.overlayGfx = &sWalreinOverlay,
-	},
-	{
-		.species = SPECIES_CLAMPERL,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_HUNTAIL,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_GOREBYSS,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_RELICANTH,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_LUVDISC,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_LATIAS,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_LATIOS,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_KYOGRE,
-		.palAddr = &kyogrePal[0],
-		.shinyPalAddr = &kyogreShinyPal[0],
-		.overworldGfx = &sKyogreOverworld,
-		.overlayGfx = 0,
-	},
-	{
-		.species = SPECIES_RAYQUAZA,
-		.palAddr = 0,
-		.shinyPalAddr = 0,
-		.overworldGfx = sDefaultSurfBlob,
-		.overlayGfx = 0,
-	},
+    {
+        {
+            .species = SPECIES_SQUIRTLE,
+            .palAddr = &squirtlePal[0],
+            .shinyPalAddr = &squirtleShinyPal[0],
+            .overworldGfx = &sSquirtleOverworld,
+            .overlayGfx = &sSquirtleOverlay,
+        },
+        {
+            .species = SPECIES_WARTORTLE,
+            .palAddr = &wartortlePal[0],
+            .shinyPalAddr = &wartortleShinyPal[0],
+            .overworldGfx = &sWartortleOverworld,
+            .overlayGfx = &sWartortleOverlay,
+        },
+        {
+            .species = SPECIES_BLASTOISE,
+            .palAddr = &blastoisePal[0],
+            .shinyPalAddr = &blastoiseShinyPal[0],
+            .overworldGfx = &sBlastoiseOverworld,
+            .overlayGfx = &sBlastoiseOverlay,
+        },
+        {
+            .species = SPECIES_PIKACHU,
+            .palAddr = &pikachuPal[0],
+            .shinyPalAddr = &pikachuShinyPal[0],
+            .overworldGfx = &sPikachuOverworld,
+            .overlayGfx = &sPikachuOverlay,
+        },
+        {
+            .species = SPECIES_RAICHU,
+            .palAddr = &raichuPal[0],
+            .shinyPalAddr = &raichuShinyPal[0],
+            .overworldGfx = &sRaichuOverworld,
+            .overlayGfx = &sRaichuOverlay,
+        },
+        {
+            .species = SPECIES_NIDOQUEEN,
+            .palAddr = &nidoqueenPal[0],
+            .shinyPalAddr = &nidoqueenShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sNidoqueenOverworld,
+            .overlayGfx = &sNidoqueenOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_NIDOKING,
+            .palAddr = &nidokingPal[0],
+            .shinyPalAddr = &nidokingShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sNidokingOverworld,
+            .overlayGfx = &sNidokingOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_PSYDUCK,
+            .palAddr = &psyduckPal[0],
+            .shinyPalAddr = &psyduckShinyPal[0],
+            .overworldGfx = &sPsyduckOverworld,
+            .overlayGfx = &sPsyduckOverlay,
+        },
+        {
+            .species = SPECIES_GOLDUCK,
+            .palAddr = &golduckPal[0],
+            .shinyPalAddr = &golduckShinyPal[0],
+            .overworldGfx = &sGolduckOverworld,
+            .overlayGfx = &sGolduckOverlay,
+        },
+        {
+            .species = SPECIES_POLIWAG,
+            .palAddr = &poliwagPal[0],
+            .shinyPalAddr = &poliwagShinyPal[0],
+            .overworldGfx = &sPoliwagOverworld,
+            .overlayGfx = &sPoliwagOverlay,
+        },
+        {
+            .species = SPECIES_POLIWHIRL,
+            .palAddr = &poliwhirlPal[0],
+            .shinyPalAddr = &poliwhirlShinyPal[0],
+            .overworldGfx = &sPoliwhirlOverworld,
+            .overlayGfx = &sPoliwhirlOverlay,
+        },
+        {
+            .species = SPECIES_POLIWRATH,
+            .palAddr = &poliwrathPal[0],
+            .shinyPalAddr = &poliwrathShinyPal[0],
+            .overworldGfx = &sPoliwrathOverworld,
+            .overlayGfx = &sPoliwrathOverlay,
+        },
+        {
+            .species = SPECIES_TENTACOOL,
+            .palAddr = &tentacoolPal[0],
+            .shinyPalAddr = &tentacoolShinyPal[0],
+            .overworldGfx = &sTentacoolOverworld,
+            .overlayGfx = &sTentacoolOverlay,
+        },
+        {
+            .species = SPECIES_TENTACRUEL,
+            .palAddr = &tentacruelPal[0],
+            .shinyPalAddr = &tentacruelShinyPal[0],
+            .overworldGfx = &sTentacruelOverworld,
+            .overlayGfx = &sTentacruelOverlay,
+        },
+        {
+            .species = SPECIES_SLOWPOKE,
+            .palAddr = &slowpokePal[0],
+            .shinyPalAddr = &slowpokeShinyPal[0],
+            .overworldGfx = &sSlowpokeOverworld,
+            .overlayGfx = &sSlowpokeOverlay,
+        },
+        {
+            .species = SPECIES_SLOWBRO,
+            .palAddr = &slowbroPal[0],
+            .shinyPalAddr = &slowbroShinyPal[0],
+            .overworldGfx = &sSlowbroOverworld,
+            .overlayGfx = &sSlowbroOverlay,
+        },
+        {
+            .species = SPECIES_SEEL,
+            .palAddr = &seelPal[0],
+            .shinyPalAddr = &seelShinyPal[0],
+            .overworldGfx = &sSeelOverworld,
+            .overlayGfx = &sSeelOverlay,
+        },
+        {
+            .species = SPECIES_DEWGONG,
+            .palAddr = &dewgongPal[0],
+            .shinyPalAddr = &dewgongShinyPal[0],
+            .overworldGfx = &sDewgongOverworld,
+            .overlayGfx = &sDewgongOverlay,
+        },
+        {
+            .species = SPECIES_SHELLDER,
+            .palAddr = &shellderPal[0],
+            .shinyPalAddr = &shellderShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sShellderOverworld,
+            .overlayGfx = &sShellderOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_CLOYSTER,
+            .palAddr = &cloysterPal[0],
+            .shinyPalAddr = &cloysterShinyPal[0],
+            .overworldGfx = &sCloysterOverworld,
+            .overlayGfx = &sCloysterOverlay,
+        },
+        {
+            .species = SPECIES_KRABBY,
+            .palAddr = &krabbyPal[0],
+            .shinyPalAddr = &krabbyShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sKrabbyOverworld,
+            .overlayGfx = &sKrabbyOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_KINGLER,
+            .palAddr = &kinglerPal[0],
+            .shinyPalAddr = &kinglerShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sKinglerOverworld,
+            .overlayGfx = &sKinglerOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LICKITUNG,
+            .palAddr = &lickitungPal[0],
+            .shinyPalAddr = &lickitungShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLickitungOverworld,
+            .overlayGfx = &sLickitungOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_RHYDON,
+            .palAddr = &rhydonPal[0],
+            .shinyPalAddr = &rhydonShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sRhydonOverworld,
+            .overlayGfx = &sRhydonOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_RHYHORN,
+            .palAddr = &rhyhornPal[0],
+            .shinyPalAddr = 0, // or 0 if it doesn't exist
+            .overworldGfx = &sRhyhornOverworld,
+            .overlayGfx = &sRhyhornOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_KANGASKHAN,
+            .palAddr = &kangaskhanPal[0],
+            .shinyPalAddr = &kangaskhanShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sKangaskhanOverworld,
+            .overlayGfx = &sKangaskhanOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_HORSEA,
+            .palAddr = &horseaPal[0],
+            .shinyPalAddr = &horseaShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sHorseaOverworld,
+            .overlayGfx = &sHorseaOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SEADRA,
+            .palAddr = &seadraPal[0],
+            .shinyPalAddr = &seadraShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sSeadraOverworld,
+            .overlayGfx = &sSeadraOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_GOLDEEN,
+            .palAddr = &goldeenPal[0],
+            .shinyPalAddr = &goldeenShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sGoldeenOverworld,
+            .overlayGfx = &sGoldeenOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SEAKING,
+            .palAddr = &seakingPal[0],
+            .shinyPalAddr = &seakingShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sSeakingOverworld,
+            .overlayGfx = &sSeakingOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_STARYU,
+            .palAddr = &staryuPal[0],
+            .shinyPalAddr = &staryuShinyPal[0],
+            .overworldGfx = &sStaryuOverworld,
+            .overlayGfx = &sStaryuOverlay,
+        },
+        {
+            .species = SPECIES_STARMIE,
+            .palAddr = &starmiePal[0],
+            .shinyPalAddr = &starmieShinyPal[0],
+            .overworldGfx = &sStarmieOverworld,
+            .overlayGfx = &sStarmieOverlay,
+        },
+        {
+            .species = SPECIES_TAUROS,
+            .palAddr = &taurosPal[0],
+            .shinyPalAddr = &taurosShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sTaurosOverworld,
+            .overlayGfx = &sTaurosOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_GYARADOS,
+            .palAddr = &gyaradosPal[0],
+            .shinyPalAddr = &gyaradosShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sGyaradosOverworld,
+            .overlayGfx = &sGyaradosOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LAPRAS,
+            .palAddr = &laprasPal[0],
+            .shinyPalAddr = &laprasShinyPal[0],
+            .overworldGfx = &sLaprasOverworld,
+            .overlayGfx = &sLaprasOverlay,
+        },
+        {
+            .species = SPECIES_VAPOREON,
+            .palAddr = &vaporeonPal[0],
+            .shinyPalAddr = &vaporeonShinyPal[0],
+            .overworldGfx = &sVaporeonOverworld,
+            .overlayGfx = &sVaporeonOverlay,
+        },
+        {
+            .species = SPECIES_OMANYTE,
+            .palAddr = &omanytePal[0],
+            .shinyPalAddr = &omanyteShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sOmanyteOverworld,
+            .overlayGfx = &sOmanyteOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_OMASTAR,
+            .palAddr = &omastarPal[0],
+            .shinyPalAddr = &omastarShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sOmastarOverworld,
+            .overlayGfx = &sOmastarOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_KABUTO,
+            .palAddr = &kabutoPal[0],
+            .shinyPalAddr = &kabutoShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sKabutoOverworld,
+            .overlayGfx = &sKabutoOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_KABUTOPS,
+            .palAddr = &kabutopsPal[0],
+            .shinyPalAddr = &kabutopsShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sKabutopsOverworld,
+            .overlayGfx = &sKabutopsOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SNORLAX,
+            .palAddr = &snorlaxPal[0],
+            .shinyPalAddr = &snorlaxShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sSnorlaxOverworld,
+            .overlayGfx = &sSnorlaxOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_DRATINI,
+            .palAddr = &dratiniPal[0],
+            .shinyPalAddr = &dratiniShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sDratiniOverworld,
+            .overlayGfx = &sDratiniOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_DRAGONAIR,
+            .palAddr = &dragonairPal[0],
+            .shinyPalAddr = &dragonairShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sDragonairOverworld,
+            .overlayGfx = &sDragonairOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_DRAGONITE,
+            .palAddr = &dragonitePal[0],
+            .shinyPalAddr = &dragoniteShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sDragoniteOverworld,
+            .overlayGfx = &sDragoniteOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MEW,
+            .palAddr = &mewPal[0],
+            .shinyPalAddr = &mewShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMewOverworld,
+            .overlayGfx = &sMewOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_TOTODILE,
+            .palAddr = &totodilePal[0],
+            .shinyPalAddr = &totodileShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sTotodileOverworld,
+            .overlayGfx = &sTotodileOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_CROCONAW,
+            .palAddr = &croconawPal[0],
+            .shinyPalAddr = &croconawShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sCroconawOverworld,
+            .overlayGfx = &sCroconawOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_FERALIGATR,
+            .palAddr = &feraligatrPal[0],
+            .shinyPalAddr = &feraligatrShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sFeraligatrOverworld,
+            .overlayGfx = &sFeraligatrOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SENTRET,
+            .palAddr = &sentretPal[0],
+            .shinyPalAddr = &sentretShinyPal[0],
+            .overworldGfx = &sSentretOverworld,
+            .overlayGfx = &sSentretOverlay,
+        },
+        {
+            .species = SPECIES_FURRET,
+            .palAddr = &furretPal[0],
+            .shinyPalAddr = &furretShinyPal[0],
+            .overworldGfx = &sFurretOverworld,
+            .overlayGfx = &sFurretOverlay,
+        },
+        {
+            .species = SPECIES_PICHU,
+            .palAddr = &pichuPal[0],
+            .shinyPalAddr = &pichuShinyPal[0],
+            .overworldGfx = &sPichuOverworld,
+            .overlayGfx = &sPichuOverlay,
+        },
+        {
+            .species = SPECIES_CHINCHOU,
+            .palAddr = &chinchouPal[0],
+            .shinyPalAddr = &chinchouShinyPal[0],
+            .overworldGfx = &sChinchouOverworld,
+            .overlayGfx = &sChinchouOverlay,
+        },
+        {
+            .species = SPECIES_LANTURN,
+            .palAddr = &lanturnPal[0],
+            .shinyPalAddr = &lanturnShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLanturnOverworld,
+            .overlayGfx = &sLanturnOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_AZURILL,
+            .palAddr = &azurillPal[0],
+            .shinyPalAddr = &azurillShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sAzurillOverworld,
+            .overlayGfx = &sAzurillOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MARILL,
+            .palAddr = &marillPal[0],
+            .shinyPalAddr = &marillShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMarillOverworld,
+            .overlayGfx = &sMarillOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_AZUMARILL,
+            .palAddr = &azumarillPal[0],
+            .shinyPalAddr = &azumarillShinyPal[0],
+            .overworldGfx = &sAzumarillOverworld,
+            .overlayGfx = &sAzumarillOverlay,
+        },
+        {
+            .species = SPECIES_POLITOED,
+            .palAddr = &politoedPal[0],
+            .shinyPalAddr = &politoedShinyPal[0],
+            .overworldGfx = &sPolitoedOverworld,
+            .overlayGfx = &sPolitoedOverlay,
+        },
+        {
+            .species = SPECIES_WOOPER,
+            .palAddr = &wooperPal[0],
+            .shinyPalAddr = &wooperShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sWooperOverworld,
+            .overlayGfx = &sWooperOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_QUAGSIRE,
+            .palAddr = &quagsirePal[0],
+            .shinyPalAddr = &quagsireShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sQuagsireOverworld,
+            .overlayGfx = &sQuagsireOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SLOWKING,
+            .palAddr = &slowkingPal[0],
+            .shinyPalAddr = &slowkingShinyPal[0],
+            .overworldGfx = &sSlowkingOverworld,
+            .overlayGfx = &sSlowkingOverlay,
+        },
+        {
+            .species = SPECIES_QWILFISH,
+            .palAddr = &qwilfishPal[0],
+            .shinyPalAddr = &qwilfishShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sQwilfishOverworld,
+            .overlayGfx = &sQwilfishOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SNEASEL,
+            .palAddr = &sneaselPal[0],
+            .shinyPalAddr = &sneaselShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sSneaselOverworld,
+            .overlayGfx = &sSneaselOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_CORSOLA,
+            .palAddr = &corsolaPal[0],
+            .shinyPalAddr = &corsolaShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sCorsolaOverworld,
+            .overlayGfx = &sCorsolaOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_REMORAID,
+            .palAddr = &remoraidPal[0],
+            .shinyPalAddr = &remoraidShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sRemoraidOverworld,
+            .overlayGfx = &sRemoraidOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_OCTILLERY,
+            .palAddr = &octilleryPal[0],
+            .shinyPalAddr = &octilleryShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sOctilleryOverworld,
+            .overlayGfx = &sOctilleryOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MANTINE,
+            .palAddr = &mantinePal[0],
+            .shinyPalAddr = &mantineShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMantineOverworld,
+            .overlayGfx = &sMantineOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_KINGDRA,
+            .palAddr = &kingdraPal[0],
+            .shinyPalAddr = &kingdraShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sKingdraOverworld,
+            .overlayGfx = &sKingdraOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MILTANK,
+            .palAddr = &miltankPal[0],
+            .shinyPalAddr = &miltankShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMiltankOverworld,
+            .overlayGfx = &sMiltankOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SUICUNE,
+            .palAddr = &suicunePal[0],
+            .shinyPalAddr = &suicuneShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sSuicuneOverworld,
+            .overlayGfx = &sSuicuneOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_TYRANITAR,
+            .palAddr = &tyranitarPal[0],
+            .shinyPalAddr = &tyranitarShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sTyranitarOverworld,
+            .overlayGfx = &sTyranitarOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LUGIA,
+            .palAddr = &lugiaPal[0],
+            .shinyPalAddr = &lugiaShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLugiaOverworld,
+            .overlayGfx = &sLugiaOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MUDKIP,
+            .palAddr = &mudkipPal[0],
+            .shinyPalAddr = &mudkipShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMudkipOverworld,
+            .overlayGfx = &sMudkipOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MARSHTOMP,
+            .palAddr = &marshtompPal[0],
+            .shinyPalAddr = &marshtompShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMarshtompOverworld,
+            .overlayGfx = &sMarshtompOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SWAMPERT,
+            .palAddr = &swampertPal[0],
+            .shinyPalAddr = &swampertShinyPal[0],
+            .overworldGfx = &sSwampertOverworld,
+            .overlayGfx = &sSwampertOverlay,
+        },
+        {
+            .species = SPECIES_ZIGZAGOON,
+            .palAddr = &zigzagoonPal[0],
+            .shinyPalAddr = &zigzagoonShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sZigzagoonOverworld,
+            .overlayGfx = &sZigzagoonOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LINOONE,
+            .palAddr = &linoonePal[0],
+            .shinyPalAddr = &linooneShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLinooneOverworld,
+            .overlayGfx = &sLinooneOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LOTAD,
+            .palAddr = &lotadPal[0],
+            .shinyPalAddr = &lotadShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLotadOverworld,
+            .overlayGfx = &sLotadOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LOMBRE,
+            .palAddr = &lombrePal[0],
+            .shinyPalAddr = &lombreShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLombreOverworld,
+            .overlayGfx = &sLombreOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_LUDICOLO,
+            .palAddr = &ludicoloPal[0],
+            .shinyPalAddr = &ludicoloShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sLudicoloOverworld,
+            .overlayGfx = &sLudicoloOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_PELIPPER,
+            .palAddr = &pelipperPal[0],
+            .shinyPalAddr = &pelipperShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sPelipperOverworld,
+            .overlayGfx = &sPelipperOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_EXPLOUD,
+            .palAddr = &exploudPal[0],
+            .shinyPalAddr = &exploudShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sExploudOverworld,
+            .overlayGfx = &sExploudOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_MAKUHITA,
+            .palAddr = &makuhitaPal[0],
+            .shinyPalAddr = &makuhitaShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMakuhitaOverworld,
+            .overlayGfx = &sMakuhitaOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_HARIYAMA,
+            .palAddr = &hariyamaPal[0],
+            .shinyPalAddr = &hariyamaShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sHariyamaOverworld,
+            .overlayGfx = &sHariyamaOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_AZURILL,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_AGGRON,
+            .palAddr = &aggronPal[0],
+            .shinyPalAddr = &aggronShinyPal[0],
+            .overworldGfx = &sAggronOverworld,
+            .overlayGfx = &sAggronOverlay,
+        },
+        {
+            .species = SPECIES_CARVANHA,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_SHARPEDO,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_WAILMER,
+            .palAddr = &wailmerPal[0],
+            .shinyPalAddr = &wailmerShinyPal[0],
+            .overworldGfx = &sWailmerOverworld,
+            .overlayGfx = &sWailmerOverlay,
+        },
+        {
+            .species = SPECIES_WAILORD,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_BARBOACH,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_WHISCASH,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_CORPHISH,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_CRAWDAUNT,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_FEEBAS,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_MILOTIC,
+            .palAddr = &miloticPal[0],
+            .shinyPalAddr = &miloticShinyPal[0], // or 0 if it doesn't exist
+            .overworldGfx = &sMiloticOverworld,
+            .overlayGfx = &sMiloticOverlay, // or 0 if it doesn't exist
+        },
+        {
+            .species = SPECIES_SPHEAL,
+            .palAddr = &sphealPal[0],
+            .shinyPalAddr = &sphealShinyPal[0],
+            .overworldGfx = &sSphealOverworld,
+            .overlayGfx = &sSphealOverlay,
+        },
+        {
+            .species = SPECIES_SEALEO,
+            .palAddr = &sealeoPal[0],
+            .shinyPalAddr = &sealeoShinyPal[0],
+            .overworldGfx = &sSealeoOverworld,
+            .overlayGfx = &sSealeoOverlay,
+        },
+        {
+            .species = SPECIES_WALREIN,
+            .palAddr = &walreinPal[0],
+            .shinyPalAddr = &walreinShinyPal[0],
+            .overworldGfx = &sWalreinOverworld,
+            .overlayGfx = &sWalreinOverlay,
+        },
+        {
+            .species = SPECIES_CLAMPERL,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_HUNTAIL,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_GOREBYSS,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_RELICANTH,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_LUVDISC,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_LATIAS,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_LATIOS,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_KYOGRE,
+            .palAddr = &kyogrePal[0],
+            .shinyPalAddr = &kyogreShinyPal[0],
+            .overworldGfx = &sKyogreOverworld,
+            .overlayGfx = 0,
+        },
+        {
+            .species = SPECIES_RAYQUAZA,
+            .palAddr = 0,
+            .shinyPalAddr = 0,
+            .overworldGfx = sDefaultSurfBlob,
+            .overlayGfx = 0,
+        },
 };
