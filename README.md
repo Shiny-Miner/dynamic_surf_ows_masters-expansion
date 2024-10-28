@@ -8,6 +8,8 @@ What Is This?
 
 This is a feature, originally from pokeem, (see https://github.com/Slawter666/pokeemerald/tree/surfable/src), to have the surfing sprite dynamically change based on the first party pokemon or selected pokemon from the menu.
 
+![Surfing Pikachu](example.gif)
+
 It has a few improved features:
 
 1. One master structure for all species data, so worrying about matching indexes is no longer an issue
