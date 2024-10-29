@@ -2345,14 +2345,50 @@ const struct SpriteTemplate sClamperlOverworld = surf_template(PAL_TAG_SURF_NEW,
 const struct SpriteTemplate sClamperlOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Clamperl, UpdateSurfMonOverlay);
 
 //=============== HUNTAIL
-//extern const u32 huntailTiles[];
-//extern const u16 huntailPal[];
-//extern const u16 huntailShinyPal[];
+extern const u32 huntailTiles[];
+extern const u16 huntailPal[];
+extern const u16 huntailShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Huntail[] = {
+    overworld_frame(&huntailTiles[0], 4, 4, 1),
+    overworld_frame(&huntailTiles[0], 4, 4, 0),
+    overworld_frame(&huntailTiles[0], 4, 4, 3),
+    overworld_frame(&huntailTiles[0], 4, 4, 2),
+    overworld_frame(&huntailTiles[0], 4, 4, 5),
+    overworld_frame(&huntailTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Huntail[] = {
+    overworld_frame(&huntailTiles[0], 4, 4, 7),
+    overworld_frame(&huntailTiles[0], 4, 4, 6),
+    overworld_frame(&huntailTiles[0], 4, 4, 9),
+    overworld_frame(&huntailTiles[0], 4, 4, 8),
+    overworld_frame(&huntailTiles[0], 4, 4, 11),
+    overworld_frame(&huntailTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sHuntailOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Huntail, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sHuntailOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Huntail, UpdateSurfMonOverlay);
 
 //=============== GOREBYSS
-//extern const u32 gorebyssTiles[];
-//extern const u16 gorebyssPal[];
-//extern const u16 gorebyssShinyPal[];
+extern const u32 gorebyssTiles[];
+extern const u16 gorebyssPal[];
+extern const u16 gorebyssShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Gorebyss[] = {
+    overworld_frame(&gorebyssTiles[0], 4, 4, 1),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 0),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 3),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 2),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 5),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Gorebyss[] = {
+    overworld_frame(&gorebyssTiles[0], 4, 4, 7),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 6),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 9),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 8),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 11),
+    overworld_frame(&gorebyssTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sGorebyssOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Gorebyss, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sGorebyssOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Gorebyss, UpdateSurfMonOverlay);
 
 //=============== RELICANTH
 //extern const u32 relicanthTiles[];
@@ -2952,6 +2988,13 @@ const struct RideableMons gSurfablePokemon[] =
             .overlayGfx = &sLotadOverlay, // or 0 if it doesn't exist
         },
         {
+            .species = SPECIES_HUNTAIL,
+            .palAddr = &huntailPal[0],
+            .shinyPalAddr = &huntailShinyPal[0],
+            .overworldGfx = &sHuntailOverworld,
+            .overlayGfx = &sHuntailOverlay,
+        },
+        {
             .species = SPECIES_LOMBRE,
             .palAddr = &lombrePal[0],
             .shinyPalAddr = &lombreShinyPal[0], // or 0 if it doesn't exist
@@ -3107,17 +3150,17 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_HUNTAIL,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &huntailPal[0],
+            .shinyPalAddr = &huntailShinyPal[0],
+            .overworldGfx = &sHuntailOverworld,
+            .overlayGfx = &sHuntailOverlay,
         },
         {
             .species = SPECIES_GOREBYSS,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &gorebyssPal[0],
+            .shinyPalAddr = &gorebyssShinyPal[0],
+            .overworldGfx = &sGorebyssOverworld,
+            .overlayGfx = &sGorebyssOverlay,
         },
         {
             .species = SPECIES_RELICANTH,
