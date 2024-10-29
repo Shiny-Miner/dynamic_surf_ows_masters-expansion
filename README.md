@@ -150,8 +150,8 @@ TODOs:
 - Sealeo - Complete (ghoulslash)
 - Walrein - Complete (ghoulslash)
 - Clamperl - Complete (Nolo33LP)
-- Huntail - Missing
-- Gorebyss - Missing
+- Huntail - Complete (Nolo33LP)
+- Gorebyss - Complete (Nolo33LP)
 - Relicanth - Missing
 - Luvdisc - Missing
 - Latias - Missing
