@@ -2321,11 +2321,28 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Walrein[] = {
 const struct SpriteTemplate sWalreinOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Walrein, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sWalreinOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Walrein, UpdateSurfMonOverlay);
 
-
 //=============== CLAMPERL
-//extern const u32 clamperlTiles[];
-//extern const u16 clamperlPal[];
-//extern const u16 clamperlShinyPal[];
+extern const u32 clamperlTiles[];
+extern const u16 clamperlPal[];
+extern const u16 clamperlShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Clamperl[] = {
+    overworld_frame(&clamperlTiles[0], 4, 4, 1),
+    overworld_frame(&clamperlTiles[0], 4, 4, 0),
+    overworld_frame(&clamperlTiles[0], 4, 4, 3),
+    overworld_frame(&clamperlTiles[0], 4, 4, 2),
+    overworld_frame(&clamperlTiles[0], 4, 4, 5),
+    overworld_frame(&clamperlTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Clamperl[] = {
+    overworld_frame(&clamperlTiles[0], 4, 4, 7),
+    overworld_frame(&clamperlTiles[0], 4, 4, 6),
+    overworld_frame(&clamperlTiles[0], 4, 4, 9),
+    overworld_frame(&clamperlTiles[0], 4, 4, 8),
+    overworld_frame(&clamperlTiles[0], 4, 4, 11),
+    overworld_frame(&clamperlTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sClamperlOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Clamperl, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sClamperlOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Clamperl, UpdateSurfMonOverlay);
 
 //=============== HUNTAIL
 //extern const u32 huntailTiles[];
@@ -3075,11 +3092,11 @@ const struct RideableMons gSurfablePokemon[] =
             .overlayGfx = &sSealeoOverlay,
         },
         {
-            .species = SPECIES_WALREIN,
-            .palAddr = &walreinPal[0],
-            .shinyPalAddr = &walreinShinyPal[0],
-            .overworldGfx = &sWalreinOverworld,
-            .overlayGfx = &sWalreinOverlay,
+            .species = SPECIES_CLAMPERL,
+            .palAddr = &clamperlPal[0],
+            .shinyPalAddr = &clamperlShinyPal[0],
+            .overworldGfx = &sClamperlOverworld,
+            .overlayGfx = &sClamperlOverlay,
         },
         {
             .species = SPECIES_CLAMPERL,
