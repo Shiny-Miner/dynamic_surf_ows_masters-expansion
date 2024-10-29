@@ -3092,18 +3092,18 @@ const struct RideableMons gSurfablePokemon[] =
             .overlayGfx = &sSealeoOverlay,
         },
         {
+            .species = SPECIES_WALREIN,
+            .palAddr = &walreinPal[0],
+            .shinyPalAddr = &walreinShinyPal[0],
+            .overworldGfx = &sWalreinOverworld,
+            .overlayGfx = &sWalreinOverlay,
+        },
+        {
             .species = SPECIES_CLAMPERL,
             .palAddr = &clamperlPal[0],
             .shinyPalAddr = &clamperlShinyPal[0],
             .overworldGfx = &sClamperlOverworld,
             .overlayGfx = &sClamperlOverlay,
-        },
-        {
-            .species = SPECIES_CLAMPERL,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
         },
         {
             .species = SPECIES_HUNTAIL,
