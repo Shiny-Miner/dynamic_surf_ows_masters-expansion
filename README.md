@@ -149,7 +149,7 @@ TODOs:
 - Spheal - Complete (ghoulslash)
 - Sealeo - Complete (ghoulslash)
 - Walrein - Complete (ghoulslash)
-- Clamperl - Missing
+- Clamperl - Complete (Nolo33LP)
 - Huntail - Missing
 - Gorebyss - Missing
 - Relicanth - Missing
