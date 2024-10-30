@@ -1386,6 +1386,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Azurill[] = {
 
 const struct SpriteTemplate sAzurillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azurill, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sAzurillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azurill, UpdateSurfMonOverlay);
+
 //=============== POLITOED
 extern const u32 politoedTiles[];
 extern const u16 politoedPal[];
@@ -1409,7 +1410,6 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Politoed[] = {
 };
 const struct SpriteTemplate sPolitoedOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Politoed, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sPolitoedOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Politoed, UpdateSurfMonOverlay);
-
 
 //=============== WOOPER
 extern const u32 wooperTiles[];
@@ -3005,10 +3005,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_AZURILL,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &azurillPal[0],
+            .shinyPalAddr = &azurillShinyPal[0],
+            .overworldGfx = &sAzurillOverworld,
+            .overlayGfx = &sAzurillOverlay,
         },
         {
             .species = SPECIES_AGGRON,
