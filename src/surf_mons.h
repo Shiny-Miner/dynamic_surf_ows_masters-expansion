@@ -622,32 +622,6 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Rhydon[] = {
 const struct SpriteTemplate sRhydonOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rhydon, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sRhydonOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Rhydon, UpdateSurfMonOverlay);
 
-//=============== RHYHORN
-extern const u32 rhyhornTiles[];
-extern const u16 rhyhornPal[];
-//extern const u16 rhyhornShinyPal[];
-
-const struct SpriteFrameImage gSurfingOverworldPicTable_Rhyhorn[] = {
-    overworld_frame(&rhyhornTiles[0], 4, 4, 0),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 1),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 2),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 3),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 4),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 5),
-};
-
-const struct SpriteFrameImage gSurfingOverlayPicTable_Rhyhorn[] = {
-    overworld_frame(&rhyhornTiles[0], 4, 4, 6),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 7),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 8),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 9),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 10),
-    overworld_frame(&rhyhornTiles[0], 4, 4, 11),
-};
-
-const struct SpriteTemplate sRhyhornOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rhyhorn, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sRhyhornOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Rhyhorn, UpdateSurfMonOverlay);
-
 //=============== KANGASKHAN
 extern const u32 kangaskhanTiles[];
 extern const u16 kangaskhanPal[];
@@ -2615,13 +2589,6 @@ const struct RideableMons gSurfablePokemon[] =
             .shinyPalAddr = &rhydonShinyPal[0], // or 0 if it doesn't exist
             .overworldGfx = &sRhydonOverworld,
             .overlayGfx = &sRhydonOverlay, // or 0 if it doesn't exist
-        },
-        {
-            .species = SPECIES_RHYHORN,
-            .palAddr = &rhyhornPal[0],
-            .shinyPalAddr = 0, // or 0 if it doesn't exist
-            .overworldGfx = &sRhyhornOverworld,
-            .overlayGfx = &sRhyhornOverlay, // or 0 if it doesn't exist
         },
         {
             .species = SPECIES_KANGASKHAN,
