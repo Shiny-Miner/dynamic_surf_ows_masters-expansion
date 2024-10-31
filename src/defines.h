@@ -77,3 +77,20 @@
 #define PalTypeReflection 4
 #define PalTypeOther 5
 
+extern const union AnimCmd sSurfBlobAnim_FaceSouth[]; 
+extern const union AnimCmd sSurfBlobAnim_FaceNorth[];
+extern const union AnimCmd sSurfBlobAnim_FaceWest[];
+static const union AnimCmd SurfMonAnim_FaceEast[] =
+{
+    ANIMCMD_FRAME(6, 48),
+    ANIMCMD_FRAME(7, 48),
+    ANIMCMD_JUMP(0),
+}; 
+
+static const union AnimCmd *const gSurfablePokemonAnimTable2[] = 
+{
+    sSurfBlobAnim_FaceSouth,
+    sSurfBlobAnim_FaceNorth,
+    sSurfBlobAnim_FaceWest,
+    SurfMonAnim_FaceEast,
+};
