@@ -208,4 +208,7 @@ free_ = 0x8002BC4 | 1;
 
 CpuSet = 0x81E3B64 | 1;
 
+sSurfBlobAnim_FaceSouth = 0x83a552c;
+sSurfBlobAnim_FaceNorth = 0x83a5538;
+sSurfBlobAnim_FaceWest = 0x83a5544;
 

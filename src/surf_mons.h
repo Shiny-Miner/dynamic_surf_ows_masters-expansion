@@ -18,6 +18,8 @@
 #define overworld_frame(ptr, width, height, frame) {.data = (u8 *)ptr + (width * height * frame * 64)/2, .size = (width * height * 64)/2}
 #define surf_template(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 #define surf_template64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = gSurfablePokemonAnimTable, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+#define surf_template2(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable2, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+#define surf_template2_64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = gSurfablePokemonAnimTable2, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 
 extern s32 gFieldEffectArguments[8];
 extern void UpdateSurfMonOverlay(struct Sprite *sprite);
@@ -518,6 +520,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Cloyster[] = {
 
 const struct SpriteTemplate sCloysterOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Cloyster, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sCloysterOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Cloyster, UpdateSurfMonOverlay);
+
 //=============== KRABBY
 extern const u32 krabbyTiles[];
 extern const u16 krabbyPal[];
@@ -545,11 +548,10 @@ const struct SpriteTemplate sKrabbyOverworld = surf_template(PAL_TAG_SURF_NEW, g
 const struct SpriteTemplate sKrabbyOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Krabby, UpdateSurfMonOverlay);
 
 //=============== KINGLER
-
+// NOTE: Supports unique left/right sprites!
 extern const u32 kinglerTiles[];
 extern const u16 kinglerPal[];
 extern const u16 kinglerShinyPal[];
-
 const struct SpriteFrameImage gSurfingOverworldPicTable_Kingler[] = {
     overworld_frame(&kinglerTiles[0], 4, 4, 0),
     overworld_frame(&kinglerTiles[0], 4, 4, 1),
@@ -557,19 +559,24 @@ const struct SpriteFrameImage gSurfingOverworldPicTable_Kingler[] = {
     overworld_frame(&kinglerTiles[0], 4, 4, 3),
     overworld_frame(&kinglerTiles[0], 4, 4, 4),
     overworld_frame(&kinglerTiles[0], 4, 4, 5),
+    overworld_frame(&kinglerTiles[0], 4, 4, 6),
+    overworld_frame(&kinglerTiles[0], 4, 4, 7),
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Kingler[] = {
-    overworld_frame(&kinglerTiles[0], 4, 4, 6),
-    overworld_frame(&kinglerTiles[0], 4, 4, 7),
     overworld_frame(&kinglerTiles[0], 4, 4, 8),
     overworld_frame(&kinglerTiles[0], 4, 4, 9),
     overworld_frame(&kinglerTiles[0], 4, 4, 10),
     overworld_frame(&kinglerTiles[0], 4, 4, 11),
+    overworld_frame(&kinglerTiles[0], 4, 4, 12),
+    overworld_frame(&kinglerTiles[0], 4, 4, 13),
+    overworld_frame(&kinglerTiles[0], 4, 4, 14),
+    overworld_frame(&kinglerTiles[0], 4, 4, 15),
 };
 
-const struct SpriteTemplate sKinglerOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingler, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sKinglerOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kingler, UpdateSurfMonOverlay);
+const struct SpriteTemplate sKinglerOverworld = surf_template2(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingler, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sKinglerOverlay = surf_template2(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kingler, UpdateSurfMonOverlay);
+
 //=============== LICKITUNG
 extern const u32 lickitungTiles[];
 extern const u16 lickitungPal[];
