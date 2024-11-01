@@ -53,7 +53,7 @@ TODOs:
 - Squirtle - Complete (emme97)
 - Wartortle - Complete (Avara)
 - Blastoise - Complete (emme97)
-- Pikachu - Complete (Nolo33LP, with some centering by Ansh860)
+- Pikachu - Complete (Nolo33LP, with some centering by Ansh746)
 - Raichu - Complete (Nolo33LP)
 - Nidoqueen - Complete
 - Nidoking  - Complete
@@ -71,7 +71,7 @@ TODOs:
 - Shellder - Complete
 - Cloyster - Complete
 - Krabby  - Complete
-- Kingler - Complete
+- Kingler - Complete (Ansh746)
 - Lickitung - Complete
 - Rhydon - Complete
 - Kangaskhan - Complete

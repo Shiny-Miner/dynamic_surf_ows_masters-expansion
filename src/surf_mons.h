@@ -520,6 +520,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Cloyster[] = {
 
 const struct SpriteTemplate sCloysterOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Cloyster, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sCloysterOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Cloyster, UpdateSurfMonOverlay);
+
 //=============== KRABBY
 extern const u32 krabbyTiles[];
 extern const u16 krabbyPal[];
@@ -547,7 +548,7 @@ const struct SpriteTemplate sKrabbyOverworld = surf_template(PAL_TAG_SURF_NEW, g
 const struct SpriteTemplate sKrabbyOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Krabby, UpdateSurfMonOverlay);
 
 //=============== KINGLER
-
+// NOTE: Supports unique left/right sprites!
 extern const u32 kinglerTiles[];
 extern const u16 kinglerPal[];
 extern const u16 kinglerShinyPal[];
@@ -575,6 +576,7 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kingler[] = {
 
 const struct SpriteTemplate sKinglerOverworld = surf_template2(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingler, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sKinglerOverlay = surf_template2(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kingler, UpdateSurfMonOverlay);
+
 //=============== LICKITUNG
 extern const u32 lickitungTiles[];
 extern const u16 lickitungPal[];
