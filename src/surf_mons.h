@@ -553,26 +553,54 @@ extern const u32 kinglerTiles[];
 extern const u16 kinglerPal[];
 extern const u16 kinglerShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Kingler[] = {
-    overworld_frame(&kinglerTiles[0], 4, 4, 2),
-    overworld_frame(&kinglerTiles[0], 4, 4, 3),
     overworld_frame(&kinglerTiles[0], 4, 4, 0),
     overworld_frame(&kinglerTiles[0], 4, 4, 1),
-    overworld_frame(&kinglerTiles[0], 4, 4, 6),
-    overworld_frame(&kinglerTiles[0], 4, 4, 7),
+    overworld_frame(&kinglerTiles[0], 4, 4, 2),
+    overworld_frame(&kinglerTiles[0], 4, 4, 3),
     overworld_frame(&kinglerTiles[0], 4, 4, 4),
     overworld_frame(&kinglerTiles[0], 4, 4, 5),
+    overworld_frame(&kinglerTiles[0], 4, 4, 6),
+    overworld_frame(&kinglerTiles[0], 4, 4, 7),
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Kingler[] = {
-    overworld_frame(&kinglerTiles[0], 4, 4, 10),
-    overworld_frame(&kinglerTiles[0], 4, 4, 11),
     overworld_frame(&kinglerTiles[0], 4, 4, 8),
     overworld_frame(&kinglerTiles[0], 4, 4, 9),
-    overworld_frame(&kinglerTiles[0], 4, 4, 14),
-    overworld_frame(&kinglerTiles[0], 4, 4, 15),
+    overworld_frame(&kinglerTiles[0], 4, 4, 10),
+    overworld_frame(&kinglerTiles[0], 4, 4, 11),
     overworld_frame(&kinglerTiles[0], 4, 4, 12),
     overworld_frame(&kinglerTiles[0], 4, 4, 13),
+    overworld_frame(&kinglerTiles[0], 4, 4, 14),
+    overworld_frame(&kinglerTiles[0], 4, 4, 15),
 };
+
+// This commented out frame order flips Kingler, such that it faces
+// towards the screen when moving right. However, this results in
+// something a little silly, making the player always facing Kingler's
+// largest claw. So, we left it as-is, Kingler will face away from the
+// screen when moving right/east, and towards the screen when left/west
+//
+// const struct SpriteFrameImage gSurfingOverworldPicTable_Kingler[] = {
+//     overworld_frame(&kinglerTiles[0], 4, 4, 2),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 3),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 0),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 1),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 6),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 7),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 4),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 5),
+// };
+
+// const struct SpriteFrameImage gSurfingOverlayPicTable_Kingler[] = {
+//     overworld_frame(&kinglerTiles[0], 4, 4, 10),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 11),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 8),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 9),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 14),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 15),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 12),
+//     overworld_frame(&kinglerTiles[0], 4, 4, 13),
+// };
 
 const struct SpriteTemplate sKinglerOverworld = surf_template2(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kingler, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sKinglerOverlay = surf_template2(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kingler, UpdateSurfMonOverlay);
