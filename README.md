@@ -24,6 +24,13 @@ It has a few improved features:
 
 =====================================================
 
+This repo also now supports unique West/Left-facing and East/Right-facing sprites!
+In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirroring this sprite would have resulted in the claw switching sides when the player moves around; instead, we now support sprites that have a unique look for all 4 directions!
+
+![Kingler](kingler.gif)
+
+=====================================================
+
 Important Notes:
 
 1. This includes the dynamic overworld palette hack, as it removes the need to worry about matching palettes, and is generally just awesome. See https://github.com/Navenatox/DynamicOverworldPalettes for more details. The original source code has been modified to call some of these functions, so removing the file if you've already added this feature will not do. There is ample free-space in FR so I suggest just leaving it be unless you know what you are doing.
@@ -44,7 +51,7 @@ TODOs:
 
 4. Test all sprites in-engine (see Tha Code Mining Hub's #surf-overworlds-expansion channel, and "Checking in-game" thread)
 
-5. Apply fixes from #6.
+5. Apply fixes from #5.
 
 =====================================================
 # Completed Pokemon
