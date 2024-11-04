@@ -2410,14 +2410,50 @@ const struct SpriteTemplate sGorebyssOverlay = surf_template(PAL_TAG_SURF_NEW, g
 //extern const u16 luvdiscShinyPal[];
 
 //=============== LATIAS
-//extern const u32 latiasTiles[];
-//extern const u16 latiasPal[];
-//extern const u16 latiasShinyPal[];
+extern const u32 latiasTiles[];
+extern const u16 latiasPal[];
+extern const u16 latiasShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Latias[] = {
+    overworld_frame(&latiasTiles[0], 4, 4, 1),
+    overworld_frame(&latiasTiles[0], 4, 4, 0),
+    overworld_frame(&latiasTiles[0], 4, 4, 3),
+    overworld_frame(&latiasTiles[0], 4, 4, 2),
+    overworld_frame(&latiasTiles[0], 4, 4, 5),
+    overworld_frame(&latiasTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Latias[] = {
+    overworld_frame(&latiasTiles[0], 4, 4, 7),
+    overworld_frame(&latiasTiles[0], 4, 4, 6),
+    overworld_frame(&latiasTiles[0], 4, 4, 9),
+    overworld_frame(&latiasTiles[0], 4, 4, 8),
+    overworld_frame(&latiasTiles[0], 4, 4, 11),
+    overworld_frame(&latiasTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sLatiasOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Latias, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sLatiasOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Latias, UpdateSurfMonOverlay);
 
 //=============== LATIOS
-//extern const u32 latiosTiles[];
-//extern const u16 latiosPal[];
-//extern const u16 latiosShinyPal[];
+extern const u32 latiosTiles[];
+extern const u16 latiosPal[];
+extern const u16 latiosShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Latios[] = {
+    overworld_frame(&latiosTiles[0], 4, 4, 1),
+    overworld_frame(&latiosTiles[0], 4, 4, 0),
+    overworld_frame(&latiosTiles[0], 4, 4, 3),
+    overworld_frame(&latiosTiles[0], 4, 4, 2),
+    overworld_frame(&latiosTiles[0], 4, 4, 5),
+    overworld_frame(&latiosTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Latios[] = {
+    overworld_frame(&latiosTiles[0], 4, 4, 7),
+    overworld_frame(&latiosTiles[0], 4, 4, 6),
+    overworld_frame(&latiosTiles[0], 4, 4, 9),
+    overworld_frame(&latiosTiles[0], 4, 4, 8),
+    overworld_frame(&latiosTiles[0], 4, 4, 11),
+    overworld_frame(&latiosTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sLatiosOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Latios, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sLatiosOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Latios, UpdateSurfMonOverlay);
 
 //=============== KYOGRE
 extern const u32 kyogreTiles[];
@@ -3180,17 +3216,17 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_LATIAS,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &latiasPal[0],
+            .shinyPalAddr = &latiasShinyPal[0],
+            .overworldGfx = &sLatiasOverworld,
+            .overlayGfx = &sLatiasOverlay,
         },
         {
             .species = SPECIES_LATIOS,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &latiosPal[0],
+            .shinyPalAddr = &latiosShinyPal[0],
+            .overworldGfx = &sLatiosOverworld,
+            .overlayGfx = &sLatiosOverlay,
         },
         {
             .species = SPECIES_KYOGRE,

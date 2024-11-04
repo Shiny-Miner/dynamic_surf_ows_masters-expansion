@@ -129,7 +129,7 @@ TODOs:
 - Tyranitar - Complete
 - Lugia - Complete
 
-### Gen 3: 55% or so
+### Gen 3: 69% or so (nice)
 - Mudkip - Complete
 - Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
@@ -161,8 +161,8 @@ TODOs:
 - Gorebyss - Complete (Nolo33LP)
 - Relicanth - Missing
 - Luvdisc - Missing
-- Latias - Missing
-- Latios - Missing
+- Latias - Complete (Nolo33LP)
+- Latios - Complete (Nolo33LP)
 - Kyogre - Complete
 - Rayquaza - Missing
 
