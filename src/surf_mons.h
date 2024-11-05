@@ -2471,11 +2471,27 @@ const struct SpriteFrameImage gSurfingOverworldPicTable_Kyogre[] = {
 const struct SpriteTemplate sKyogreOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kyogre, UpdateSurfBlobFieldEffect);
 
 //=============== RAYQUAZA
-//extern const u32 rayquazaTiles[];
-//extern const u16 rayquazaPal[];
-//extern const u16 rayquazaShinyPal[];
-
-
+extern const u32 rayquazaTiles[];
+extern const u16 rayquazaPal[];
+extern const u16 rayquazaShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Rayquaza[] = {
+    overworld_frame(&rayquazaTiles[0], 8, 8, 1),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 0),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 3),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 2),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 5),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Rayquaza[] = {
+    overworld_frame(&rayquazaTiles[0], 8, 8, 7),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 6),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 9),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 8),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 11),
+    overworld_frame(&rayquazaTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sRayquazaOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Rayquaza, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sRayquazaOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Rayquaza, UpdateSurfMonOverlay);
 
 /*==================================================
 	RIDEABLE POKEMON STRUCTURE
@@ -3237,9 +3253,9 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_RAYQUAZA,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &rayquazaPal[0],
+            .shinyPalAddr = &rayquazaShinyPal[0],
+            .overworldGfx = &sRayquazaOverworld,
+            .overlayGfx = &sRayquazaOverlay,
         },
 };
