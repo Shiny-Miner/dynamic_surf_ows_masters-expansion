@@ -112,7 +112,7 @@ TODOs:
 - Chinchou - Complete
 - Lanturn - Complete
 - Marill - Complete
-- Azumarill - Complete(Shiny)
+- Azumarill - Complete (Shiny)
 - Politoed - Complete
 - Wooper - Complete
 - Quagsire - Complete
