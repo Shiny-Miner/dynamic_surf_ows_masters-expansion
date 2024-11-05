@@ -164,7 +164,7 @@ TODOs:
 - Latias - Complete (Nolo33LP)
 - Latios - Complete (Nolo33LP)
 - Kyogre - Complete
-- Rayquaza - Missing
+- Rayquaza - Complete (Nolo33LP)
 
 ## Tradebacks (Receives Surf in a later gen)
 ### Gen 4: 100%
