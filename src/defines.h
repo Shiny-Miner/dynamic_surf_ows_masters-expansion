@@ -77,6 +77,7 @@
 #define PalTypeReflection 4
 #define PalTypeOther 5
 
+// New Animation Data for separate East/West facing frames
 extern const union AnimCmd sSurfBlobAnim_FaceSouth[]; 
 extern const union AnimCmd sSurfBlobAnim_FaceNorth[];
 extern const union AnimCmd sSurfBlobAnim_FaceWest[];
@@ -93,4 +94,51 @@ static const union AnimCmd *const gSurfablePokemonAnimTable2[] =
     sSurfBlobAnim_FaceNorth,
     sSurfBlobAnim_FaceWest,
     SurfMonAnim_FaceEast,
+}; 
+
+
+// New Animation data for smoother animation (4 frames per direction) 
+
+static const union AnimCmd SurfMonSmootherAnim_FaceSouth[] =
+{
+  ANIMCMD_FRAME(0, 24),
+  ANIMCMD_FRAME(1, 24),
+  ANIMCMD_FRAME(2, 24),
+  ANIMCMD_FRAME(3, 24), 
+  ANIMCMD_JUMP(0)
+};
+
+static const union AnimCmd SurfMonSmootherAnim_FaceNorth[] =
+{
+  ANIMCMD_FRAME(4, 24),
+  ANIMCMD_FRAME(5, 24),
+  ANIMCMD_FRAME(6, 24),
+  ANIMCMD_FRAME(7, 24), 
+  ANIMCMD_JUMP(0)
+}; 
+
+static const union AnimCmd SurfMonSmootherAnim_FaceWest[] =
+{
+  ANIMCMD_FRAME(8, 24),
+  ANIMCMD_FRAME(9, 24),
+  ANIMCMD_FRAME(10, 24),
+  ANIMCMD_FRAME(11, 24), 
+  ANIMCMD_JUMP(0)
+}; 
+
+static const union AnimCmd SurfMonSmootherAnim_FaceEast[] =
+{
+  ANIMCMD_FRAME(8,  24, .hFlip = TRUE),
+  ANIMCMD_FRAME(9,  24, .hFlip = TRUE),
+  ANIMCMD_FRAME(10, 24, .hFlip = TRUE),
+  ANIMCMD_FRAME(11, 24, .hFlip = TRUE),
+  ANIMCMD_JUMP(0)
+}; 
+
+static const union AnimCmd *const sSurfablePokemonAnimTable3[] =
+{
+  SurfMonSmootherAnim_FaceSouth,
+  SurfMonSmootherAnim_FaceNorth,
+  SurfMonSmootherAnim_FaceWest,
+  SurfMonSmootherAnim_FaceEast,
 };

@@ -16,10 +16,18 @@
 #define NO_OVERLAY {0, 0, NULL, NULL, NULL, NULL, NULL}
 
 #define overworld_frame(ptr, width, height, frame) {.data = (u8 *)ptr + (width * height * frame * 64)/2, .size = (width * height * 64)/2}
+
+//Surf Template 1 - Normal - 32x32 64x64
 #define surf_template(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 #define surf_template64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = gSurfablePokemonAnimTable, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+
+//Surf Template 2 - Separate East/West Frames - 32x32 64x64
 #define surf_template2(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable2, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
-#define surf_template2_64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = gSurfablePokemonAnimTable2, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+#define surf_template2_64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = sSurfablePokemonAnimTable2, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+
+//Surf Template 3 - Four frames per direction - 32x32 64x64 
+#define surf_template3(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable3, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+#define surf_template3_64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = sSurfablePokemonAnimTable3, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 
 extern s32 gFieldEffectArguments[8];
 extern void UpdateSurfMonOverlay(struct Sprite *sprite);
