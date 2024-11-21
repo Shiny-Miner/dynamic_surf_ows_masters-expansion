@@ -2152,9 +2152,27 @@ const struct SpriteTemplate sAggronOverworld = surf_template(PAL_TAG_SURF_NEW, g
 const struct SpriteTemplate sAggronOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Aggron, UpdateSurfMonOverlay);
 
 //=============== CARVANHA
-// extern const u32 carvanhaTiles[];
-// extern const u16 carvanhaPal[];
-// extern const u16 carvanhaShinyPal[];
+extern const u32 carvanhaTiles[];
+extern const u16 carvanhaPal[];
+extern const u16 carvanhaShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Carvanha[] = {
+    overworld_frame(&carvanhaTiles[0], 8, 8, 1),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 0),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 3),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 2),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 5),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Carvanha[] = {
+    overworld_frame(&carvanhaTiles[0], 8, 8, 7),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 6),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 9),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 8),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 11),
+    overworld_frame(&carvanhaTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sCarvanhaOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Carvanha, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sCarvanhaOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Carvanha, UpdateSurfMonOverlay);
 
 //=============== SHARPEDO
 //extern const u32 sharpedoTiles[];
@@ -3114,10 +3132,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_CARVANHA,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &carvanhaPal[0],
+            .shinyPalAddr = &carvanhaShinyPal[0],
+            .overworldGfx = &sCarvanhaOverworld,
+            .overlayGfx = &sCarvanhaOverlay,
         },
         {
             .species = SPECIES_SHARPEDO,
