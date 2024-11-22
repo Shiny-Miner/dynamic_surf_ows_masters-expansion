@@ -176,18 +176,18 @@ TODOs:
 - Zangoose - Missing
 
 ## Pokemon w/ Gen 4-9 Evolutions
-### Gen 4:
+### Gen 4: 0%
 - Munchlax - Missing
 - Mantyke - Missing
 - Lickilicky - Missing
 - Rhyperior - Missing
 - Weavile - Missing
 
-### Pokemon w/ Regional Variants and Evolutions
-### Alola
+## Pokemon w/ Regional Variants and Evolutions
+### Alola: 0%
 Alolan Raichu - Missing
 
-### Galar
+### Galar: 0%
 Galarian Slowpoke - Missing
 Galarian Slowbro - Missing
 Galarian Slowking - Missing
@@ -197,11 +197,11 @@ Galarian Zigzagoon - Missing
 Galarian Linoone - Missing
 Obstagoon - Missing
 
-### Hisui
+### Hisui: 0%
 Hisuian Qwilfish - Missing
 Overqwil - Missing
 
-### Paldea
+### Paldea: 0%
 Paldean Tauros (Combat Breed) - Missing
 Paldean Tauros (Aqua Breed) - Missing
 Paldean Wooper - Missing
