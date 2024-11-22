@@ -2213,9 +2213,27 @@ const struct SpriteTemplate sWailmerOverlay = surf_template(PAL_TAG_SURF_NEW, gS
 //extern const u16 barboachShinyPal[];
 
 //=============== WHISCASH
-//extern const u32 whiscashTiles[];
-//extern const u16 whiscashPal[];
-//extern const u16 whiscashShinyPal[];
+extern const u32 whiscashTiles[];
+extern const u16 whiscashPal[];
+extern const u16 whiscashShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Whiscash[] = {
+    overworld_frame(&whiscashTiles[0], 4, 4, 1),
+    overworld_frame(&whiscashTiles[0], 4, 4, 0),
+    overworld_frame(&whiscashTiles[0], 4, 4, 3),
+    overworld_frame(&whiscashTiles[0], 4, 4, 2),
+    overworld_frame(&whiscashTiles[0], 4, 4, 5),
+    overworld_frame(&whiscashTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Whiscash[] = {
+    overworld_frame(&whiscashTiles[0], 4, 4, 7),
+    overworld_frame(&whiscashTiles[0], 4, 4, 6),
+    overworld_frame(&whiscashTiles[0], 4, 4, 9),
+    overworld_frame(&whiscashTiles[0], 4, 4, 8),
+    overworld_frame(&whiscashTiles[0], 4, 4, 11),
+    overworld_frame(&whiscashTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sWhiscashOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Whiscash, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sWhiscashOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Whiscash, UpdateSurfMonOverlay);
 
 //=============== CORPHISH
 //extern const u32 corphishTiles[];
@@ -3167,10 +3185,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_WHISCASH,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &whiscashPal[0],
+            .shinyPalAddr = &whiscashShinyPal[0],
+            .overworldGfx = &sWhiscashOverworld,
+            .overlayGfx = &sWhiscashOverlay,
         },
         {
             .species = SPECIES_CORPHISH,
