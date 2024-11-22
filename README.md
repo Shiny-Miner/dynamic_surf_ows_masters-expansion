@@ -208,6 +208,7 @@ Paldean Wooper - Missing
 Clodsire - Missing
 
 =====================================================
+
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
 =====================================================
