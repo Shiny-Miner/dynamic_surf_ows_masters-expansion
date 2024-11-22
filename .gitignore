@@ -6,7 +6,6 @@ build/*
 *.dmp
 *.bak
 *.lnk
-*.sav
 *.sa1
 *.sg1
 *.ss1
