@@ -175,6 +175,39 @@ TODOs:
 - Masquerain - Missing
 - Zangoose - Missing
 
+## Pokemon w/ Gen 4-9 Evolutions
+### Gen 4:
+- Munchlax - Missing
+- Mantyke - Missing
+- Lickilicky - Missing
+- Rhyperior - Missing
+- Weavile - Missing
+
+### Pokemon w/ Regional Variants and Evolutions
+### Alola
+Alolan Raichu - Missing
+
+### Galar
+Galarian Slowpoke - Missing
+Galarian Slowbro - Missing
+Galarian Slowking - Missing
+Galarian Corsola - Missing
+Cursola - Missing
+Galarian Zigzagoon - Missing
+Galarian Linoone - Missing
+Obstagoon - Missing
+
+### Hisui
+Hisuian Qwilfish - Missing
+Overqwil - Missing
+
+### Paldea
+Paldean Tauros (Combat Breed) - Missing
+Paldean Tauros (Aqua Breed) - Missing
+Paldean Wooper - Missing
+Clodsire - Missing
+
+=====================================================
 Original thread (by ghoulslash):
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
 =====================================================
