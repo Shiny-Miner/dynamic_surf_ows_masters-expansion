@@ -185,27 +185,27 @@ TODOs:
 
 ## Pokemon w/ Regional Variants and Evolutions
 ### Alola: 0%
-Alolan Raichu - Missing
+- Alolan Raichu - Missing
 
 ### Galar: 0%
-Galarian Slowpoke - Missing
-Galarian Slowbro - Missing
-Galarian Slowking - Missing
-Galarian Corsola - Missing
-Cursola - Missing
-Galarian Zigzagoon - Missing
-Galarian Linoone - Missing
-Obstagoon - Missing
+- Galarian Slowpoke - Missing
+- Galarian Slowbro - Missing
+- Galarian Slowking - Missing
+- Galarian Corsola - Missing
+- Cursola - Missing
+- Galarian Zigzagoon - Missing
+- Galarian Linoone - Missing
+- Obstagoon - Missing
 
 ### Hisui: 0%
-Hisuian Qwilfish - Missing
-Overqwil - Missing
+- Hisuian Qwilfish - Missing
+- Overqwil - Missing
 
 ### Paldea: 0%
-Paldean Tauros (Combat Breed) - Missing
-Paldean Tauros (Aqua Breed) - Missing
-Paldean Wooper - Missing
-Clodsire - Missing
+- Paldean Tauros (Combat Breed) - Missing
+- Paldean Tauros (Aqua Breed) - Missing
+- Paldean Wooper - Missing
+- Clodsire - Missing
 
 =====================================================
 
