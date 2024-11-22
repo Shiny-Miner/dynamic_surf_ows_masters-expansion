@@ -148,7 +148,7 @@ TODOs:
 - Wailmer - Complete (Hestia)
 - Wailord - Missing
 - Barboach - Missing
-- Whiscash - Missing
+- Whiscash - [In-Progress by EduarPoken]
 - Corphish - Missing
 - Crawdaunt - Missing
 - Feebas - Missing
