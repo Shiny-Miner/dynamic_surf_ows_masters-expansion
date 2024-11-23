@@ -143,12 +143,12 @@ TODOs:
 - Hariyama - Complete
 - Azurill - Complete
 - Aggron - Complete
-- Carvanha - Michelle Soto, w/ edits by Jordank
+- Carvanha - [Complete?] Michelle Soto, w/ edits by Jordank
 - Sharpedo - Missing
 - Wailmer - Complete (Hestia)
 - Wailord - Missing
 - Barboach - Missing
-- Whiscash - [In-Progress by EduarPoken]
+- Whiscash - Complete (EduarPoken)
 - Corphish - Missing
 - Crawdaunt - Missing
 - Feebas - Missing
