@@ -2236,9 +2236,27 @@ const struct SpriteTemplate sWhiscashOverworld = surf_template(PAL_TAG_SURF_NEW,
 const struct SpriteTemplate sWhiscashOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Whiscash, UpdateSurfMonOverlay);
 
 //=============== CORPHISH
-//extern const u32 corphishTiles[];
-//extern const u16 corphishPal[];
-//extern const u16 corphishShinyPal[];
+extern const u32 corphishTiles[];
+extern const u16 corphishPal[];
+extern const u16 corphishShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Corphish[] = {
+    overworld_frame(&corphishTiles[0], 8, 8, 1),
+    overworld_frame(&corphishTiles[0], 8, 8, 0),
+    overworld_frame(&corphishTiles[0], 8, 8, 3),
+    overworld_frame(&corphishTiles[0], 8, 8, 2),
+    overworld_frame(&corphishTiles[0], 8, 8, 5),
+    overworld_frame(&corphishTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Corphish[] = {
+    overworld_frame(&corphishTiles[0], 8, 8, 7),
+    overworld_frame(&corphishTiles[0], 8, 8, 6),
+    overworld_frame(&corphishTiles[0], 8, 8, 9),
+    overworld_frame(&corphishTiles[0], 8, 8, 8),
+    overworld_frame(&corphishTiles[0], 8, 8, 11),
+    overworld_frame(&corphishTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sCorphishOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Corphish, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sCorphishOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Corphish, UpdateSurfMonOverlay);
 
 //=============== CRAWDAUNT
 //extern const u32 crawdauntTiles[];
@@ -3192,10 +3210,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_CORPHISH,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &corphishPal[0],
+            .shinyPalAddr = &corphishShinyPal[0],
+            .overworldGfx = &sCorphishOverworld,
+            .overlayGfx = &sCorphishOverlay,
         },
         {
             .species = SPECIES_CRAWDAUNT,
