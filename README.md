@@ -148,8 +148,8 @@ TODOs:
 - Wailmer - Complete (Hestia)
 - Wailord - Missing
 - Barboach - Missing
-- Whiscash - Complete (EduarPoken)
-- Corphish - Missing
+- Whiscash - Complete (EduarPokeN)
+- Corphish - Complete (EduarPokeN)
 - Crawdaunt - Missing
 - Feebas - Missing
 - Milotic - Complete
