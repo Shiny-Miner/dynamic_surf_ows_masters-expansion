@@ -2259,9 +2259,27 @@ const struct SpriteTemplate sCorphishOverworld = surf_template64x64(PAL_TAG_SURF
 const struct SpriteTemplate sCorphishOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Corphish, UpdateSurfMonOverlay);
 
 //=============== CRAWDAUNT
-//extern const u32 crawdauntTiles[];
-//extern const u16 crawdauntPal[];
-//extern const u16 crawdauntShinyPal[];
+extern const u32 crawdauntTiles[];
+extern const u16 crawdauntPal[];
+extern const u16 crawdauntShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Crawdaunt[] = {
+    overworld_frame(&crawdauntTiles[0], 4, 4, 1),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 0),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 3),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 2),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 5),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Crawdaunt[] = {
+    overworld_frame(&crawdauntTiles[0], 4, 4, 7),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 6),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 9),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 8),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 11),
+    overworld_frame(&crawdauntTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sCrawdauntOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Crawdaunt, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sCrawdauntOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Crawdaunt, UpdateSurfMonOverlay);
 
 //=============== FEEBAS
 //extern const u32 feebasTiles[];
@@ -3217,10 +3235,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_CRAWDAUNT,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &crawdauntPal[0],
+            .shinyPalAddr = &crawdauntShinyPal[0],
+            .overworldGfx = &sCrawdauntOverworld,
+            .overlayGfx = &sCrawdauntOverlay,
         },
         {
             .species = SPECIES_FEEBAS,
