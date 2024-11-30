@@ -150,7 +150,7 @@ TODOs:
 - Barboach - Missing
 - Whiscash - Complete (EduarPokeN)
 - Corphish - Complete (EduarPokeN)
-- Crawdaunt - Missing
+- Crawdaunt - Complete (EduarPokeN)
 - Feebas - Missing
 - Milotic - Complete
 - Spheal - Complete (ghoulslash)
