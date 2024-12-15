@@ -2175,9 +2175,27 @@ const struct SpriteTemplate sCarvanhaOverworld = surf_template64x64(PAL_TAG_SURF
 const struct SpriteTemplate sCarvanhaOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Carvanha, UpdateSurfMonOverlay);
 
 //=============== SHARPEDO
-//extern const u32 sharpedoTiles[];
-//extern const u16 sharpedoPal[];
-//extern const u16 sharpedoShinyPal[];
+extern const u32 sharpedoTiles[];
+extern const u16 sharpedoPal[];
+extern const u16 sharpedoShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Sharpedo[] = {
+    overworld_frame(&sharpedoTiles[0], 4, 4, 1),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 0),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 3),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 2),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 5),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Sharpedo[] = {
+    overworld_frame(&sharpedoTiles[0], 4, 4, 7),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 6),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 9),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 8),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 11),
+    overworld_frame(&sharpedoTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sSharpedoOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Sharpedo, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sSharpedoOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Sharpedo, UpdateSurfMonOverlay);
 
 //=============== WAILMER
 extern const u32 wailmerTiles[];
@@ -3193,10 +3211,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_SHARPEDO,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &sharpedoPal[0],
+            .shinyPalAddr = &sharpedoShinyPal[0],
+            .overworldGfx = &sSharpedoOverworld,
+            .overlayGfx = &sSharpedoOverlay,
         },
         {
             .species = SPECIES_WAILMER,

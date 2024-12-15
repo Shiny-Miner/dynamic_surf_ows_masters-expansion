@@ -129,7 +129,7 @@ TODOs:
 - Tyranitar - Complete
 - Lugia - Complete
 
-### Gen 3: 69% or so (nice)
+### Gen 3: 85%
 - Mudkip - Complete
 - Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
@@ -144,7 +144,7 @@ TODOs:
 - Azurill - Complete
 - Aggron - Complete
 - Carvanha - [Complete?] Michelle Soto, w/ edits by Jordank
-- Sharpedo - Missing
+- Sharpedo - Complete (Pokets)
 - Wailmer - Complete (Hestia)
 - Wailord - Missing
 - Barboach - Missing
