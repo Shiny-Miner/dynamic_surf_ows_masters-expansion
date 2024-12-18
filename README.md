@@ -159,7 +159,7 @@ TODOs:
 - Clamperl - Complete (Nolo33LP)
 - Huntail - Complete (Nolo33LP)
 - Gorebyss - Complete (Nolo33LP)
-- Relicanth - Missing
+- Relicanth - Complete (Pokets)
 - Luvdisc - Missing
 - Latias - Complete (Nolo33LP)
 - Latios - Complete (Nolo33LP)

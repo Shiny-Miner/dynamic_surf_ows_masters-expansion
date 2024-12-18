@@ -2498,9 +2498,27 @@ const struct SpriteTemplate sGorebyssOverworld = surf_template(PAL_TAG_SURF_NEW,
 const struct SpriteTemplate sGorebyssOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Gorebyss, UpdateSurfMonOverlay);
 
 //=============== RELICANTH
-//extern const u32 relicanthTiles[];
-//extern const u16 relicanthPal[];
-//extern const u16 relicanthShinyPal[];
+extern const u32 relicanthTiles[];
+extern const u16 relicanthPal[];
+extern const u16 relicanthShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Relicanth[] = {
+    overworld_frame(&relicanthTiles[0], 4, 4, 1),
+    overworld_frame(&relicanthTiles[0], 4, 4, 0),
+    overworld_frame(&relicanthTiles[0], 4, 4, 3),
+    overworld_frame(&relicanthTiles[0], 4, 4, 2),
+    overworld_frame(&relicanthTiles[0], 4, 4, 5),
+    overworld_frame(&relicanthTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Relicanth[] = {
+    overworld_frame(&relicanthTiles[0], 4, 4, 7),
+    overworld_frame(&relicanthTiles[0], 4, 4, 6),
+    overworld_frame(&relicanthTiles[0], 4, 4, 9),
+    overworld_frame(&relicanthTiles[0], 4, 4, 8),
+    overworld_frame(&relicanthTiles[0], 4, 4, 11),
+    overworld_frame(&relicanthTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sRelicanthOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Relicanth, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sRelicanthOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Relicanth, UpdateSurfMonOverlay);
 
 //=============== LUVDISC
 //extern const u32 luvdiscTiles[];
@@ -3316,10 +3334,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_RELICANTH,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &relicanthPal[0],
+            .shinyPalAddr = &relicanthShinyPal[0],
+            .overworldGfx = &sRelicanthOverworld,
+            .overlayGfx = &sRelicanthOverlay,
         },
         {
             .species = SPECIES_LUVDISC,
