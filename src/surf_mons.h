@@ -2221,9 +2221,27 @@ const struct SpriteTemplate sWailmerOverworld = surf_template(PAL_TAG_SURF_NEW, 
 const struct SpriteTemplate sWailmerOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wailmer, UpdateSurfMonOverlay);
 
 //=============== WAILORD
-//extern const u32 wailordTiles[];
-//extern const u16 wailordPal[];
-//extern const u16 wailordShinyPal[];
+extern const u32 wailordTiles[];
+extern const u16 wailordPal[];
+extern const u16 wailordShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Wailord[] = {
+    overworld_frame(&wailordTiles[0], 8, 8, 1),
+    overworld_frame(&wailordTiles[0], 8, 8, 0),
+    overworld_frame(&wailordTiles[0], 8, 8, 3),
+    overworld_frame(&wailordTiles[0], 8, 8, 2),
+    overworld_frame(&wailordTiles[0], 8, 8, 5),
+    overworld_frame(&wailordTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Wailord[] = {
+    overworld_frame(&wailordTiles[0], 8, 8, 7),
+    overworld_frame(&wailordTiles[0], 8, 8, 6),
+    overworld_frame(&wailordTiles[0], 8, 8, 9),
+    overworld_frame(&wailordTiles[0], 8, 8, 8),
+    overworld_frame(&wailordTiles[0], 8, 8, 11),
+    overworld_frame(&wailordTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sWailordOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wailord, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sWailordOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wailord, UpdateSurfMonOverlay);
 
 //=============== BARBOACH
 //extern const u32 barboachTiles[];
@@ -3243,10 +3261,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_WAILORD,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &wailordPal[0],
+            .shinyPalAddr = &wailordShinyPal[0],
+            .overworldGfx = &sWailordOverworld,
+            .overlayGfx = &sWailordOverlay,
         },
         {
             .species = SPECIES_BARBOACH,
