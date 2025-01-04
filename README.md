@@ -1,16 +1,21 @@
-# Dynamic surfing overworlds for FR (expansion by Shiny miner, ansh)
-## Trying to complete gen 1-3 as soon as we can
-for any queries contact me on discord- shinyhunter08
+# Dynamic surfing overworlds for FR
+## Expansion by Shiny miner, ansh
 
-=====================================================
+**Original thread (by ghoulslash):**
+https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
 
-What Is This?
+For any queries, ping one of us via [Discord](https://discord.gg/yKhCRrqJyX):
+- anxz86
+- jordank.memes
+- shinyhunter08
+
+## What Is This?
 
 This is a feature, originally from pokeem, (see https://github.com/Slawter666/pokeemerald/tree/surfable/src), to have the surfing sprite dynamically change based on the first party pokemon or selected pokemon from the menu.
 
 ![Surfing Pikachu](example.gif)
 
-It has a few improved features:
+## Improved Features
 
 1. One master structure for all species data, so worrying about matching indexes is no longer an issue
 
@@ -22,16 +27,14 @@ It has a few improved features:
 
 5. The overlay frames are hidden underneath map tiles (eg. treetops over water)
 
-=====================================================
+### Special Sprite Handling
 
 This repo also now supports unique West/Left-facing and East/Right-facing sprites!
 In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirroring this sprite would have resulted in the claw switching sides when the player moves around; instead, we now support sprites that have a unique look for all 4 directions!
 
 ![Kingler](kingler.gif)
 
-=====================================================
-
-Important Notes:
+## Important Notes
 
 1. This includes the dynamic overworld palette hack, as it removes the need to worry about matching palettes, and is generally just awesome. See https://github.com/Navenatox/DynamicOverworldPalettes for more details. The original source code has been modified to call some of these functions, so removing the file if you've already added this feature will not do. There is ample free-space in FR so I suggest just leaving it be unless you know what you are doing.
 
@@ -39,9 +42,8 @@ Important Notes:
 
 3. Fire Red likes vertical images, and as such the sprites have to have all their frames lined up vertically, as opposed to the pokeem images that are layered horizontally. While annoying, changing the frame ordering isn't a big deal, and I hope this won't stand in the way of community art being shared.
 
-=====================================================
 
-TODOs:
+## TODOs:
 
 1. Verify that each Pokemon has a matching Shiny sprite
 
@@ -53,10 +55,11 @@ TODOs:
 
 5. Apply fixes from #5.
 
-=====================================================
+---
+
 # Completed Pokemon
-## Here is the spriting progress:
-### Gen I : 100%
+## Spriting Progress:
+### Gen 1: 100%
 - Squirtle - Complete (emme97)
 - Wartortle - Complete (Avara)
 - Blastoise - Complete (emme97)
@@ -129,7 +132,7 @@ TODOs:
 - Tyranitar - Complete
 - Lugia - Complete
 
-### Gen 3: 85%
+### Gen 3: 89%
 - Mudkip - Complete
 - Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
@@ -146,7 +149,7 @@ TODOs:
 - Carvanha - [Complete?] Michelle Soto, w/ edits by Jordank
 - Sharpedo - Complete (Pokets)
 - Wailmer - Complete (Hestia)
-- Wailord - Missing
+- Wailord - Complete (Pokets)
 - Barboach - Missing
 - Whiscash - Complete (EduarPokeN)
 - Corphish - Complete (EduarPokeN)
@@ -207,13 +210,9 @@ TODOs:
 - Paldean Wooper - Missing
 - Clodsire - Missing
 
-=====================================================
+---
 
-Original thread (by ghoulslash):
-https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
-=====================================================
-
-How To Compile:
+## How To Compile:
 
 1. add `rom.gba` to the main directory
 
@@ -225,12 +224,11 @@ How To Compile:
 
 4. `test.gba` will be added to the folder, and the offsets will be located in `offsets.ini`
 
+---
 
-=====================================================
+### Adding New Species:
 
-Adding New Species:
-
-if you want to add new species that can learn surf, follow these steps. I will use Popplio as an example
+If you want to add new species that can learn surf, follow these steps. I will use Popplio as an example
 1. make the sprite, 32 x 384 (12 frames of 32x32). Use the existing sprites as models.
 
 2a. add the indexed image .png file to graphics/. Eg. `popplio.png`
@@ -277,5 +275,3 @@ const struct SpriteTemplate sPopplioOverlay = surf_template(PAL_TAG_SURF_NEW, gS
   .overlayGfx = &sPopplioOverlay,	// or 0 if it doesn't exist
 },
 ```
-
-
