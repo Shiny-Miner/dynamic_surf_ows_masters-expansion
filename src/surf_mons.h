@@ -2244,9 +2244,27 @@ const struct SpriteTemplate sWailordOverworld = surf_template64x64(PAL_TAG_SURF_
 const struct SpriteTemplate sWailordOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wailord, UpdateSurfMonOverlay);
 
 //=============== BARBOACH
-//extern const u32 barboachTiles[];
-//extern const u16 barboachPal[];
-//extern const u16 barboachShinyPal[];
+extern const u32 barboachTiles[];
+extern const u16 barboachPal[];
+extern const u16 barboachShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Barboach[] = {
+    overworld_frame(&barboachTiles[0], 8, 8, 1),
+    overworld_frame(&barboachTiles[0], 8, 8, 0),
+    overworld_frame(&barboachTiles[0], 8, 8, 3),
+    overworld_frame(&barboachTiles[0], 8, 8, 2),
+    overworld_frame(&barboachTiles[0], 8, 8, 5),
+    overworld_frame(&barboachTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Barboach[] = {
+    overworld_frame(&barboachTiles[0], 8, 8, 7),
+    overworld_frame(&barboachTiles[0], 8, 8, 6),
+    overworld_frame(&barboachTiles[0], 8, 8, 9),
+    overworld_frame(&barboachTiles[0], 8, 8, 8),
+    overworld_frame(&barboachTiles[0], 8, 8, 11),
+    overworld_frame(&barboachTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sBarboachOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Barboach, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sBarboachOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Barboach, UpdateSurfMonOverlay);
 
 //=============== WHISCASH
 extern const u32 whiscashTiles[];
@@ -3268,10 +3286,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_BARBOACH,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &barboachPal[0],
+            .shinyPalAddr = &barboachShinyPal[0],
+            .overworldGfx = &sBarboachOverworld,
+            .overlayGfx = &sBarboachOverlay,
         },
         {
             .species = SPECIES_WHISCASH,
