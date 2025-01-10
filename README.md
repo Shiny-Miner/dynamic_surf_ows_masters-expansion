@@ -150,7 +150,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Sharpedo - Complete (Pokets)
 - Wailmer - Complete (Hestia)
 - Wailord - Complete (Pokets)
-- Barboach - Missing
+- Barboach - Complete (Pokets)
 - Whiscash - Complete (EduarPokeN)
 - Corphish - Complete (EduarPokeN)
 - Crawdaunt - Complete (EduarPokeN)
