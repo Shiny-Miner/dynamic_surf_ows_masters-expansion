@@ -2243,6 +2243,29 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Wailord[] = {
 const struct SpriteTemplate sWailordOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wailord, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sWailordOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wailord, UpdateSurfMonOverlay);
 
+//=============== ZANGOOSE
+extern const u32 zangooseTiles[];
+extern const u16 zangoosePal[];
+extern const u16 zangooseShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Zangoose[] = {
+    overworld_frame(&zangooseTiles[0], 4, 4, 1),
+    overworld_frame(&zangooseTiles[0], 4, 4, 0),
+    overworld_frame(&zangooseTiles[0], 4, 4, 3),
+    overworld_frame(&zangooseTiles[0], 4, 4, 2),
+    overworld_frame(&zangooseTiles[0], 4, 4, 5),
+    overworld_frame(&zangooseTiles[0], 4, 4, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Zangoose[] = {
+    overworld_frame(&zangooseTiles[0], 4, 4, 7),
+    overworld_frame(&zangooseTiles[0], 4, 4, 6),
+    overworld_frame(&zangooseTiles[0], 4, 4, 9),
+    overworld_frame(&zangooseTiles[0], 4, 4, 8),
+    overworld_frame(&zangooseTiles[0], 4, 4, 11),
+    overworld_frame(&zangooseTiles[0], 4, 4, 10),
+};
+const struct SpriteTemplate sZangooseOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Zangoose, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sZangooseOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Zangoose, UpdateSurfMonOverlay);
+
 //=============== BARBOACH
 extern const u32 barboachTiles[];
 extern const u16 barboachPal[];
@@ -3283,6 +3306,13 @@ const struct RideableMons gSurfablePokemon[] =
             .shinyPalAddr = &wailordShinyPal[0],
             .overworldGfx = &sWailordOverworld,
             .overlayGfx = &sWailordOverlay,
+        },
+        {
+            .species = SPECIES_ZANGOOSE,
+            .palAddr = &zangoosePal[0],
+            .shinyPalAddr = &zangooseShinyPal[0],
+            .overworldGfx = &sZangooseOverworld,
+            .overlayGfx = &sZangooseOverlay,
         },
         {
             .species = SPECIES_BARBOACH,

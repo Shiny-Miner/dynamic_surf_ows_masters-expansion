@@ -4,9 +4,10 @@ you only need one pal tag based on the way they are now loaded.
 If you want more, uncomment out UNIQUE_TAGS in config.h and assign each to the species in gSurfablePokemon
 */
 #ifdef UNIQUE_TAGS
-enum {
-	PAL_TAG_SQUIRTLE_SURF = 0x3001,
-	PAL_TAG_WARTORTLE_SURF,
+enum
+{
+    PAL_TAG_SQUIRTLE_SURF = 0x3001,
+    PAL_TAG_WARTORTLE_SURF,
     PAL_TAG_BLASTOISE_SURF,
     PAL_TAG_PIKACHU_SURF,
     PAL_TAG_RAICHU_SURF,
@@ -49,7 +50,7 @@ enum {
     PAL_TAG_DRAGONAIR_SURF,
     PAL_TAG_DRAGONITE_SURF,
     PAL_TAG_MEW_SURF,
-// Gen II Pokemon
+    // Gen II Pokemon
     PAL_TAG_TOTODILE_SURF,
     PAL_TAG_CROCONAW_SURF,
     PAL_TAG_FERALIGATR_SURF,
@@ -75,7 +76,7 @@ enum {
     PAL_TAG_SUICUNE_SURF,
     PAL_TAG_TYRANITAR_SURF,
     PAL_TAG_LUGIA_SURF,
-// Gen III Pokemon
+    // Gen III Pokemon
     PAL_TAG_MUDKIP_SURF,
     PAL_TAG_MARSHTOMP_SURF,
     PAL_TAG_SWAMPERT_SURF,
@@ -94,6 +95,7 @@ enum {
     PAL_TAG_SHARPEDO_SURF,
     PAL_TAG_WAILMER_SURF,
     PAL_TAG_WAILORD_SURF,
+    PAL_TAG_ZANGOOSE_SURF,
     PAL_TAG_BARBOACH_SURF,
     PAL_TAG_WHISCASH_SURF,
     PAL_TAG_CORPHISH_SURF,
