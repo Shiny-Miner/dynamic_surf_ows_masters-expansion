@@ -2684,6 +2684,22 @@ struct RideableMons
 
 const struct RideableMons gSurfablePokemon[] =
     {
+        /*
+         * If a shiny palette or overlay does not exist, set:
+         * .shinyPalAddr = 0,
+         * .overlayGfx = 0,
+         */
+        /*
+        {
+            .species = SPECIES_NAME,
+            .palAddr = &namePal[0],
+            .shinyPalAddr = &nameShinyPal[0],
+            .overworldGfx = &sNameOverworld,
+            .overlayGfx = &sNameOverlay,
+        },
+        */
+
+        //=============== KANTO POKEMON
         {
             .species = SPECIES_SQUIRTLE,
             .palAddr = &squirtlePal[0],
@@ -2722,16 +2738,16 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_NIDOQUEEN,
             .palAddr = &nidoqueenPal[0],
-            .shinyPalAddr = &nidoqueenShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &nidoqueenShinyPal[0],
             .overworldGfx = &sNidoqueenOverworld,
-            .overlayGfx = &sNidoqueenOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sNidoqueenOverlay,
         },
         {
             .species = SPECIES_NIDOKING,
             .palAddr = &nidokingPal[0],
-            .shinyPalAddr = &nidokingShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &nidokingShinyPal[0],
             .overworldGfx = &sNidokingOverworld,
-            .overlayGfx = &sNidokingOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sNidokingOverlay,
         },
         {
             .species = SPECIES_PSYDUCK,
@@ -2813,9 +2829,9 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_SHELLDER,
             .palAddr = &shellderPal[0],
-            .shinyPalAddr = &shellderShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &shellderShinyPal[0],
             .overworldGfx = &sShellderOverworld,
-            .overlayGfx = &sShellderOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sShellderOverlay,
         },
         {
             .species = SPECIES_CLOYSTER,
@@ -2827,65 +2843,65 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_KRABBY,
             .palAddr = &krabbyPal[0],
-            .shinyPalAddr = &krabbyShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &krabbyShinyPal[0],
             .overworldGfx = &sKrabbyOverworld,
-            .overlayGfx = &sKrabbyOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sKrabbyOverlay,
         },
         {
             .species = SPECIES_KINGLER,
             .palAddr = &kinglerPal[0],
-            .shinyPalAddr = &kinglerShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &kinglerShinyPal[0],
             .overworldGfx = &sKinglerOverworld,
-            .overlayGfx = &sKinglerOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sKinglerOverlay,
         },
         {
             .species = SPECIES_LICKITUNG,
             .palAddr = &lickitungPal[0],
-            .shinyPalAddr = &lickitungShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &lickitungShinyPal[0],
             .overworldGfx = &sLickitungOverworld,
-            .overlayGfx = &sLickitungOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLickitungOverlay,
         },
         {
             .species = SPECIES_RHYDON,
             .palAddr = &rhydonPal[0],
-            .shinyPalAddr = &rhydonShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &rhydonShinyPal[0],
             .overworldGfx = &sRhydonOverworld,
-            .overlayGfx = &sRhydonOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sRhydonOverlay,
         },
         {
             .species = SPECIES_KANGASKHAN,
             .palAddr = &kangaskhanPal[0],
-            .shinyPalAddr = &kangaskhanShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &kangaskhanShinyPal[0],
             .overworldGfx = &sKangaskhanOverworld,
-            .overlayGfx = &sKangaskhanOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sKangaskhanOverlay,
         },
         {
             .species = SPECIES_HORSEA,
             .palAddr = &horseaPal[0],
-            .shinyPalAddr = &horseaShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &horseaShinyPal[0],
             .overworldGfx = &sHorseaOverworld,
-            .overlayGfx = &sHorseaOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sHorseaOverlay,
         },
         {
             .species = SPECIES_SEADRA,
             .palAddr = &seadraPal[0],
-            .shinyPalAddr = &seadraShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &seadraShinyPal[0],
             .overworldGfx = &sSeadraOverworld,
-            .overlayGfx = &sSeadraOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sSeadraOverlay,
         },
         {
             .species = SPECIES_GOLDEEN,
             .palAddr = &goldeenPal[0],
-            .shinyPalAddr = &goldeenShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &goldeenShinyPal[0],
             .overworldGfx = &sGoldeenOverworld,
-            .overlayGfx = &sGoldeenOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sGoldeenOverlay,
         },
         {
             .species = SPECIES_SEAKING,
             .palAddr = &seakingPal[0],
-            .shinyPalAddr = &seakingShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &seakingShinyPal[0],
             .overworldGfx = &sSeakingOverworld,
-            .overlayGfx = &sSeakingOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sSeakingOverlay,
         },
         {
             .species = SPECIES_STARYU,
@@ -2904,16 +2920,16 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_TAUROS,
             .palAddr = &taurosPal[0],
-            .shinyPalAddr = &taurosShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &taurosShinyPal[0],
             .overworldGfx = &sTaurosOverworld,
-            .overlayGfx = &sTaurosOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sTaurosOverlay,
         },
         {
             .species = SPECIES_GYARADOS,
             .palAddr = &gyaradosPal[0],
-            .shinyPalAddr = &gyaradosShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &gyaradosShinyPal[0],
             .overworldGfx = &sGyaradosOverworld,
-            .overlayGfx = &sGyaradosOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sGyaradosOverlay,
         },
         {
             .species = SPECIES_LAPRAS,
@@ -2932,86 +2948,87 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_OMANYTE,
             .palAddr = &omanytePal[0],
-            .shinyPalAddr = &omanyteShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &omanyteShinyPal[0],
             .overworldGfx = &sOmanyteOverworld,
-            .overlayGfx = &sOmanyteOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sOmanyteOverlay,
         },
         {
             .species = SPECIES_OMASTAR,
             .palAddr = &omastarPal[0],
-            .shinyPalAddr = &omastarShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &omastarShinyPal[0],
             .overworldGfx = &sOmastarOverworld,
-            .overlayGfx = &sOmastarOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sOmastarOverlay,
         },
         {
             .species = SPECIES_KABUTO,
             .palAddr = &kabutoPal[0],
-            .shinyPalAddr = &kabutoShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &kabutoShinyPal[0],
             .overworldGfx = &sKabutoOverworld,
-            .overlayGfx = &sKabutoOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sKabutoOverlay,
         },
         {
             .species = SPECIES_KABUTOPS,
             .palAddr = &kabutopsPal[0],
-            .shinyPalAddr = &kabutopsShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &kabutopsShinyPal[0],
             .overworldGfx = &sKabutopsOverworld,
-            .overlayGfx = &sKabutopsOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sKabutopsOverlay,
         },
         {
             .species = SPECIES_SNORLAX,
             .palAddr = &snorlaxPal[0],
-            .shinyPalAddr = &snorlaxShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &snorlaxShinyPal[0],
             .overworldGfx = &sSnorlaxOverworld,
-            .overlayGfx = &sSnorlaxOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sSnorlaxOverlay,
         },
         {
             .species = SPECIES_DRATINI,
             .palAddr = &dratiniPal[0],
-            .shinyPalAddr = &dratiniShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &dratiniShinyPal[0],
             .overworldGfx = &sDratiniOverworld,
-            .overlayGfx = &sDratiniOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sDratiniOverlay,
         },
         {
             .species = SPECIES_DRAGONAIR,
             .palAddr = &dragonairPal[0],
-            .shinyPalAddr = &dragonairShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &dragonairShinyPal[0],
             .overworldGfx = &sDragonairOverworld,
-            .overlayGfx = &sDragonairOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sDragonairOverlay,
         },
         {
             .species = SPECIES_DRAGONITE,
             .palAddr = &dragonitePal[0],
-            .shinyPalAddr = &dragoniteShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &dragoniteShinyPal[0],
             .overworldGfx = &sDragoniteOverworld,
-            .overlayGfx = &sDragoniteOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sDragoniteOverlay,
         },
         {
             .species = SPECIES_MEW,
             .palAddr = &mewPal[0],
-            .shinyPalAddr = &mewShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &mewShinyPal[0],
             .overworldGfx = &sMewOverworld,
-            .overlayGfx = &sMewOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMewOverlay,
         },
+        //=============== JOHTO POKEMON
         {
             .species = SPECIES_TOTODILE,
             .palAddr = &totodilePal[0],
-            .shinyPalAddr = &totodileShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &totodileShinyPal[0],
             .overworldGfx = &sTotodileOverworld,
-            .overlayGfx = &sTotodileOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sTotodileOverlay,
         },
         {
             .species = SPECIES_CROCONAW,
             .palAddr = &croconawPal[0],
-            .shinyPalAddr = &croconawShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &croconawShinyPal[0],
             .overworldGfx = &sCroconawOverworld,
-            .overlayGfx = &sCroconawOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sCroconawOverlay,
         },
         {
             .species = SPECIES_FERALIGATR,
             .palAddr = &feraligatrPal[0],
-            .shinyPalAddr = &feraligatrShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &feraligatrShinyPal[0],
             .overworldGfx = &sFeraligatrOverworld,
-            .overlayGfx = &sFeraligatrOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sFeraligatrOverlay,
         },
         {
             .species = SPECIES_SENTRET,
@@ -3044,23 +3061,23 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_LANTURN,
             .palAddr = &lanturnPal[0],
-            .shinyPalAddr = &lanturnShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &lanturnShinyPal[0],
             .overworldGfx = &sLanturnOverworld,
-            .overlayGfx = &sLanturnOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLanturnOverlay,
         },
         {
             .species = SPECIES_AZURILL,
             .palAddr = &azurillPal[0],
-            .shinyPalAddr = &azurillShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &azurillShinyPal[0],
             .overworldGfx = &sAzurillOverworld,
-            .overlayGfx = &sAzurillOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sAzurillOverlay,
         },
         {
             .species = SPECIES_MARILL,
             .palAddr = &marillPal[0],
-            .shinyPalAddr = &marillShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &marillShinyPal[0],
             .overworldGfx = &sMarillOverworld,
-            .overlayGfx = &sMarillOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMarillOverlay,
         },
         {
             .species = SPECIES_AZUMARILL,
@@ -3079,16 +3096,16 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_WOOPER,
             .palAddr = &wooperPal[0],
-            .shinyPalAddr = &wooperShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &wooperShinyPal[0],
             .overworldGfx = &sWooperOverworld,
-            .overlayGfx = &sWooperOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sWooperOverlay,
         },
         {
             .species = SPECIES_QUAGSIRE,
             .palAddr = &quagsirePal[0],
-            .shinyPalAddr = &quagsireShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &quagsireShinyPal[0],
             .overworldGfx = &sQuagsireOverworld,
-            .overlayGfx = &sQuagsireOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sQuagsireOverlay,
         },
         {
             .species = SPECIES_SLOWKING,
@@ -3100,93 +3117,98 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_QWILFISH,
             .palAddr = &qwilfishPal[0],
-            .shinyPalAddr = &qwilfishShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &qwilfishShinyPal[0],
             .overworldGfx = &sQwilfishOverworld,
-            .overlayGfx = &sQwilfishOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sQwilfishOverlay,
         },
         {
             .species = SPECIES_SNEASEL,
             .palAddr = &sneaselPal[0],
-            .shinyPalAddr = &sneaselShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &sneaselShinyPal[0],
             .overworldGfx = &sSneaselOverworld,
-            .overlayGfx = &sSneaselOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sSneaselOverlay,
         },
         {
             .species = SPECIES_CORSOLA,
             .palAddr = &corsolaPal[0],
-            .shinyPalAddr = &corsolaShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &corsolaShinyPal[0],
             .overworldGfx = &sCorsolaOverworld,
-            .overlayGfx = &sCorsolaOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sCorsolaOverlay,
         },
         {
             .species = SPECIES_REMORAID,
             .palAddr = &remoraidPal[0],
-            .shinyPalAddr = &remoraidShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &remoraidShinyPal[0],
             .overworldGfx = &sRemoraidOverworld,
-            .overlayGfx = &sRemoraidOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sRemoraidOverlay,
         },
         {
             .species = SPECIES_OCTILLERY,
             .palAddr = &octilleryPal[0],
-            .shinyPalAddr = &octilleryShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &octilleryShinyPal[0],
             .overworldGfx = &sOctilleryOverworld,
-            .overlayGfx = &sOctilleryOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sOctilleryOverlay,
         },
         {
             .species = SPECIES_MANTINE,
             .palAddr = &mantinePal[0],
-            .shinyPalAddr = &mantineShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &mantineShinyPal[0],
             .overworldGfx = &sMantineOverworld,
-            .overlayGfx = &sMantineOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMantineOverlay,
         },
         {
             .species = SPECIES_KINGDRA,
             .palAddr = &kingdraPal[0],
-            .shinyPalAddr = &kingdraShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &kingdraShinyPal[0],
             .overworldGfx = &sKingdraOverworld,
-            .overlayGfx = &sKingdraOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sKingdraOverlay,
         },
         {
             .species = SPECIES_MILTANK,
             .palAddr = &miltankPal[0],
-            .shinyPalAddr = &miltankShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &miltankShinyPal[0],
             .overworldGfx = &sMiltankOverworld,
-            .overlayGfx = &sMiltankOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMiltankOverlay,
         },
         {
             .species = SPECIES_SUICUNE,
             .palAddr = &suicunePal[0],
-            .shinyPalAddr = &suicuneShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &suicuneShinyPal[0],
             .overworldGfx = &sSuicuneOverworld,
-            .overlayGfx = &sSuicuneOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sSuicuneOverlay,
         },
         {
             .species = SPECIES_TYRANITAR,
             .palAddr = &tyranitarPal[0],
-            .shinyPalAddr = &tyranitarShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &tyranitarShinyPal[0],
             .overworldGfx = &sTyranitarOverworld,
-            .overlayGfx = &sTyranitarOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sTyranitarOverlay,
         },
         {
             .species = SPECIES_LUGIA,
             .palAddr = &lugiaPal[0],
-            .shinyPalAddr = &lugiaShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &lugiaShinyPal[0],
             .overworldGfx = &sLugiaOverworld,
-            .overlayGfx = &sLugiaOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLugiaOverlay,
         },
+        /*
+         * =============== HOENN POKEMON
+          NOTE: These are listed in National Dex Order
+          (Not in Internal Order for FRLG/RSE)
+         */
         {
             .species = SPECIES_MUDKIP,
             .palAddr = &mudkipPal[0],
-            .shinyPalAddr = &mudkipShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &mudkipShinyPal[0],
             .overworldGfx = &sMudkipOverworld,
-            .overlayGfx = &sMudkipOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMudkipOverlay,
         },
         {
             .species = SPECIES_MARSHTOMP,
             .palAddr = &marshtompPal[0],
-            .shinyPalAddr = &marshtompShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &marshtompShinyPal[0],
             .overworldGfx = &sMarshtompOverworld,
-            .overlayGfx = &sMarshtompOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMarshtompOverlay,
         },
         {
             .species = SPECIES_SWAMPERT,
@@ -3198,23 +3220,23 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_ZIGZAGOON,
             .palAddr = &zigzagoonPal[0],
-            .shinyPalAddr = &zigzagoonShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &zigzagoonShinyPal[0],
             .overworldGfx = &sZigzagoonOverworld,
-            .overlayGfx = &sZigzagoonOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sZigzagoonOverlay,
         },
         {
             .species = SPECIES_LINOONE,
             .palAddr = &linoonePal[0],
-            .shinyPalAddr = &linooneShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &linooneShinyPal[0],
             .overworldGfx = &sLinooneOverworld,
-            .overlayGfx = &sLinooneOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLinooneOverlay,
         },
         {
             .species = SPECIES_LOTAD,
             .palAddr = &lotadPal[0],
-            .shinyPalAddr = &lotadShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &lotadShinyPal[0],
             .overworldGfx = &sLotadOverworld,
-            .overlayGfx = &sLotadOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLotadOverlay,
         },
         {
             .species = SPECIES_HUNTAIL,
@@ -3226,44 +3248,44 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_LOMBRE,
             .palAddr = &lombrePal[0],
-            .shinyPalAddr = &lombreShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &lombreShinyPal[0],
             .overworldGfx = &sLombreOverworld,
-            .overlayGfx = &sLombreOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLombreOverlay,
         },
         {
             .species = SPECIES_LUDICOLO,
             .palAddr = &ludicoloPal[0],
-            .shinyPalAddr = &ludicoloShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &ludicoloShinyPal[0],
             .overworldGfx = &sLudicoloOverworld,
-            .overlayGfx = &sLudicoloOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sLudicoloOverlay,
         },
         {
             .species = SPECIES_PELIPPER,
             .palAddr = &pelipperPal[0],
-            .shinyPalAddr = &pelipperShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &pelipperShinyPal[0],
             .overworldGfx = &sPelipperOverworld,
-            .overlayGfx = &sPelipperOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sPelipperOverlay,
         },
         {
             .species = SPECIES_EXPLOUD,
             .palAddr = &exploudPal[0],
-            .shinyPalAddr = &exploudShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &exploudShinyPal[0],
             .overworldGfx = &sExploudOverworld,
-            .overlayGfx = &sExploudOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sExploudOverlay,
         },
         {
             .species = SPECIES_MAKUHITA,
             .palAddr = &makuhitaPal[0],
-            .shinyPalAddr = &makuhitaShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &makuhitaShinyPal[0],
             .overworldGfx = &sMakuhitaOverworld,
-            .overlayGfx = &sMakuhitaOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMakuhitaOverlay,
         },
         {
             .species = SPECIES_HARIYAMA,
             .palAddr = &hariyamaPal[0],
-            .shinyPalAddr = &hariyamaShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &hariyamaShinyPal[0],
             .overworldGfx = &sHariyamaOverworld,
-            .overlayGfx = &sHariyamaOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sHariyamaOverlay,
         },
         {
             .species = SPECIES_AZURILL,
@@ -3352,9 +3374,9 @@ const struct RideableMons gSurfablePokemon[] =
         {
             .species = SPECIES_MILOTIC,
             .palAddr = &miloticPal[0],
-            .shinyPalAddr = &miloticShinyPal[0], // or 0 if it doesn't exist
+            .shinyPalAddr = &miloticShinyPal[0],
             .overworldGfx = &sMiloticOverworld,
-            .overlayGfx = &sMiloticOverlay, // or 0 if it doesn't exist
+            .overlayGfx = &sMiloticOverlay,
         },
         {
             .species = SPECIES_SPHEAL,
