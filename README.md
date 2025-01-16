@@ -132,7 +132,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Tyranitar - Complete
 - Lugia - Complete
 
-### Gen 3: 89%
+### Gen 3: 94%
 - Mudkip - Complete
 - Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
@@ -173,7 +173,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 ### Gen 4: 100%
 - Exploud - Complete
 
-### Gen 9: 0%
+### Gen 9: 33%
 - Surskit - Missing
 - Masquerain - Missing
 - Zangoose - Complete (Pokets)
