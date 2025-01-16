@@ -176,7 +176,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 ### Gen 9: 0%
 - Surskit - Missing
 - Masquerain - Missing
-- Zangoose - Missing
+- Zangoose - Complete (Pokets)
 
 ## Pokemon w/ Gen 4-9 Evolutions
 ### Gen 4: 0%
