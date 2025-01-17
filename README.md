@@ -63,8 +63,8 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Squirtle - Complete (emme97)
 - Wartortle - Complete (Avara)
 - Blastoise - Complete (emme97)
-- Pikachu - Complete (Nolo33LP, with some centering by Ansh746)
-- Raichu - Complete (Nolo33LP)
+- Pikachu - Complete ([Nolo33LP](https://x.com/Nolo33LP), with some centering by Ansh746)
+- Raichu - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Nidoqueen - Complete
 - Nidoking  - Complete
 - Psyduck - Complete (ghoulslash)
@@ -111,7 +111,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Feraligatr - Complete
 - Sentret - Complete (gota_csm)
 - Furret - Complete (gota_csm)
-- Pichu - Complete (Nolo33LP)
+- Pichu - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Chinchou - Complete
 - Lanturn - Complete
 - Marill - Complete
@@ -147,27 +147,27 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Azurill - Complete
 - Aggron - Complete
 - Carvanha - [Complete?] Michelle Soto, w/ edits by Jordank
-- Sharpedo - Complete (Pokets)
+- Sharpedo - Complete ([Pokets](https://x.com/pokets3))
 - Wailmer - Complete (Hestia)
-- Wailord - Complete (Pokets)
-- Barboach - Complete (Pokets)
-- Whiscash - Complete (EduarPokeN)
-- Corphish - Complete (EduarPokeN)
-- Crawdaunt - Complete (EduarPokeN)
+- Wailord - Complete ([Pokets](https://x.com/pokets3))
+- Barboach - Complete ([Pokets](https://x.com/pokets3))
+- Whiscash - Complete ([EduarPokeN](https://x.com/EduarPokeN))
+- Corphish - Complete ([EduarPokeN](https://x.com/EduarPokeN))
+- Crawdaunt - Complete ([EduarPokeN](https://x.com/EduarPokeN))
 - Feebas - Missing
 - Milotic - Complete
 - Spheal - Complete (ghoulslash)
 - Sealeo - Complete (ghoulslash)
 - Walrein - Complete (ghoulslash)
-- Clamperl - Complete (Nolo33LP)
-- Huntail - Complete (Nolo33LP)
-- Gorebyss - Complete (Nolo33LP)
-- Relicanth - Complete (Pokets)
+- Clamperl - Complete ([Nolo33LP](https://x.com/Nolo33LP))
+- Huntail - Complete ([Nolo33LP](https://x.com/Nolo33LP))
+- Gorebyss - Complete ([Nolo33LP](https://x.com/Nolo33LP))
+- Relicanth - Complete ([Pokets](https://x.com/pokets3))
 - Luvdisc - Missing
-- Latias - Complete (Nolo33LP)
-- Latios - Complete (Nolo33LP)
+- Latias - Complete ([Nolo33LP](https://x.com/Nolo33LP))
+- Latios - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Kyogre - Complete
-- Rayquaza - Complete (Nolo33LP)
+- Rayquaza - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 
 ## Tradebacks (Receives Surf in a later gen)
 ### Gen 4: 100%
@@ -176,7 +176,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 ### Gen 9: 33%
 - Surskit - Missing
 - Masquerain - Missing
-- Zangoose - Complete (Pokets)
+- Zangoose - Complete ([Pokets](https://x.com/pokets3))
 
 ## Pokemon w/ Gen 4-9 Evolutions
 ### Gen 4: 0%
