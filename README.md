@@ -1,5 +1,5 @@
 # Dynamic surfing overworlds for FR
-## Expansion by Shiny miner, ansh
+## Expansion by Shiny miner, ansh, jordank
 
 **Original thread (by ghoulslash):**
 https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/
