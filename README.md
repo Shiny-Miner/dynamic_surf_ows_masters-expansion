@@ -154,7 +154,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Whiscash - Complete ([EduarPokeN](https://x.com/EduarPokeN))
 - Corphish - Complete ([EduarPokeN](https://x.com/EduarPokeN))
 - Crawdaunt - Complete ([EduarPokeN](https://x.com/EduarPokeN))
-- Feebas - Missing
+- Feebas - Complete ([Pokets](https://x.com/pokets3))
 - Milotic - Complete
 - Spheal - Complete (ghoulslash)
 - Sealeo - Complete (ghoulslash)
