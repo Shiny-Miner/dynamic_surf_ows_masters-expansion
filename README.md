@@ -132,7 +132,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Tyranitar - Complete
 - Lugia - Complete
 
-### Gen 3: 94%
+### Gen 3: 97%
 - Mudkip - Complete
 - Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
