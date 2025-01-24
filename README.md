@@ -132,7 +132,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Tyranitar - Complete
 - Lugia - Complete
 
-### Gen 3: 97%
+### Gen 3: 100%
 - Mudkip - Complete
 - Marshtomp - Complete
 - Swampert - Complete (Zhyruk)
@@ -163,19 +163,19 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Huntail - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Gorebyss - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Relicanth - Complete ([Pokets](https://x.com/pokets3))
-- Luvdisc - Missing
+- Luvdisc - Complete ([Pokets](https://x.com/pokets3))
 - Latias - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Latios - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Kyogre - Complete
 - Rayquaza - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 
 ## Tradebacks (Receives Surf in a later gen)
-### Gen 4: 100%
+### Learns Surf in Gen 4: 100%
 - Exploud - Complete
 
-### Gen 9: 33%
-- Surskit - Missing
-- Masquerain - Missing
+### Learns Surf in Gen 9: 100%
+- Surskit - Complete ([Pokets](https://x.com/pokets3))
+- Masquerain - Complete ([Pokets](https://x.com/pokets3))
 - Zangoose - Complete ([Pokets](https://x.com/pokets3))
 
 ## Pokemon w/ Gen 4-9 Evolutions
