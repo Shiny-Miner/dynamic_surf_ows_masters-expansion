@@ -2050,6 +2050,52 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Pelipper[] = {
 const struct SpriteTemplate sPelipperOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Pelipper, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sPelipperOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Pelipper, UpdateSurfMonOverlay);
 
+//=============== SURSKIT
+extern const u32 surskitTiles[];
+extern const u16 surskitPal[];
+extern const u16 surskitShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Surskit[] = {
+    overworld_frame(&surskitTiles[0], 8, 8, 1),
+    overworld_frame(&surskitTiles[0], 8, 8, 0),
+    overworld_frame(&surskitTiles[0], 8, 8, 3),
+    overworld_frame(&surskitTiles[0], 8, 8, 2),
+    overworld_frame(&surskitTiles[0], 8, 8, 5),
+    overworld_frame(&surskitTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Surskit[] = {
+    overworld_frame(&surskitTiles[0], 8, 8, 7),
+    overworld_frame(&surskitTiles[0], 8, 8, 6),
+    overworld_frame(&surskitTiles[0], 8, 8, 9),
+    overworld_frame(&surskitTiles[0], 8, 8, 8),
+    overworld_frame(&surskitTiles[0], 8, 8, 11),
+    overworld_frame(&surskitTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sSurskitOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Surskit, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sSurskitOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Surskit, UpdateSurfMonOverlay);
+
+//=============== MASQUERAIN
+extern const u32 masquerainTiles[];
+extern const u16 masquerainPal[];
+extern const u16 masquerainShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Masquerain[] = {
+    overworld_frame(&masquerainTiles[0], 8, 8, 1),
+    overworld_frame(&masquerainTiles[0], 8, 8, 0),
+    overworld_frame(&masquerainTiles[0], 8, 8, 3),
+    overworld_frame(&masquerainTiles[0], 8, 8, 2),
+    overworld_frame(&masquerainTiles[0], 8, 8, 5),
+    overworld_frame(&masquerainTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Masquerain[] = {
+    overworld_frame(&masquerainTiles[0], 8, 8, 7),
+    overworld_frame(&masquerainTiles[0], 8, 8, 6),
+    overworld_frame(&masquerainTiles[0], 8, 8, 9),
+    overworld_frame(&masquerainTiles[0], 8, 8, 8),
+    overworld_frame(&masquerainTiles[0], 8, 8, 11),
+    overworld_frame(&masquerainTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sMasquerainOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Masquerain, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sMasquerainOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Masquerain, UpdateSurfMonOverlay);
+
 //=============== EXPLOUD
 extern const u32 exploudTiles[];
 extern const u16 exploudPal[];
@@ -2598,9 +2644,27 @@ const struct SpriteTemplate sRelicanthOverworld = surf_template(PAL_TAG_SURF_NEW
 const struct SpriteTemplate sRelicanthOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Relicanth, UpdateSurfMonOverlay);
 
 //=============== LUVDISC
-//extern const u32 luvdiscTiles[];
-//extern const u16 luvdiscPal[];
-//extern const u16 luvdiscShinyPal[];
+extern const u32 luvdiscTiles[];
+extern const u16 luvdiscPal[];
+extern const u16 luvdiscShinyPal[];
+const struct SpriteFrameImage gSurfingOverworldPicTable_Luvdisc[] = {
+    overworld_frame(&luvdiscTiles[0], 8, 8, 1),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 0),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 3),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 2),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 5),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 4),
+};
+const struct SpriteFrameImage gSurfingOverlayPicTable_Luvdisc[] = {
+    overworld_frame(&luvdiscTiles[0], 8, 8, 7),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 6),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 9),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 8),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 11),
+    overworld_frame(&luvdiscTiles[0], 8, 8, 10),
+};
+const struct SpriteTemplate sLuvdiscOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Luvdisc, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sLuvdiscOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Luvdisc, UpdateSurfMonOverlay);
 
 //=============== LATIAS
 extern const u32 latiasTiles[];
@@ -3292,6 +3356,20 @@ const struct RideableMons gSurfablePokemon[] =
             .overlayGfx = &sExploudOverlay,
         },
         {
+            .species = SPECIES_SURSKIT,
+            .palAddr = &surskitPal[0],
+            .shinyPalAddr = &surskitShinyPal[0],
+            .overworldGfx = &sSurskitOverworld,
+            .overlayGfx = &sSurskitOverlay,
+        },
+        {
+            .species = SPECIES_MASQUERAIN,
+            .palAddr = &masquerainPal[0],
+            .shinyPalAddr = &masquerainShinyPal[0],
+            .overworldGfx = &sMasquerainOverworld,
+            .overlayGfx = &sMasquerainOverlay,
+        },
+        {
             .species = SPECIES_MAKUHITA,
             .palAddr = &makuhitaPal[0],
             .shinyPalAddr = &makuhitaShinyPal[0],
@@ -3447,10 +3525,10 @@ const struct RideableMons gSurfablePokemon[] =
         },
         {
             .species = SPECIES_LUVDISC,
-            .palAddr = 0,
-            .shinyPalAddr = 0,
-            .overworldGfx = sDefaultSurfBlob,
-            .overlayGfx = 0,
+            .palAddr = &luvdiscPal[0],
+            .shinyPalAddr = &luvdiscShinyPal[0],
+            .overworldGfx = &sLuvdiscOverworld,
+            .overlayGfx = &sLuvdiscOverlay,
         },
         {
             .species = SPECIES_LATIAS,
