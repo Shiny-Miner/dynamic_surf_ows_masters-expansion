@@ -1047,27 +1047,24 @@ const struct SpriteTemplate sKabutopsOverlay = surf_template(PAL_TAG_SURF_NEW, g
 extern const u32 snorlaxTiles[];
 extern const u16 snorlaxPal[];
 extern const u16 snorlaxShinyPal[];
-
 const struct SpriteFrameImage gSurfingOverworldPicTable_Snorlax[] = {
-    overworld_frame(&snorlaxTiles[0], 4, 4, 0),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 1),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 2),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 3),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 4),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 5),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 1),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 0),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 3),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 2),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 5),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 4),
 };
-
 const struct SpriteFrameImage gSurfingOverlayPicTable_Snorlax[] = {
-    overworld_frame(&snorlaxTiles[0], 4, 4, 6),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 7),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 8),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 9),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 10),
-    overworld_frame(&snorlaxTiles[0], 4, 4, 11),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 7),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 6),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 9),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 8),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 11),
+    overworld_frame(&snorlaxTiles[0], 8, 8, 10),
 };
-
-const struct SpriteTemplate sSnorlaxOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Snorlax, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSnorlaxOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Snorlax, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSnorlaxOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Snorlax, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sSnorlaxOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Snorlax, UpdateSurfMonOverlay);
 
 //=============== DRATINI
 extern const u32 dratiniTiles[];
