@@ -1790,28 +1790,24 @@ const struct SpriteTemplate sTyranitarOverlay = surf_template(PAL_TAG_SURF_NEW, 
 extern const u32 lugiaTiles[];
 extern const u16 lugiaPal[];
 extern const u16 lugiaShinyPal[];
-
 const struct SpriteFrameImage gSurfingOverworldPicTable_Lugia[] = {
-    overworld_frame(&lugiaTiles[0], 4, 4, 0),
-    overworld_frame(&lugiaTiles[0], 4, 4, 1),
-    overworld_frame(&lugiaTiles[0], 4, 4, 2),
-    overworld_frame(&lugiaTiles[0], 4, 4, 3),
-    overworld_frame(&lugiaTiles[0], 4, 4, 4),
-    overworld_frame(&lugiaTiles[0], 4, 4, 5),
+    overworld_frame(&lugiaTiles[0], 8, 8, 1),
+    overworld_frame(&lugiaTiles[0], 8, 8, 0),
+    overworld_frame(&lugiaTiles[0], 8, 8, 3),
+    overworld_frame(&lugiaTiles[0], 8, 8, 2),
+    overworld_frame(&lugiaTiles[0], 8, 8, 5),
+    overworld_frame(&lugiaTiles[0], 8, 8, 4),
 };
-
 const struct SpriteFrameImage gSurfingOverlayPicTable_Lugia[] = {
-    overworld_frame(&lugiaTiles[0], 4, 4, 6),
-    overworld_frame(&lugiaTiles[0], 4, 4, 7),
-    overworld_frame(&lugiaTiles[0], 4, 4, 8),
-    overworld_frame(&lugiaTiles[0], 4, 4, 9),
-    overworld_frame(&lugiaTiles[0], 4, 4, 10),
-    overworld_frame(&lugiaTiles[0], 4, 4, 11),
+    overworld_frame(&lugiaTiles[0], 8, 8, 7),
+    overworld_frame(&lugiaTiles[0], 8, 8, 6),
+    overworld_frame(&lugiaTiles[0], 8, 8, 9),
+    overworld_frame(&lugiaTiles[0], 8, 8, 8),
+    overworld_frame(&lugiaTiles[0], 8, 8, 11),
+    overworld_frame(&lugiaTiles[0], 8, 8, 10),
 };
-
-const struct SpriteTemplate sLugiaOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lugia, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sLugiaOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lugia, UpdateSurfMonOverlay);
-
+const struct SpriteTemplate sLugiaOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lugia, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sLugiaOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lugia, UpdateSurfMonOverlay);
 
 /*==============================
 GEN III
