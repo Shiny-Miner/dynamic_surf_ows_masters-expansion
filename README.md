@@ -128,7 +128,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Miltank - Complete
 - Suicune - Complete
 - Tyranitar - Complete
-- Lugia - Complete
+- Lugia - Complete (Jordank)
 
 ### Gen 3: 100%
 - Mudkip - Complete
