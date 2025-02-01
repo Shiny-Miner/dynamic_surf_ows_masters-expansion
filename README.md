@@ -143,7 +143,6 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Makuhita - Complete
 - Hariyama - Complete
 - Azurill - Complete
-- Lairon - Complete
 - Aggron - Complete
 - Carvanha - [Complete?] Michelle Soto, w/ edits by Jordank
 - Sharpedo - Complete ([Pokets](https://x.com/pokets3))
