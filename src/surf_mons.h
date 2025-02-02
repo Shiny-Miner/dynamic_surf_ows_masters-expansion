@@ -1064,35 +1064,47 @@ const struct SpriteFrameImage gSurfingOverworldPicTable_Snorlax[] = {
     overworld_frame(&snorlaxTiles[0], 8, 8, 6), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 7), // Bob Down
 
-    // Facing East/West
+    // Facing East
     overworld_frame(&snorlaxTiles[0], 8, 8, 8),  // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 9),  // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 10), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 11), // Bob Down
-};
 
-const struct SpriteFrameImage gSurfingOverlayPicTable_Snorlax[] = {
-    // Facing North
+    // Facing West
     overworld_frame(&snorlaxTiles[0], 8, 8, 12), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 13), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 14), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 15), // Bob Down
+};
 
-    // Facing South
+const struct SpriteFrameImage gSurfingOverlayPicTable_Snorlax[] = {
+    // Facing North
     overworld_frame(&snorlaxTiles[0], 8, 8, 16), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 17), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 18), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 19), // Bob Down
 
-    // Facing East/West
+    // Facing South
     overworld_frame(&snorlaxTiles[0], 8, 8, 20), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 21), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 22), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 23), // Bob Down
+
+    // Facing East
+    overworld_frame(&snorlaxTiles[0], 8, 8, 24), // Bob Up
+    overworld_frame(&snorlaxTiles[0], 8, 8, 25), // Bob Down
+    overworld_frame(&snorlaxTiles[0], 8, 8, 26), // Bob Down
+    overworld_frame(&snorlaxTiles[0], 8, 8, 27), // Bob Down
+
+    // Facing West
+    overworld_frame(&snorlaxTiles[0], 8, 8, 28), // Bob Up
+    overworld_frame(&snorlaxTiles[0], 8, 8, 29), // Bob Down
+    overworld_frame(&snorlaxTiles[0], 8, 8, 30), // Bob Down
+    overworld_frame(&snorlaxTiles[0], 8, 8, 31), // Bob Down
 };
 
-const struct SpriteTemplate sSnorlaxOverworld = surf_template3_64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Snorlax, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sSnorlaxOverlay = surf_template3_64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Snorlax, UpdateSurfMonOverlay);
+const struct SpriteTemplate sSnorlaxOverworld = surf_template4_64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Snorlax, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sSnorlaxOverlay = surf_template4_64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Snorlax, UpdateSurfMonOverlay);
 
 //=============== DRATINI
 extern const u32 dratiniTiles[];
