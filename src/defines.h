@@ -142,3 +142,22 @@ static const union AnimCmd *const sSurfablePokemonAnimTable3[] =
   SurfMonSmootherAnim_FaceWest,
   SurfMonSmootherAnim_FaceEast,
 };
+
+// Four frame animation with separate east and west facing frames
+
+static const union AnimCmd SurfMonSmootherAnim_FaceEastUnique[] =
+{
+  ANIMCMD_FRAME(12,  24),
+  ANIMCMD_FRAME(13,  24),
+  ANIMCMD_FRAME(14, 24),
+  ANIMCMD_FRAME(15, 24),
+  ANIMCMD_JUMP(0)
+}; 
+
+static const union AnimCmd *const sSurfablePokemonAnimTable4[] =
+{
+  SurfMonSmootherAnim_FaceSouth,
+  SurfMonSmootherAnim_FaceNorth,
+  SurfMonSmootherAnim_FaceWest,
+  SurfMonSmootherAnim_FaceEastUnique,
+};

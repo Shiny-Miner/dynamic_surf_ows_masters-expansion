@@ -29,6 +29,10 @@
 #define surf_template3(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable3, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 #define surf_template3_64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = sSurfablePokemonAnimTable3, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
 
+// Surf Template 4 - Four frames per direction + unique east and west facing frames 32x32 64x64
+#define surf_template4(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gEventObjectBaseOam_32x32, .anims = gSurfablePokemonAnimTable4, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+#define surf_template4_64x64(tag, image, cb) {.tileTag = 0xFFFF, .paletteTag = tag, .oam = gObjectEventBaseOam_64x64, .anims = sSurfablePokemonAnimTable4, .images = image, .affineAnims = gDummySpriteAffineAnimTable, .callback = cb}
+
 extern s32 gFieldEffectArguments[8];
 extern void UpdateSurfMonOverlay(struct Sprite *sprite);
 
