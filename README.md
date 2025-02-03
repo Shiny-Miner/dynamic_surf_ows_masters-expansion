@@ -212,7 +212,9 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 
 ## How To Compile:
 
-1. add `rom.gba` to the main directory
+0. Ensure that you have Pokemon - Fire Red v1.0 (aka `1636 - Pokemon Fire Red (U)(Squirrels).gba`). If you're unsure, you can [verify](https://emn178.github.io/online-tools/md5_checksum.html) the md5sum of your ROM, which should match `e26ee0d44e809351c8ce2d73c7400cdd`
+
+1. Rename your ROM to `rom.gba`, and add it to the root directory of this project
 
 2. open `scripts/make.py` and modify `OFFSET_TO_PUT` to wherever you'd like to insert this code, as well as `SEARCH_FREE_SPACE` to `True` if you'd like to search for free space from said offset.
 
