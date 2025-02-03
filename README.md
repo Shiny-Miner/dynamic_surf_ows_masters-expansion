@@ -82,7 +82,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 
 ### Michelle Soto
 - Carvanha
-  - Raft editing by [Jordank](https://github.com/jmynes/dynamic_surf_ows_masters-expansion)
+- Made the raft used by several smaller Pokemon
 
 ### [Nolo33LP](https://x.com/Nolo33LP)
 - Pichu, Pikachu, Raichu
@@ -90,9 +90,10 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Latias, Latios
 - Rayquaza
 
-### ([EduarPokeN](https://x.com/EduarPokeN))
+### [EduarPokeN](https://x.com/EduarPokeN)
 - Whiscash
 - Corphish, Crawdaunt
+- Improved the Raft used by several smaller Pokemon
 
 ### [Pokets](https://x.com/pokets3)
 - Snorlax
@@ -204,7 +205,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Hariyama - Complete
 - Azurill - Complete
 - Aggron - Complete
-- Carvanha - [Complete?] Michelle Soto, w/ edits by Jordank
+- Carvanha - [Complete?] Michelle Soto
 - Sharpedo - Complete ([Pokets](https://x.com/pokets3))
 - Wailmer - Complete (Hestia)
 - Wailord - Complete ([Pokets](https://x.com/pokets3))
