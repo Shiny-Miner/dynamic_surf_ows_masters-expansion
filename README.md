@@ -101,6 +101,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
   - Snoring, and 4-frame animation adjustment by [Jordank](https://github.com/jmynes/dynamic_surf_ows_masters-expansion)
 - Sharpedo
 - Wailord
+- Barboach
 - Feebas
 - Relicanth
 - Luvdisc
