@@ -55,13 +55,67 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 
 ---
 
+# Credits:
+## History Lesson
+Here's a fun infographic, provided by AsparagusEduardo in the [Team Aqua Asset Repo](https://github.com/Pawkkie/Team-Aquas-Asset-Repo)'s [Discord server](https://discord.gg/hX3a63RYzZ):
+![Chart showing the history of development for this project, starting with Slawter666's project for early pret/pokeemerald. This split into Ghoulslash's binary Fire Red version of the project, continued by Shiny-Miner, Ansh, and Jordank, and into surskitty's port to pokeemerald-expansion, which was continued by grunt-lucas and wally-217](history.png)
+
+## Legacy Sprites
+Various artists contributed edited sprites [Gen 1](https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/26794/), [Gen 2](https://www.spriters-resource.com/fullview/26795/), and [Gen 3](https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/26795/) from the Following Pokemon feature of Heart Gold and Soul Silver. Please let me know if you've contributed, and would like specific credit for specific Pokemon; This is rabbit hole to unravel, but here are the names we could verify:
+- [Ghoulslash](https://github.com/ghoulslash/dynamic_surf_ows)
+- [grunt-lucas](https://github.com/grunt-lucas/pokeemerald-expansion/tree/surfable/graphics/object_events/pics/pokemon/surfable)
+- gota_csm
+- [Slawter666](https://github.com/Slawter666/pokeemerald/blob/surfable/graphics/event_objects/pics/pokemon/surfable/080_slowbro.png)
+- [Surskitty](https://github.com/surskitty/pokeemerald/tree/surfable/graphics/object_events/pics/pokemon/surfable)
+- [wally-217](https://github.com/zacwalton/pokeemerald-expansion/tree/master/graphics/object_events/pics/pokemon/surfable)
+
+## Modern Sprites
+Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/Jordank version of this project (the repo you're reading currently)
+
+### [Avara](https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/)
+- Wartortle, Tentacool, Tentacruel
+
+### [eMMe97](https://www.pokecommunity.com/threads/fire-red-dynamic-surf-overworlds.420665/)
+- Squirtle, Blastoise
+
+### Hestia
+- Wailmer
+
+### Michelle Soto
+- Carvanha
+  - Raft editing by Jordank
+
+### [Nolo33LP](https://x.com/Nolo33LP)
+- Pichu, Pikachu, Raichu
+- Clamperl, Huntail, Gorebyss
+- Latias, Latios
+- Rayquaza
+
+### ([EduarPokeN](https://x.com/EduarPokeN))
+- Whiscash
+- Corphish, Crawdaunt
+
+### [Pokets](https://x.com/pokets3)
+- Snorlax
+  - Snoring, and 4-frame animation adjustment by Jordank
+- Sharpedo
+- Wailord
+- Feebas
+- Relicanth
+- Luvdisc
+- Surskit, Masquerain
+- Zangoose
+
+### Zhyruk
+- Swampert
+
 # Completed Pokemon
 ## Spriting Progress:
 ### Gen 1: 100%
-- Squirtle - Complete (emme97)
+- Squirtle - Complete (eMMe97)
 - Wartortle - Complete (Avara)
-- Blastoise - Complete (emme97)
-- Pikachu - Complete ([Nolo33LP](https://x.com/Nolo33LP), with some centering by Ansh746)
+- Blastoise - Complete (eMMe97)
+- Pikachu - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Raichu - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Nidoqueen - Complete
 - Nidoking  - Complete
