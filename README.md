@@ -81,6 +81,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Wailmer
 
 ### Michelle Soto
+- Dratini
 - Carvanha
 - Made the raft used by several smaller Pokemon
 
