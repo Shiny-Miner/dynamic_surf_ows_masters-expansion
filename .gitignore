@@ -15,3 +15,4 @@ generatedrepoints
 *__pycache__
 graphics/*.h
 graphics/shiny/*.h
+test.sav
