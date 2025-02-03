@@ -1062,6 +1062,8 @@ const struct SpriteTemplate sKabutopsOverworld = surf_template(PAL_TAG_SURF_NEW,
 const struct SpriteTemplate sKabutopsOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kabutops, UpdateSurfMonOverlay);
 
 //=============== SNORLAX
+// NOTE: Supports unique left/right sprites!
+// NOTE: Supports 4-frame animations!
 extern const u32 snorlaxTiles[];
 extern const u16 snorlaxPal[];
 extern const u16 snorlaxShinyPal[];
