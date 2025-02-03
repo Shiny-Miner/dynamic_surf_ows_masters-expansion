@@ -97,7 +97,7 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 - Omastar - Complete
 - Kabuto - Complete
 - Kabutops - Complete
-- Snorlax - Complete ([Pokets](https://x.com/pokets3))
+- Snorlax - Complete ([Pokets](https://x.com/pokets3)), with Snoring efforts from Jordank
 - Dratini - Complete (michelle soto)
 - Dragonair - Complete
 - Dragonite - Complete
