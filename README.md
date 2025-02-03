@@ -64,7 +64,6 @@ Here's a fun infographic, provided by AsparagusEduardo in the [Team Aqua Asset R
 Various artists contributed edited sprites [Gen 1](https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/26794/), [Gen 2](https://www.spriters-resource.com/fullview/26795/), and [Gen 3](https://www.spriters-resource.com/ds_dsi/pokemonheartgoldsoulsilver/sheet/26795/) from the Following Pokemon feature of Heart Gold and Soul Silver. Please let me know if you've contributed, and would like specific credit for specific Pokemon; This is rabbit hole to unravel, but here are the names we could verify:
 - [Ghoulslash](https://github.com/ghoulslash/dynamic_surf_ows)
 - [grunt-lucas](https://github.com/grunt-lucas/pokeemerald-expansion/tree/surfable/graphics/object_events/pics/pokemon/surfable)
-- gota_csm
 - [Slawter666](https://github.com/Slawter666/pokeemerald/blob/surfable/graphics/event_objects/pics/pokemon/surfable/080_slowbro.png)
 - [Surskitty](https://github.com/surskitty/pokeemerald/tree/surfable/graphics/object_events/pics/pokemon/surfable)
 - [wally-217](https://github.com/zacwalton/pokeemerald-expansion/tree/master/graphics/object_events/pics/pokemon/surfable)
@@ -83,7 +82,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 
 ### Michelle Soto
 - Carvanha
-  - Raft editing by Jordank
+  - Raft editing by [Jordank](https://github.com/jmynes/dynamic_surf_ows_masters-expansion)
 
 ### [Nolo33LP](https://x.com/Nolo33LP)
 - Pichu, Pikachu, Raichu
@@ -97,7 +96,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 
 ### [Pokets](https://x.com/pokets3)
 - Snorlax
-  - Snoring, and 4-frame animation adjustment by Jordank
+  - Snoring, and 4-frame animation adjustment by [Jordank](https://github.com/jmynes/dynamic_surf_ows_masters-expansion)
 - Sharpedo
 - Wailord
 - Feebas
@@ -106,8 +105,15 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Surskit, Masquerain
 - Zangoose
 
-### Zhyruk
+## Edited HGSS Sprites (such as posture/redrawn parts)
+### Surskitty
+- Nidoking, Nidoqueen
+- Kangaskhan
+- Quagsire
 - Swampert
+
+# [wally-217](https://github.com/zacwalton/pokeemerald-expansion/tree/master/graphics/object_events/pics/pokemon/surfable)
+- Lickitung
 
 # Completed Pokemon
 ## Spriting Progress:
@@ -187,7 +193,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 ### Gen 3: 100%
 - Mudkip - Complete
 - Marshtomp - Complete
-- Swampert - Complete (Zhyruk)
+- Swampert - Complete
 - Zigzagoon - Complete
 - Linoone - Complete
 - Lotad - Complete
