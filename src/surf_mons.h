@@ -84,20 +84,20 @@ extern const u32 wartortleTiles[];
 extern const u16 wartortlePal[];
 extern const u16 wartortleShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Wartortle[] = {
-    overworld_frame(&wartortleTiles[0], 4, 4, 1),
     overworld_frame(&wartortleTiles[0], 4, 4, 0),
-    overworld_frame(&wartortleTiles[0], 4, 4, 3),
+    overworld_frame(&wartortleTiles[0], 4, 4, 1),
     overworld_frame(&wartortleTiles[0], 4, 4, 2),
-    overworld_frame(&wartortleTiles[0], 4, 4, 5),
+    overworld_frame(&wartortleTiles[0], 4, 4, 3),
     overworld_frame(&wartortleTiles[0], 4, 4, 4),
+    overworld_frame(&wartortleTiles[0], 4, 4, 5),
 };
 const struct SpriteFrameImage gSurfingOverlayPicTable_Wartortle[] = {
-    overworld_frame(&wartortleTiles[0], 4, 4, 7),
     overworld_frame(&wartortleTiles[0], 4, 4, 6),
-    overworld_frame(&wartortleTiles[0], 4, 4, 9),
+    overworld_frame(&wartortleTiles[0], 4, 4, 7),
     overworld_frame(&wartortleTiles[0], 4, 4, 8),
-    overworld_frame(&wartortleTiles[0], 4, 4, 11),
+    overworld_frame(&wartortleTiles[0], 4, 4, 9),
     overworld_frame(&wartortleTiles[0], 4, 4, 10),
+    overworld_frame(&wartortleTiles[0], 4, 4, 11),
 };
 const struct SpriteTemplate sWartortleOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wartortle, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sWartortleOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wartortle, UpdateSurfMonOverlay);
