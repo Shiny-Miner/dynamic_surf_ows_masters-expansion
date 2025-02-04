@@ -342,24 +342,34 @@ extern const u32 golduckTiles[];
 extern const u16 golduckPal[];
 extern const u16 golduckShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Golduck[] = {
-    overworld_frame(&golduckTiles[0], 4, 4, 0),
-    overworld_frame(&golduckTiles[0], 4, 4, 1),
-    overworld_frame(&golduckTiles[0], 4, 4, 2),
-    overworld_frame(&golduckTiles[0], 4, 4, 3),
-    overworld_frame(&golduckTiles[0], 4, 4, 4),
-    overworld_frame(&golduckTiles[0], 4, 4, 5),
+    // Facing South
+    overworld_frame(&golduckTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&golduckTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&golduckTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&golduckTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&golduckTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&golduckTiles[0], 4, 4, 5), // Bob Down
 };
 const struct SpriteFrameImage gSurfingOverlayPicTable_Golduck[] = {
-    overworld_frame(&golduckTiles[0], 4, 4, 6),
-    overworld_frame(&golduckTiles[0], 4, 4, 7),
-    overworld_frame(&golduckTiles[0], 4, 4, 8),
-    overworld_frame(&golduckTiles[0], 4, 4, 9),
-    overworld_frame(&golduckTiles[0], 4, 4, 10),
-    overworld_frame(&golduckTiles[0], 4, 4, 11),
+    // Facing South
+    overworld_frame(&golduckTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&golduckTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&golduckTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&golduckTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&golduckTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&golduckTiles[0], 4, 4, 11), // Bob Down
 };
+
 const struct SpriteTemplate sGolduckOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Golduck, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sGolduckOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Golduck, UpdateSurfMonOverlay);
-
 
 //=============== POLIWAG
 extern const u32 poliwagTiles[];
