@@ -47,7 +47,9 @@ In the case of Kingler, it has an asymmetric sprite, with one larger claw. Mirro
 
 1. Verify that each Pokemon has a matching Shiny sprite
 
-2. Try to identify any missing credits via pokecommunity thread (or old repo), if possible
+2. Continue normalizing sprite order ([0-1] ..  [7-8]), rather than ([1-0] .. [8-7])
+
+3. Fix template, old, and alt sprites, in accordance with #2
 
 3. Test all sprites in-engine (see Tha Code Mining Hub's #surf-overworlds-expansion channel, and "Checking in-game" thread)
 
@@ -87,6 +89,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 
 ### [Nolo33LP](https://x.com/Nolo33LP)
 - Pichu, Pikachu, Raichu
+  - Additional editing by Jordank
 - Clamperl, Huntail, Gorebyss
 - Latias, Latios
 - Rayquaza
