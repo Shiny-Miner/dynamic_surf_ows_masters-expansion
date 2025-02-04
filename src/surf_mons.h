@@ -156,24 +156,35 @@ const struct SpriteTemplate sBlastoiseOverworld = surf_template(PAL_TAG_SURF_NEW
 const struct SpriteTemplate sBlastoiseOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Blastoise, UpdateSurfMonOverlay);
 
 //=============== PIKACHU
+// NOTE: Large, 64x64 Sprite
 extern const u32 pikachuTiles[];
 extern const u16 pikachuPal[];
 extern const u16 pikachuShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Pikachu[] = {
-    overworld_frame(&pikachuTiles[0], 8, 8, 1),
-    overworld_frame(&pikachuTiles[0], 8, 8, 0),
-    overworld_frame(&pikachuTiles[0], 8, 8, 3),
-    overworld_frame(&pikachuTiles[0], 8, 8, 2),
-    overworld_frame(&pikachuTiles[0], 8, 8, 5),
-    overworld_frame(&pikachuTiles[0], 8, 8, 4),
+    // Facing South
+    overworld_frame(&pikachuTiles[0], 8, 8, 0), // Bob Up
+    overworld_frame(&pikachuTiles[0], 8, 8, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&pikachuTiles[0], 8, 8, 2), // Bob Up
+    overworld_frame(&pikachuTiles[0], 8, 8, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&pikachuTiles[0], 8, 8, 4), // Bob Up
+    overworld_frame(&pikachuTiles[0], 8, 8, 5), // Bob Down
 };
 const struct SpriteFrameImage gSurfingOverlayPicTable_Pikachu[] = {
-    overworld_frame(&pikachuTiles[0], 8, 8, 7),
-    overworld_frame(&pikachuTiles[0], 8, 8, 6),
-    overworld_frame(&pikachuTiles[0], 8, 8, 9),
-    overworld_frame(&pikachuTiles[0], 8, 8, 8),
-    overworld_frame(&pikachuTiles[0], 8, 8, 11),
-    overworld_frame(&pikachuTiles[0], 8, 8, 10),
+    // Facing South
+    overworld_frame(&pikachuTiles[0], 8, 8, 6), // Bob Up
+    overworld_frame(&pikachuTiles[0], 8, 8, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&pikachuTiles[0], 8, 8, 8), // Bob Up
+    overworld_frame(&pikachuTiles[0], 8, 8, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&pikachuTiles[0], 8, 8, 10), // Bob Up
+    overworld_frame(&pikachuTiles[0], 8, 8, 11), // Bob Down
 };
 const struct SpriteTemplate sPikachuOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Pikachu, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sPikachuOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Pikachu, UpdateSurfMonOverlay);
@@ -1092,6 +1103,7 @@ const struct SpriteTemplate sKabutopsOverworld = surf_template(PAL_TAG_SURF_NEW,
 const struct SpriteTemplate sKabutopsOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kabutops, UpdateSurfMonOverlay);
 
 //=============== SNORLAX
+// NOTE: Large, 64x64 Sprite
 // NOTE: Supports unique left/right sprites!
 // NOTE: Supports 4-frame animations!
 extern const u32 snorlaxTiles[];
