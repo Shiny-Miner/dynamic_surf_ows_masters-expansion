@@ -60,20 +60,20 @@ extern const u32 squirtleTiles[];
 extern const u16 squirtlePal[];
 extern const u16 squirtleShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Squirtle[] = {
-    overworld_frame(&squirtleTiles[0], 4, 4, 1),
     overworld_frame(&squirtleTiles[0], 4, 4, 0),
-    overworld_frame(&squirtleTiles[0], 4, 4, 3),
+    overworld_frame(&squirtleTiles[0], 4, 4, 1),
     overworld_frame(&squirtleTiles[0], 4, 4, 2),
-    overworld_frame(&squirtleTiles[0], 4, 4, 5),
+    overworld_frame(&squirtleTiles[0], 4, 4, 3),
     overworld_frame(&squirtleTiles[0], 4, 4, 4),
+    overworld_frame(&squirtleTiles[0], 4, 4, 5),
 };
 const struct SpriteFrameImage gSurfingOverlayPicTable_Squirtle[] = {
-    overworld_frame(&squirtleTiles[0], 4, 4, 7),
     overworld_frame(&squirtleTiles[0], 4, 4, 6),
-    overworld_frame(&squirtleTiles[0], 4, 4, 9),
+    overworld_frame(&squirtleTiles[0], 4, 4, 7),
     overworld_frame(&squirtleTiles[0], 4, 4, 8),
-    overworld_frame(&squirtleTiles[0], 4, 4, 11),
+    overworld_frame(&squirtleTiles[0], 4, 4, 9),
     overworld_frame(&squirtleTiles[0], 4, 4, 10),
+    overworld_frame(&squirtleTiles[0], 4, 4, 11),
 };
 const struct SpriteTemplate sSquirtleOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Squirtle, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sSquirtleOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Squirtle, UpdateSurfMonOverlay);
