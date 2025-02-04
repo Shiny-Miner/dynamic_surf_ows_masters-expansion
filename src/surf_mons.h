@@ -60,21 +60,30 @@ extern const u32 squirtleTiles[];
 extern const u16 squirtlePal[];
 extern const u16 squirtleShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Squirtle[] = {
-    //
+    // Facing South
     overworld_frame(&squirtleTiles[0], 4, 4, 0), // Bob Up
-    overworld_frame(&squirtleTiles[0], 4, 4, 1),
-    overworld_frame(&squirtleTiles[0], 4, 4, 2),
-    overworld_frame(&squirtleTiles[0], 4, 4, 3),
-    overworld_frame(&squirtleTiles[0], 4, 4, 4),
-    overworld_frame(&squirtleTiles[0], 4, 4, 5),
+    overworld_frame(&squirtleTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&squirtleTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&squirtleTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&squirtleTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&squirtleTiles[0], 4, 4, 5), // Bob Down
 };
 const struct SpriteFrameImage gSurfingOverlayPicTable_Squirtle[] = {
-    overworld_frame(&squirtleTiles[0], 4, 4, 6),
-    overworld_frame(&squirtleTiles[0], 4, 4, 7),
-    overworld_frame(&squirtleTiles[0], 4, 4, 8),
-    overworld_frame(&squirtleTiles[0], 4, 4, 9),
-    overworld_frame(&squirtleTiles[0], 4, 4, 10),
-    overworld_frame(&squirtleTiles[0], 4, 4, 11),
+    // Facing South
+    overworld_frame(&squirtleTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&squirtleTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&squirtleTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&squirtleTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&squirtleTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&squirtleTiles[0], 4, 4, 11), // Bob Down
 };
 const struct SpriteTemplate sSquirtleOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Squirtle, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sSquirtleOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Squirtle, UpdateSurfMonOverlay);
@@ -85,20 +94,30 @@ extern const u32 wartortleTiles[];
 extern const u16 wartortlePal[];
 extern const u16 wartortleShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Wartortle[] = {
+    // Facing South
     overworld_frame(&wartortleTiles[0], 4, 4, 0), // Bob Up
-    overworld_frame(&wartortleTiles[0], 4, 4, 1),
-    overworld_frame(&wartortleTiles[0], 4, 4, 2),
-    overworld_frame(&wartortleTiles[0], 4, 4, 3),
-    overworld_frame(&wartortleTiles[0], 4, 4, 4),
-    overworld_frame(&wartortleTiles[0], 4, 4, 5),
+    overworld_frame(&wartortleTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&wartortleTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&wartortleTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&wartortleTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&wartortleTiles[0], 4, 4, 5), // Bob Down
 };
 const struct SpriteFrameImage gSurfingOverlayPicTable_Wartortle[] = {
-    overworld_frame(&wartortleTiles[0], 4, 4, 6),
-    overworld_frame(&wartortleTiles[0], 4, 4, 7),
-    overworld_frame(&wartortleTiles[0], 4, 4, 8),
-    overworld_frame(&wartortleTiles[0], 4, 4, 9),
-    overworld_frame(&wartortleTiles[0], 4, 4, 10),
-    overworld_frame(&wartortleTiles[0], 4, 4, 11),
+    // Facing South
+    overworld_frame(&wartortleTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&wartortleTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&wartortleTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&wartortleTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&wartortleTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&wartortleTiles[0], 4, 4, 11), // Bob Down
 };
 const struct SpriteTemplate sWartortleOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wartortle, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sWartortleOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wartortle, UpdateSurfMonOverlay);
