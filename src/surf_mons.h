@@ -1398,25 +1398,25 @@ extern const u32 snorlaxTiles[];
 extern const u16 snorlaxPal[];
 extern const u16 snorlaxShinyPal[];
 const struct SpriteFrameImage gSurfingOverworldPicTable_Snorlax[] = {
-    // Facing North
+    // Facing South
     overworld_frame(&snorlaxTiles[0], 8, 8, 0), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 1), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 2), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 3), // Bob Down
 
-    // Facing South
+    // Facing North
     overworld_frame(&snorlaxTiles[0], 8, 8, 4), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 5), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 6), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 7), // Bob Down
 
-    // Facing East
+    // Facing West
     overworld_frame(&snorlaxTiles[0], 8, 8, 8),  // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 9),  // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 10), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 11), // Bob Down
 
-    // Facing West
+    // Facing East
     overworld_frame(&snorlaxTiles[0], 8, 8, 12), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 13), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 14), // Bob Down
@@ -1424,25 +1424,25 @@ const struct SpriteFrameImage gSurfingOverworldPicTable_Snorlax[] = {
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Snorlax[] = {
-    // Facing North
+    // Facing South
     overworld_frame(&snorlaxTiles[0], 8, 8, 16), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 17), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 18), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 19), // Bob Down
 
-    // Facing South
+    // Facing North
     overworld_frame(&snorlaxTiles[0], 8, 8, 20), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 21), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 22), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 23), // Bob Down
 
-    // Facing East
+    // Facing West
     overworld_frame(&snorlaxTiles[0], 8, 8, 24), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 25), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 26), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 27), // Bob Down
 
-    // Facing West
+    // Facing East
     overworld_frame(&snorlaxTiles[0], 8, 8, 28), // Bob Up
     overworld_frame(&snorlaxTiles[0], 8, 8, 29), // Bob Down
     overworld_frame(&snorlaxTiles[0], 8, 8, 30), // Bob Down
