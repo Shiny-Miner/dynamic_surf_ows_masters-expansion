@@ -749,37 +749,37 @@ extern const u16 kinglerPal[];
 extern const u16 kinglerShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Kingler[] = {
-    // Facing East
+    // Facing South
     overworld_frame(&kinglerTiles[0], 4, 4, 0),
     overworld_frame(&kinglerTiles[0], 4, 4, 1),
 
-    // Facing West
+    // Facing North
     overworld_frame(&kinglerTiles[0], 4, 4, 2),
     overworld_frame(&kinglerTiles[0], 4, 4, 3),
 
-    // Facing South
+    // Facing West
     overworld_frame(&kinglerTiles[0], 4, 4, 4),
     overworld_frame(&kinglerTiles[0], 4, 4, 5),
 
-    // Facing North
+    // Facing East
     overworld_frame(&kinglerTiles[0], 4, 4, 6),
     overworld_frame(&kinglerTiles[0], 4, 4, 7),
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Kingler[] = {
-    // Facing East
+    // Facing South
     overworld_frame(&kinglerTiles[0], 4, 4, 8),
     overworld_frame(&kinglerTiles[0], 4, 4, 9),
 
-    // Facing West
+    // Facing North
     overworld_frame(&kinglerTiles[0], 4, 4, 10),
     overworld_frame(&kinglerTiles[0], 4, 4, 11),
 
-    // Facing South
+    // Facing West
     overworld_frame(&kinglerTiles[0], 4, 4, 12),
     overworld_frame(&kinglerTiles[0], 4, 4, 13),
 
-    // Facing North
+    // Facing East
     overworld_frame(&kinglerTiles[0], 4, 4, 14),
     overworld_frame(&kinglerTiles[0], 4, 4, 15),
 };
