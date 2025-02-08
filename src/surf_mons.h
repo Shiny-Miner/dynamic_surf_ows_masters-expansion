@@ -424,21 +424,31 @@ extern const u16 poliwhirlPal[];
 extern const u16 poliwhirlShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Poliwhirl[] = {
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 1),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 0),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 3),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 2),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 5),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 4),
+    // Facing South
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Poliwhirl[] = {
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 7),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 6),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 9),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 8),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 11),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 10),
+    // Facing South
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&poliwhirlTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sPoliwhirlOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Poliwhirl, UpdateSurfBlobFieldEffect);
@@ -450,21 +460,31 @@ extern const u16 poliwrathPal[];
 extern const u16 poliwrathShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Poliwrath[] = {
-    overworld_frame(&poliwrathTiles[0], 4, 4, 1),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 0),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 3),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 2),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 5),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 4),
+    // Facing South
+    overworld_frame(&poliwrathTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&poliwrathTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&poliwrathTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&poliwrathTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&poliwrathTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&poliwrathTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Poliwrath[] = {
-    overworld_frame(&poliwrathTiles[0], 4, 4, 7),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 6),
-    overworld_frame(&poliwhirlTiles[0], 4, 4, 9),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 8),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 11),
-    overworld_frame(&poliwrathTiles[0], 4, 4, 10),
+    // Facing South
+    overworld_frame(&poliwrathTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&poliwrathTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&poliwrathTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&poliwrathTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&poliwrathTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&poliwrathTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sPoliwrathOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Poliwrath, UpdateSurfBlobFieldEffect);
