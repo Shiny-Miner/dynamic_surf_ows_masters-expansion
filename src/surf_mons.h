@@ -674,22 +674,33 @@ const struct SpriteTemplate sSeelOverlay = surf_template(PAL_TAG_SURF_NEW, gSurf
 extern const u32 dewgongTiles[];
 extern const u16 dewgongPal[];
 extern const u16 dewgongShinyPal[];
+
 const struct SpriteFrameImage gSurfingOverworldPicTable_Dewgong[] = {
-    overworld_frame(&dewgongTiles[0], 4, 4, 1),
-    overworld_frame(&dewgongTiles[0], 4, 4, 0),
-    overworld_frame(&dewgongTiles[0], 4, 4, 3),
-    overworld_frame(&dewgongTiles[0], 4, 4, 2),
-    overworld_frame(&dewgongTiles[0], 4, 4, 5),
-    overworld_frame(&dewgongTiles[0], 4, 4, 4),
+    // Facing South
+    overworld_frame(&dewgongTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&dewgongTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&dewgongTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&dewgongTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&dewgongTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&dewgongTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Dewgong[] = {
-    overworld_frame(&dewgongTiles[0], 4, 4, 7),
-    overworld_frame(&dewgongTiles[0], 4, 4, 6),
-    overworld_frame(&dewgongTiles[0], 4, 4, 9),
-    overworld_frame(&dewgongTiles[0], 4, 4, 8),
-    overworld_frame(&dewgongTiles[0], 4, 4, 11),
-    overworld_frame(&dewgongTiles[0], 4, 4, 10),
+    // Facing South
+    overworld_frame(&dewgongTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&dewgongTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&dewgongTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&dewgongTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&dewgongTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&dewgongTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sDewgongOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Dewgong, UpdateSurfBlobFieldEffect);
