@@ -136,57 +136,65 @@ h2vLayout = {
     ]
 }
 
+def display_main_menu(frame_size: int) -> None:
+    """Prints the main conversion menu."""
+    print(f"Choose conversion method [{frame_size}x{frame_size}px frames]:")
+    print("1. Invert Frames [Vertical]")
+    print("2. Convert Vertical to Horizontal layout")
+    print("3. Convert Horizontal to Vertical layout")
+    if frame_size == 32:
+        print("4. Switch to 64x64px frames")
+    else:
+        print("4. Switch to 32x32px frames")
+    print("\nEnter option, 'h' for help, or 'q' to exit:", end=" ")
+
+def display_help_menu() -> None:
+    """Prints the help menu to choose a conversion schema."""
+    print("Which conversion type would you like to see the schema of?")
+    print("1. Invert Frames [Vertical]")
+    print("2. Vertical to Horizontal layout")
+    print("3. Horizontal to Vertical layout")
+    print("\nEnter option:", end=" ")
+
+def display_schema(title: str, layout: dict) -> None:
+    """Prints out the conversion schema given a title and layout mapping."""
+    print(f"\nHere's how the {title} schema works:")
+    keys = list(layout.keys())
+    print("\nBefore:")
+    for row in layout[keys[0]]:
+        print(row, end=",\n")
+    print("\nAfter:")
+    for row in layout[keys[1]]:
+        print(row, end=",\n")
+    print()
+
+def handle_help() -> None:
+    """Handles help requests by displaying the appropriate schema."""
+    display_help_menu()
+    help_choice = input().strip()
+    print()
+    if help_choice == "1":
+        display_schema("Invert Frames [Vertical]", invertVerticalLayout)
+    elif help_choice == "2":
+        display_schema("Vertical to Horizontal layout", v2hLayout)
+    elif help_choice == "3":
+        display_schema("Horizontal to Vertical layout", h2vLayout)
+    else:
+        print("Invalid help option.\n")
+
 def main():
     # --- Minimal CLI handling ---
     current_frame_size = FRAME_SIZE
     conversion_mode = None
     if len(os.sys.argv) <= 1:
         while True:
-            print(f"Choose conversion method [{current_frame_size}x{current_frame_size}px frames]:")
-            print("1. Invert Frames [Vertical]")
-            print("2. Convert Vertical to Horizontal layout")
-            print("3. Convert Horizontal to Vertical layout")
-            print("4. Switch to 64x64px frames" if current_frame_size == 32 else "4. Switch to 32x32px frames")
-            print("\nEnter option, or enter 'q' to exit:", end=" ")
+            display_main_menu(current_frame_size)
             choice = input().strip()
             print()
             if choice.lower() == "q":
                 exit(0)
             if choice.lower() == "h":
-                print("Which conversion type would you like to see the schema of?")
-                print("1. Invert Frames [Vertical]")
-                print("2. Vertical to Horizontal layout")
-                print("3. Horizontal to Vertical layout")
-                help_choice = input("\nEnter option (1, 2, or 3): ").strip()
-                print()
-                if help_choice == "1":
-                    keys = list(invertVerticalLayout.keys())
-                    print("Here's how the Invert Frames [Vertical] schema works:")
-                    print("\nBefore:")
-                    for row in invertVerticalLayout[keys[0]]:
-                        print(row, end=",\n")
-                    print("\nAfter:")
-                    for row in invertVerticalLayout[keys[1]]:
-                        print(row, end=",\n")
-                elif help_choice == "2":
-                    keys = list(v2hLayout.keys())
-                    print("Here's how the Vertical to Horizontal layout schema works:")
-                    print("\nBefore:")
-                    for row in v2hLayout[keys[0]]:
-                        print(row, end=",\n")
-                    print("\nAfter:")
-                    for row in v2hLayout[keys[1]]:
-                        print(row, end=",\n")
-                elif help_choice == "3":
-                    keys = list(h2vLayout.keys())
-                    print("Here's how the Horizontal to Vertical layout schema works:")
-                    print("\nBefore:")
-                    for row in h2vLayout[keys[0]]:
-                        print(row, end=",\n")
-                    print("\nAfter:")
-                    for row in h2vLayout[keys[1]]:
-                        print(row, end=",\n")
-                print()
+                handle_help()
                 continue
             elif choice == "4":
                 current_frame_size = 64 if current_frame_size == 32 else 32
