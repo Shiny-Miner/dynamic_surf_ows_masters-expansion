@@ -1,6 +1,11 @@
 import os 
 from PIL import Image
 
+# Flags settings (formerly in flags.txt: "32 before after")
+FRAME_SIZE = 32
+DEFAULT_FORMAT = "before"
+TARGET_FORMAT = "after"
+
 class SpriteSheet:
     def __init__(self, path:str, Format:list, frame_size:int):
         img = Image.open(path).convert("P")
@@ -56,7 +61,7 @@ default = "\033[0m"
 
 # Default conversion layout (vertical inversion of each pair of frames)
 invertVerticalLayout = {
-    "R12_C1": [
+    "before": [
         [1],
         [0],
         [3],
@@ -70,7 +75,7 @@ invertVerticalLayout = {
         [11],
         [10]
     ],
-    "R6_C6": [
+    "after": [
         [0],
         [1],
         [2],
@@ -89,7 +94,7 @@ invertVerticalLayout = {
 # --- Additional preset conversion layouts ---
 # Vertical to Horizontal
 v2hLayout = {
-    "R12_C1": [
+    "before": [
         [0],
         [1],
         [2],
@@ -103,7 +108,7 @@ v2hLayout = {
         [10],
         [11]
     ],
-    "R6_C6": [
+    "after": [
         [0, 1, 2, 3, 4, 5],
         [6, 7, 8, 9, 10, 11]
     ]
@@ -111,11 +116,11 @@ v2hLayout = {
 
 # Horizontal to Vertical
 h2vLayout = {
-    "R12_C1": [
+    "before": [
         [0, 1, 2, 3, 4, 5],
         [6, 7, 8, 9, 10, 11]
     ],
-    "R6_C6": [
+    "after": [
         [0],
         [1],
         [2],
@@ -140,39 +145,44 @@ def main():
             print("1. Invert Frames [Vertical]")
             print("2. Convert Vertical to Horizontal layout")
             print("3. Convert Horizontal to Vertical layout")
-            print("Enter option (1, 2, or 3) or 'h' for help:")
+            print("Enter option (1, 2, or 3) or 'h' for help:", end=" ")
             choice = input().strip()
             if choice.lower() == "h":
+                print()
                 print("Which conversion type would you like to see the schema of?")
                 print("1. Invert Frames [Vertical]")
                 print("2. Vertical to Horizontal layout")
                 print("3. Horizontal to Vertical layout")
                 help_choice = input("Enter option (1, 2, or 3): ").strip()
+                print()
                 if help_choice == "1":
+                    keys = list(invertVerticalLayout.keys())
                     print("Here's how the Invert Frames [Vertical] schema works:")
                     print("Before:")
-                    for row in invertVerticalLayout["R12_C1"]:
+                    for row in invertVerticalLayout[keys[0]]:
                         print(row, end=",\n")
                     print("\nAfter:")
-                    for row in invertVerticalLayout["R6_C6"]:
+                    for row in invertVerticalLayout[keys[1]]:
                         print(row, end=",\n")
                 elif help_choice == "2":
+                    keys = list(v2hLayout.keys())
                     print("Here's how the Vertical to Horizontal layout schema works:")
                     print("Before:")
-                    for row in v2hLayout["R12_C1"]:
+                    for row in v2hLayout[keys[0]]:
                         print(row, end=",\n")
                     print("\nAfter:")
-                    for row in v2hLayout["R6_C6"]:
+                    for row in v2hLayout[keys[1]]:
                         print(row, end=",\n")
                 elif help_choice == "3":
+                    keys = list(h2vLayout.keys())
                     print("Here's how the Horizontal to Vertical layout schema works:")
                     print("Before:")
-                    for row in h2vLayout["R12_C1"]:
+                    for row in h2vLayout[keys[0]]:
                         print(row, end=",\n")
                     print("\nAfter:")
-                    for row in h2vLayout["R6_C6"]:
+                    for row in h2vLayout[keys[1]]:
                         print(row, end=",\n")
-                # After help, loop again to re-prompt with the original options.
+                print()
                 continue
             elif choice in ["1", "2", "3"]:
                 break
@@ -190,18 +200,14 @@ def main():
         os.mkdir(export_dir)
     
     for path, dirs, files in os.walk(os.path.abspath("convert_sprites")):
-        flagfile = open(os.path.join(path, "flags.txt"))
-        frame_size, Format, newFormat = flagfile.readline().strip().split()
+        # Use constants defined at the top.
+        frame_size, Format, newFormat = FRAME_SIZE, DEFAULT_FORMAT, TARGET_FORMAT
         for dir in dirs:
             out_dir = os.path.join(path, dir).replace("convert_sprites", "exported_sprites")
-            if os.path.isdir(out_dir):
-                continue
-            os.mkdir(out_dir)
+            if not os.path.isdir(out_dir):
+                os.mkdir(out_dir)
         for file in files:
-            if file=="flags.txt":
-                continue
             spritesheet = SpriteSheet(os.path.join(path, file), invertVerticalLayout[Format], int(frame_size))
-            # If the user selected a CLI conversion option, override the invertVertical layout.
             if conversion_mode == "v2h":
                 mapping = v2hLayout[Format]
             elif conversion_mode == "h2v":
@@ -211,8 +217,9 @@ def main():
             else:
                 mapping = invertVerticalLayout[newFormat]
             spritesheet.convert(mapping)
-            print(bold__ + f"{color__((23,23,234))}Converting{__color}", file + __bold +"...", end = "")
+            print(bold__ + f"{color__((23,23,234))}Converting{__color}", file + __bold + "...", end=" ")
             spritesheet.image.save(os.path.join(path, file).replace("convert_sprites", "exported_sprites"))
             print("done")
+            
 if __name__ == "__main__":
     main()
