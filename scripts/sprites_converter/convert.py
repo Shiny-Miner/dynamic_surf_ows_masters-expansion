@@ -65,7 +65,7 @@ default = "\033[0m"
 # Layout definitions with metadata
 invertVerticalLayout = {
     "label": "Invert Vertical Frames",
-    "description": "This strategy inverts each pair of frames in a vertical spritesheet.",
+    "help_text": "This strategy inverts each pair of frames in a vertical spritesheet.",
     "arg": "invert",
     "strategy": {
         "before": [
@@ -101,7 +101,7 @@ invertVerticalLayout = {
 
 v2hLayout = {
     "label": "Vertical to Horizontal",
-    "description": "This strategy converts a vertically arranged spritesheet into a horizontal layout.",
+    "help_text": "This strategy converts a vertically arranged spritesheet into a horizontal layout.",
     "arg": "v2h",
     "strategy": {
         "before": [
@@ -127,7 +127,7 @@ v2hLayout = {
 
 h2vLayout = {
     "label": "Horizontal to Vertical",
-    "description": "This strategy converts a horizontally arranged spritesheet into a vertical layout.",
+    "help_text": "This strategy converts a horizontally arranged spritesheet into a vertical layout.",
     "arg": "h2v",
     "strategy": {
         "before": [
@@ -177,7 +177,7 @@ def display_help_menu() -> None:
 def display_schema(layout: dict) -> None:
     """Prints out the conversion schema for a given layout."""
     print(f"\n{layout['label']}:")
-    print(layout['description'])
+    print(layout['help_text'])
     print("\nBefore:")
     for row in layout["strategy"]["before"]:
         print(row, end=",\n")
@@ -195,7 +195,7 @@ def handle_help() -> None:
         index = int(help_choice) - 1
         if 0 <= index < len(layouts):
             display_schema(layouts[index])
-            print("\n############################################\n")
+            print("############################################\n")
         else:
             print("Invalid help option.\n")
     except ValueError:
