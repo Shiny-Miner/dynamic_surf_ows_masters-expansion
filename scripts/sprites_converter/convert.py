@@ -1,4 +1,4 @@
-import os 
+import os
 from PIL import Image
 
 # Flags settings (formerly in flags.txt: "32 before after")
@@ -183,10 +183,28 @@ def handle_help() -> None:
         print("Invalid help option.\n")
 
 def main():
-    # --- Minimal CLI handling ---
-    current_frame_size = FRAME_SIZE
+    # --- Command-line Argument Handling ---
+    # If arguments are provided, they can include the conversion strategy
+    # ("invert", "v2h", or "h2v") and/or a frame size (an integer).
+    # They can be provided in any order.
+    args = os.sys.argv[1:]
     conversion_mode = None
-    if len(os.sys.argv) <= 1:
+    current_frame_size = FRAME_SIZE  # Default frame size: 32
+
+    if args:
+        for arg in args:
+            arg_lower = arg.lower()
+            if arg_lower in ["invert", "v2h", "h2v"]:
+                conversion_mode = arg_lower
+            else:
+                try:
+                    current_frame_size = int(arg)
+                except ValueError:
+                    pass  # Ignore any argument that isn't a known strategy or an integer
+        if conversion_mode is None:
+            conversion_mode = "invert"
+    else:
+        # --- Interactive Mode ---
         while True:
             display_main_menu(current_frame_size)
             choice = input().strip()
@@ -215,6 +233,8 @@ def main():
         os.mkdir(export_dir)
     
     for path, dirs, files in os.walk(os.path.abspath("convert_sprites")):
+        # Use ORIGINAL_FORMAT and TARGET_FORMAT to choose the frame mapping.
+        # Note: The spritesheet is always created using the "before" layout.
         frame_size, Format, newFormat = current_frame_size, ORIGINAL_FORMAT, TARGET_FORMAT
         for dir in dirs:
             out_dir = os.path.join(path, dir).replace("convert_sprites", "exported_sprites")
