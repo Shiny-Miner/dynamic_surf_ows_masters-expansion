@@ -3,7 +3,7 @@ from PIL import Image
 
 # Flags settings (formerly in flags.txt: "32 before after")
 FRAME_SIZE = 32
-DEFAULT_FORMAT = "before"
+ORIGINAL_FORMAT = "before"
 TARGET_FORMAT = "after"
 
 class SpriteSheet:
@@ -138,27 +138,31 @@ h2vLayout = {
 
 def main():
     # --- Minimal CLI handling ---
+    current_frame_size = FRAME_SIZE
     conversion_mode = None
     if len(os.sys.argv) <= 1:
         while True:
-            print("Choose conversion type:")
+            print(f"Choose conversion method [{current_frame_size}x{current_frame_size}px frames]:")
             print("1. Invert Frames [Vertical]")
             print("2. Convert Vertical to Horizontal layout")
             print("3. Convert Horizontal to Vertical layout")
-            print("Enter option (1, 2, or 3) or 'h' for help:", end=" ")
+            print("4. Switch to 64x64px frames" if current_frame_size == 32 else "4. Switch to 32x32px frames")
+            print("\nEnter option, or enter 'q' to exit:", end=" ")
             choice = input().strip()
+            print()
+            if choice.lower() == "q":
+                exit(0)
             if choice.lower() == "h":
-                print()
                 print("Which conversion type would you like to see the schema of?")
                 print("1. Invert Frames [Vertical]")
                 print("2. Vertical to Horizontal layout")
                 print("3. Horizontal to Vertical layout")
-                help_choice = input("Enter option (1, 2, or 3): ").strip()
+                help_choice = input("\nEnter option (1, 2, or 3): ").strip()
                 print()
                 if help_choice == "1":
                     keys = list(invertVerticalLayout.keys())
                     print("Here's how the Invert Frames [Vertical] schema works:")
-                    print("Before:")
+                    print("\nBefore:")
                     for row in invertVerticalLayout[keys[0]]:
                         print(row, end=",\n")
                     print("\nAfter:")
@@ -167,7 +171,7 @@ def main():
                 elif help_choice == "2":
                     keys = list(v2hLayout.keys())
                     print("Here's how the Vertical to Horizontal layout schema works:")
-                    print("Before:")
+                    print("\nBefore:")
                     for row in v2hLayout[keys[0]]:
                         print(row, end=",\n")
                     print("\nAfter:")
@@ -176,13 +180,16 @@ def main():
                 elif help_choice == "3":
                     keys = list(h2vLayout.keys())
                     print("Here's how the Horizontal to Vertical layout schema works:")
-                    print("Before:")
+                    print("\nBefore:")
                     for row in h2vLayout[keys[0]]:
                         print(row, end=",\n")
                     print("\nAfter:")
                     for row in h2vLayout[keys[1]]:
                         print(row, end=",\n")
                 print()
+                continue
+            elif choice == "4":
+                current_frame_size = 64 if current_frame_size == 32 else 32
                 continue
             elif choice in ["1", "2", "3"]:
                 break
@@ -193,15 +200,14 @@ def main():
         else:
             conversion_mode = "invert"
     # --- End CLI handling ---
-    
+
     # Ensure the top-level exported_sprites directory exists.
     export_dir = os.path.abspath("convert_sprites").replace("convert_sprites", "exported_sprites")
     if not os.path.exists(export_dir):
         os.mkdir(export_dir)
     
     for path, dirs, files in os.walk(os.path.abspath("convert_sprites")):
-        # Use constants defined at the top.
-        frame_size, Format, newFormat = FRAME_SIZE, DEFAULT_FORMAT, TARGET_FORMAT
+        frame_size, Format, newFormat = current_frame_size, ORIGINAL_FORMAT, TARGET_FORMAT
         for dir in dirs:
             out_dir = os.path.join(path, dir).replace("convert_sprites", "exported_sprites")
             if not os.path.isdir(out_dir):
