@@ -149,18 +149,24 @@ def main():
             conversion_mode = "invert"
     # --- End CLI handling ---
     
+    # Ensure the top-level exported_sprites directory exists.
+    export_dir = os.path.abspath("convert_sprites").replace("convert_sprites", "exported_sprites")
+    if not os.path.exists(export_dir):
+        os.mkdir(export_dir)
+    
     for path, dirs, files in os.walk(os.path.abspath("convert_sprites")):
         flagfile = open(os.path.join(path, "flags.txt"))
         frame_size, Format, newFormat = flagfile.readline().strip().split()
         for dir in dirs:
-            if os.path.isdir(os.path.join(path, dir).replace("convert_sprites", "exported_sprites")):
+            out_dir = os.path.join(path, dir).replace("convert_sprites", "exported_sprites")
+            if os.path.isdir(out_dir):
                 continue
-            os.mkdir(os.path.join(path , dir).replace("convert_sprites", "exported_sprites"))
+            os.mkdir(out_dir)
         for file in files:
             if file=="flags.txt":
                 continue
             spritesheet = SpriteSheet(os.path.join(path, file), invertVerticalLayout[Format], int(frame_size))
-            # If the user selected a CLI conversion option, override the formats layout.
+            # If the user selected a CLI conversion option, override the invertVertical layout.
             if conversion_mode == "v2h":
                 mapping = v2hLayout[Format]
             elif conversion_mode == "h2v":
