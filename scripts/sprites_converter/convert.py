@@ -55,10 +55,8 @@ __italic = "\033[23m"
 
 default = "\033[0m"
 
-
-
-
-Formats = {
+# Default conversion layout (vertical inversion of each pair of frames)
+invertVerticalLayout = {
     "R12_C1": [
         [1],
         [0],
@@ -89,9 +87,68 @@ Formats = {
     ]
 }
 
+# --- Additional preset conversion layouts ---
+# Vertical to Horizontal
+v2hLayout = {
+    "R12_C1": [
+        [0],
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [6],
+        [7],
+        [8],
+        [9],
+        [10],
+        [11]
+    ],
+    "R6_C6": [
+        [0, 1, 2, 3, 4, 5],
+        [6, 7, 8, 9, 10, 11]
+    ]
+}
 
+# Horizontal to Vertical
+h2vLayout = {
+    "R12_C1": [
+        [0, 1, 2, 3, 4, 5],
+        [6, 7, 8, 9, 10, 11]
+    ],
+    "R6_C6": [
+        [0],
+        [1],
+        [2],
+        [3],
+        [4],
+        [5],
+        [6],
+        [7],
+        [8],
+        [9],
+        [10],
+        [11]
+    ]
+}
 
 def main():
+    # --- Minimal CLI handling ---
+    conversion_mode = None
+    if len(os.sys.argv) <= 1:
+        print("Choose conversion type:")
+        print("1. Vertical inversion (default)")
+        print("2. Vertical to Horizontal")
+        print("3. Horizontal to Vertical")
+        choice = input("Enter option (1, 2, or 3): ").strip()
+        if choice == "2":
+            conversion_mode = "v2h"
+        elif choice == "3":
+            conversion_mode = "h2v"
+        else:
+            conversion_mode = "invert"
+    # --- End CLI handling ---
+    
     for path, dirs, files in os.walk(os.path.abspath("sprites____")):
         flagfile = open(os.path.join(path, "flags.txt"))
         frame_size, Format, newFormat = flagfile.readline().strip().split()
@@ -102,8 +159,17 @@ def main():
         for file in files:
             if file=="flags.txt":
                 continue
-            spritesheet = SpriteSheet(os.path.join(path, file), Formats[Format], int(frame_size))
-            spritesheet.convert(Formats[newFormat])
+            spritesheet = SpriteSheet(os.path.join(path, file), invertVerticalLayout[Format], int(frame_size))
+            # If the user selected a CLI conversion option, override the formats layout.
+            if conversion_mode == "v2h":
+                mapping = v2hLayout[Format]
+            elif conversion_mode == "h2v":
+                mapping = h2vLayout[Format]
+            elif conversion_mode == "invert":
+                mapping = invertVerticalLayout[newFormat]
+            else:
+                mapping = invertVerticalLayout[newFormat]
+            spritesheet.convert(mapping)
             print(bold__ + f"{color__((23,23,234))}Converting{__color}", file + __bold +"...", end = "")
             spritesheet.image.save(os.path.join(path, file).replace("sprites____", "sprites_new"))
             print("done")
