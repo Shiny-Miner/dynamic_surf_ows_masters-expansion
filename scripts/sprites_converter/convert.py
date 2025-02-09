@@ -149,13 +149,13 @@ def main():
             conversion_mode = "invert"
     # --- End CLI handling ---
     
-    for path, dirs, files in os.walk(os.path.abspath("sprites____")):
+    for path, dirs, files in os.walk(os.path.abspath("convert_sprites")):
         flagfile = open(os.path.join(path, "flags.txt"))
         frame_size, Format, newFormat = flagfile.readline().strip().split()
         for dir in dirs:
-            if os.path.isdir(os.path.join(path, dir).replace("sprites____", "sprites_new")):
+            if os.path.isdir(os.path.join(path, dir).replace("convert_sprites", "exported_sprites")):
                 continue
-            os.mkdir(os.path.join(path , dir).replace("sprites____", "sprites_new"))
+            os.mkdir(os.path.join(path , dir).replace("convert_sprites", "exported_sprites"))
         for file in files:
             if file=="flags.txt":
                 continue
@@ -171,7 +171,7 @@ def main():
                 mapping = invertVerticalLayout[newFormat]
             spritesheet.convert(mapping)
             print(bold__ + f"{color__((23,23,234))}Converting{__color}", file + __bold +"...", end = "")
-            spritesheet.image.save(os.path.join(path, file).replace("sprites____", "sprites_new"))
+            spritesheet.image.save(os.path.join(path, file).replace("convert_sprites", "exported_sprites"))
             print("done")
 if __name__ == "__main__":
     main()
