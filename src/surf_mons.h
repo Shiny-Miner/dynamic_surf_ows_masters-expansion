@@ -1282,26 +1282,40 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Gyarados[] = {
 
 const struct SpriteTemplate sGyaradosOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Gyarados, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sGyaradosOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Gyarados, UpdateSurfMonOverlay);
+
 //=============== LAPRAS
 extern const u32 laprasTiles[];
 extern const u16 laprasPal[];
 extern const u16 laprasShinyPal[];
+
 const struct SpriteFrameImage gSurfingOverworldPicTable_Lapras[] = {
-    overworld_frame(&laprasTiles[0], 4, 4, 1),
-    overworld_frame(&laprasTiles[0], 4, 4, 0),
-    overworld_frame(&laprasTiles[0], 4, 4, 3),
-    overworld_frame(&laprasTiles[0], 4, 4, 2),
-    overworld_frame(&laprasTiles[0], 4, 4, 5),
-    overworld_frame(&laprasTiles[0], 4, 4, 4),
+    // Facing South
+    overworld_frame(&laprasTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&laprasTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&laprasTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&laprasTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&laprasTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&laprasTiles[0], 4, 4, 5), // Bob Down
 };
+
 const struct SpriteFrameImage gSurfingOverlayPicTable_Lapras[] = {
-    overworld_frame(&laprasTiles[0], 4, 4, 7),
-    overworld_frame(&laprasTiles[0], 4, 4, 6),
-    overworld_frame(&laprasTiles[0], 4, 4, 9),
-    overworld_frame(&laprasTiles[0], 4, 4, 8),
-    overworld_frame(&laprasTiles[0], 4, 4, 11),
-    overworld_frame(&laprasTiles[0], 4, 4, 10),
+    // Facing South
+    overworld_frame(&laprasTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&laprasTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&laprasTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&laprasTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&laprasTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&laprasTiles[0], 4, 4, 11), // Bob Down
 };
+
 const struct SpriteTemplate sLaprasOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lapras, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sLaprasOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lapras, UpdateSurfMonOverlay);
 
