@@ -40,12 +40,11 @@ class SpriteSheet:
 color__ = lambda rgb: f"\033[38;2;{rgb[0]};{rgb[1]};{rgb[2]}m"
 __color = "\033[39m"
 
-bgcolor__ =lambda rgb: f"\033[48;2;{rgb[0]};{rgb[1]};{rgb[2]}m"
+bgcolor__ = lambda rgb: f"\033[48;2;{rgb[0]};{rgb[1]};{rgb[2]}m"
 __bgcolor = "\033[49m"
 
 underline__ = "\033[4m"
 __underline = "\033[24m"
-
 
 bold__ = "\033[1m"
 __bold = "\033[22m"
@@ -136,11 +135,47 @@ def main():
     # --- Minimal CLI handling ---
     conversion_mode = None
     if len(os.sys.argv) <= 1:
-        print("Choose conversion type:")
-        print("1. Invert Frames [Vertical]")
-        print("2. Convert Vertical to Horizontal layout")
-        print("3. Convret Horizontal to Vertical layout")
-        choice = input("Enter option (1, 2, or 3): ").strip()
+        while True:
+            print("Choose conversion type:")
+            print("1. Invert Frames [Vertical]")
+            print("2. Convert Vertical to Horizontal layout")
+            print("3. Convert Horizontal to Vertical layout")
+            print("Enter option (1, 2, or 3) or 'h' for help:")
+            choice = input().strip()
+            if choice.lower() == "h":
+                print("Which conversion type would you like to see the schema of?")
+                print("1. Invert Frames [Vertical]")
+                print("2. Vertical to Horizontal layout")
+                print("3. Horizontal to Vertical layout")
+                help_choice = input("Enter option (1, 2, or 3): ").strip()
+                if help_choice == "1":
+                    print("Here's how the Invert Frames [Vertical] schema works:")
+                    print("Before:")
+                    for row in invertVerticalLayout["R12_C1"]:
+                        print(row, end=",\n")
+                    print("\nAfter:")
+                    for row in invertVerticalLayout["R6_C6"]:
+                        print(row, end=",\n")
+                elif help_choice == "2":
+                    print("Here's how the Vertical to Horizontal layout schema works:")
+                    print("Before:")
+                    for row in v2hLayout["R12_C1"]:
+                        print(row, end=",\n")
+                    print("\nAfter:")
+                    for row in v2hLayout["R6_C6"]:
+                        print(row, end=",\n")
+                elif help_choice == "3":
+                    print("Here's how the Horizontal to Vertical layout schema works:")
+                    print("Before:")
+                    for row in h2vLayout["R12_C1"]:
+                        print(row, end=",\n")
+                    print("\nAfter:")
+                    for row in h2vLayout["R6_C6"]:
+                        print(row, end=",\n")
+                # After help, loop again to re-prompt with the original options.
+                continue
+            elif choice in ["1", "2", "3"]:
+                break
         if choice == "2":
             conversion_mode = "v2h"
         elif choice == "3":
