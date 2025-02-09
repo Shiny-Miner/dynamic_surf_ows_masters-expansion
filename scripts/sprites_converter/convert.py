@@ -137,9 +137,9 @@ def main():
     conversion_mode = None
     if len(os.sys.argv) <= 1:
         print("Choose conversion type:")
-        print("1. Vertical inversion (default)")
-        print("2. Vertical to Horizontal")
-        print("3. Horizontal to Vertical")
+        print("1. Invert Frames [Vertical]")
+        print("2. Convert Vertical to Horizontal layout")
+        print("3. Convret Horizontal to Vertical layout")
         choice = input("Enter option (1, 2, or 3): ").strip()
         if choice == "2":
             conversion_mode = "v2h"
