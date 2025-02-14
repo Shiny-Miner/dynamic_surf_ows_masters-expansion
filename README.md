@@ -111,6 +111,10 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Surskit, Masquerain
 - Zangoose
 
+### [Surskitty](https://github.com/surskitty)
+- Kyogre
+  - Primal Kyogre
+
 ## Edited HGSS Sprites (such as posture/redrawn parts)
 ### Surskitty
 - Nidoking, Nidoqueen
@@ -230,7 +234,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Luvdisc - Complete ([Pokets](https://x.com/pokets3))
 - Latias - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 - Latios - Complete ([Nolo33LP](https://x.com/Nolo33LP))
-- Kyogre - Complete
+- Kyogre - Complete (Surskitty)
 - Rayquaza - Complete ([Nolo33LP](https://x.com/Nolo33LP))
 
 ## Tradebacks (Receives Surf in a later gen)
