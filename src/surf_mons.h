@@ -2327,22 +2327,35 @@ const struct SpriteTemplate sTyranitarOverlay = surf_template(PAL_TAG_SURF_NEW, 
 extern const u32 lugiaTiles[];
 extern const u16 lugiaPal[];
 extern const u16 lugiaShinyPal[];
+
 const struct SpriteFrameImage gSurfingOverworldPicTable_Lugia[] = {
-    overworld_frame(&lugiaTiles[0], 8, 8, 1),
-    overworld_frame(&lugiaTiles[0], 8, 8, 0),
-    overworld_frame(&lugiaTiles[0], 8, 8, 3),
-    overworld_frame(&lugiaTiles[0], 8, 8, 2),
-    overworld_frame(&lugiaTiles[0], 8, 8, 5),
-    overworld_frame(&lugiaTiles[0], 8, 8, 4),
+    // Facing South
+    overworld_frame(&lugiaTiles[0], 8, 8, 0), // Bob Up
+    overworld_frame(&lugiaTiles[0], 8, 8, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&lugiaTiles[0], 8, 8, 2), // Bob Up
+    overworld_frame(&lugiaTiles[0], 8, 8, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&lugiaTiles[0], 8, 8, 4), // Bob Up
+    overworld_frame(&lugiaTiles[0], 8, 8, 5), // Bob Down
 };
+
 const struct SpriteFrameImage gSurfingOverlayPicTable_Lugia[] = {
-    overworld_frame(&lugiaTiles[0], 8, 8, 7),
-    overworld_frame(&lugiaTiles[0], 8, 8, 6),
-    overworld_frame(&lugiaTiles[0], 8, 8, 9),
-    overworld_frame(&lugiaTiles[0], 8, 8, 8),
-    overworld_frame(&lugiaTiles[0], 8, 8, 11),
-    overworld_frame(&lugiaTiles[0], 8, 8, 10),
+    // Facing South
+    overworld_frame(&lugiaTiles[0], 8, 8, 6), // Bob Up
+    overworld_frame(&lugiaTiles[0], 8, 8, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&lugiaTiles[0], 8, 8, 8), // Bob Up
+    overworld_frame(&lugiaTiles[0], 8, 8, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&lugiaTiles[0], 8, 8, 10), // Bob Up
+    overworld_frame(&lugiaTiles[0], 8, 8, 11), // Bob Down
 };
+
 const struct SpriteTemplate sLugiaOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Lugia, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sLugiaOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Lugia, UpdateSurfMonOverlay);
 
