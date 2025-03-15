@@ -198,7 +198,7 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 - Miltank - Complete
 - Suicune - Complete
 - Tyranitar - Complete
-- Lugia - Complete (Jordank)
+- Lugia - Complete (Surfing by Pokets, Flying HGSS edit by Jordank)
 
 ### Gen 3: 100%
 - Mudkip - Complete
