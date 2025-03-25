@@ -101,7 +101,10 @@ Any sprites listed below this header are custom drawn, in the Shiny-Miner/Ansh/J
 
 ### [Pokets](https://x.com/pokets3)
 - Snorlax
-  - Snoring, and 4-frame animation adjustment by [Jordank](https://github.com/jmynes/dynamic_surf_ows_masters-expansion)
+  - Snoring, w/ 4-frame animation adjustment by [Jordank](https://github.com/jmynes/dynamic_surf_ows_masters-expansion)
+- Lugia
+  - Surfing sprite by Pokets
+  - Flying sprite adapted from HG/SS by Jordank
 - Sharpedo
 - Wailord
 - Barboach
