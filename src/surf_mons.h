@@ -2027,31 +2027,31 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Marill[] = {
 const struct SpriteTemplate sMarillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Marill, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sMarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Marill, UpdateSurfMonOverlay);
 
-//=============== AZURILL
-extern const u32 azurillTiles[];
-extern const u16 azurillPal[];
-extern const u16 azurillShinyPal[];
+//=============== AZUMARILL
+extern const u32 azumarillTiles[];
+extern const u16 azumarillPal[];
+extern const u16 azumarillShinyPal[];
 
-const struct SpriteFrameImage gSurfingOverworldPicTable_Azurill[] = {
-    overworld_frame(&azurillTiles[0], 4, 4, 0),
-    overworld_frame(&azurillTiles[0], 4, 4, 1),
-    overworld_frame(&azurillTiles[0], 4, 4, 2),
-    overworld_frame(&azurillTiles[0], 4, 4, 3),
-    overworld_frame(&azurillTiles[0], 4, 4, 4),
-    overworld_frame(&azurillTiles[0], 4, 4, 5),
+const struct SpriteFrameImage gSurfingOverworldPicTable_Azumarill[] = {
+    overworld_frame(&azumarillTiles[0], 4, 4, 0),
+    overworld_frame(&azumarillTiles[0], 4, 4, 1),
+    overworld_frame(&azumarillTiles[0], 4, 4, 2),
+    overworld_frame(&azumarillTiles[0], 4, 4, 3),
+    overworld_frame(&azumarillTiles[0], 4, 4, 4),
+    overworld_frame(&azumarillTiles[0], 4, 4, 5),
 };
 
-const struct SpriteFrameImage gSurfingOverlayPicTable_Azurill[] = {
-    overworld_frame(&azurillTiles[0], 4, 4, 6),
-    overworld_frame(&azurillTiles[0], 4, 4, 7),
-    overworld_frame(&azurillTiles[0], 4, 4, 8),
-    overworld_frame(&azurillTiles[0], 4, 4, 9),
-    overworld_frame(&azurillTiles[0], 4, 4, 10),
-    overworld_frame(&azurillTiles[0], 4, 4, 11),
+const struct SpriteFrameImage gSurfingOverlayPicTable_Azumarill[] = {
+    overworld_frame(&azumarillTiles[0], 4, 4, 6),
+    overworld_frame(&azumarillTiles[0], 4, 4, 7),
+    overworld_frame(&azumarillTiles[0], 4, 4, 8),
+    overworld_frame(&azumarillTiles[0], 4, 4, 9),
+    overworld_frame(&azumarillTiles[0], 4, 4, 10),
+    overworld_frame(&azumarillTiles[0], 4, 4, 11),
 };
 
-const struct SpriteTemplate sAzurillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azurill, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sAzurillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azurill, UpdateSurfMonOverlay);
+const struct SpriteTemplate sAzumarillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azumarill, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sAzumarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azumarill, UpdateSurfMonOverlay);
 
 //=============== POLITOED
 extern const u32 politoedTiles[];
@@ -3125,31 +3125,32 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Spheal[] = {
 const struct SpriteTemplate sSphealOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Spheal, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sSphealOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Spheal, UpdateSurfMonOverlay);
 
-//=============== AZUMARILL
-extern const u32 azumarillTiles[];
-extern const u16 azumarillPal[];
-extern const u16 azumarillShinyPal[];
+//=============== AZURILL
+extern const u32 azurillTiles[];
+extern const u16 azurillPal[];
+extern const u16 azurillShinyPal[];
 
-const struct SpriteFrameImage gSurfingOverworldPicTable_Azumarill[] = {
-    overworld_frame(&azumarillTiles[0], 4, 4, 0),
-    overworld_frame(&azumarillTiles[0], 4, 4, 1),
-    overworld_frame(&azumarillTiles[0], 4, 4, 2),
-    overworld_frame(&azumarillTiles[0], 4, 4, 3),
-    overworld_frame(&azumarillTiles[0], 4, 4, 4),
-    overworld_frame(&azumarillTiles[0], 4, 4, 5),
+const struct SpriteFrameImage gSurfingOverworldPicTable_Azurill[] = {
+    overworld_frame(&azurillTiles[0], 4, 4, 0),
+    overworld_frame(&azurillTiles[0], 4, 4, 1),
+    overworld_frame(&azurillTiles[0], 4, 4, 2),
+    overworld_frame(&azurillTiles[0], 4, 4, 3),
+    overworld_frame(&azurillTiles[0], 4, 4, 4),
+    overworld_frame(&azurillTiles[0], 4, 4, 5),
 };
 
-const struct SpriteFrameImage gSurfingOverlayPicTable_Azumarill[] = {
-    overworld_frame(&azumarillTiles[0], 4, 4, 6),
-    overworld_frame(&azumarillTiles[0], 4, 4, 7),
-    overworld_frame(&azumarillTiles[0], 4, 4, 8),
-    overworld_frame(&azumarillTiles[0], 4, 4, 9),
-    overworld_frame(&azumarillTiles[0], 4, 4, 10),
-    overworld_frame(&azumarillTiles[0], 4, 4, 11),
+const struct SpriteFrameImage gSurfingOverlayPicTable_Azurill[] = {
+    overworld_frame(&azurillTiles[0], 4, 4, 6),
+    overworld_frame(&azurillTiles[0], 4, 4, 7),
+    overworld_frame(&azurillTiles[0], 4, 4, 8),
+    overworld_frame(&azurillTiles[0], 4, 4, 9),
+    overworld_frame(&azurillTiles[0], 4, 4, 10),
+    overworld_frame(&azurillTiles[0], 4, 4, 11),
 };
 
-const struct SpriteTemplate sAzumarillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azumarill, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sAzumarillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azumarill, UpdateSurfMonOverlay);
+const struct SpriteTemplate sAzurillOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Azurill, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sAzurillOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Azurill, UpdateSurfMonOverlay);
+
 //=============== SEALEO
 extern const u32 sealeoTiles[];
 extern const u16 sealeoPal[];
