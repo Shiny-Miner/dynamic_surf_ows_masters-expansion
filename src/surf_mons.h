@@ -1702,21 +1702,31 @@ extern const u16 totodilePal[];
 extern const u16 totodileShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Totodile[] = {
-    overworld_frame(&totodileTiles[0], 4, 4, 0),
-    overworld_frame(&totodileTiles[0], 4, 4, 1),
-    overworld_frame(&totodileTiles[0], 4, 4, 2),
-    overworld_frame(&totodileTiles[0], 4, 4, 3),
-    overworld_frame(&totodileTiles[0], 4, 4, 4),
-    overworld_frame(&totodileTiles[0], 4, 4, 5),
+    // Facing South
+    overworld_frame(&totodileTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&totodileTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&totodileTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&totodileTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&totodileTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&totodileTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Totodile[] = {
-    overworld_frame(&totodileTiles[0], 4, 4, 6),
-    overworld_frame(&totodileTiles[0], 4, 4, 7),
-    overworld_frame(&totodileTiles[0], 4, 4, 8),
-    overworld_frame(&totodileTiles[0], 4, 4, 9),
-    overworld_frame(&totodileTiles[0], 4, 4, 10),
-    overworld_frame(&totodileTiles[0], 4, 4, 11),
+    // Facing South
+    overworld_frame(&totodileTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&totodileTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&totodileTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&totodileTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&totodileTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&totodileTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sTotodileOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Totodile, UpdateSurfBlobFieldEffect);
@@ -1729,51 +1739,72 @@ extern const u16 croconawPal[];
 extern const u16 croconawShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Croconaw[] = {
-    overworld_frame(&croconawTiles[0], 4, 4, 0),
-    overworld_frame(&croconawTiles[0], 4, 4, 1),
-    overworld_frame(&croconawTiles[0], 4, 4, 2),
-    overworld_frame(&croconawTiles[0], 4, 4, 3),
-    overworld_frame(&croconawTiles[0], 4, 4, 4),
-    overworld_frame(&croconawTiles[0], 4, 4, 5),
+    // Facing South
+    overworld_frame(&croconawTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&croconawTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&croconawTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&croconawTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&croconawTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&croconawTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Croconaw[] = {
-    overworld_frame(&croconawTiles[0], 4, 4, 6),
-    overworld_frame(&croconawTiles[0], 4, 4, 7),
-    overworld_frame(&croconawTiles[0], 4, 4, 8),
-    overworld_frame(&croconawTiles[0], 4, 4, 9),
-    overworld_frame(&croconawTiles[0], 4, 4, 10),
-    overworld_frame(&croconawTiles[0], 4, 4, 11),
+    // Facing South
+    overworld_frame(&croconawTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&croconawTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&croconawTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&croconawTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&croconawTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&croconawTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sCroconawOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Croconaw, UpdateSurfBlobFieldEffect);
 const struct SpriteTemplate sCroconawOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Croconaw, UpdateSurfMonOverlay);
 
 //=============== FERALIGATR
+// NOTE: Large, 64x64 Sprite
 extern const u32 feraligatrTiles[];
 extern const u16 feraligatrPal[];
 extern const u16 feraligatrShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Feraligatr[] = {
-    overworld_frame(&feraligatrTiles[0], 4, 4, 0),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 1),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 2),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 3),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 4),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 5),
+    // Facing South
+    overworld_frame(&feraligatrTiles[0], 8, 8, 0), // Bob Up
+    overworld_frame(&feraligatrTiles[0], 8, 8, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&feraligatrTiles[0], 8, 8, 2), // Bob Up
+    overworld_frame(&feraligatrTiles[0], 8, 8, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&feraligatrTiles[0], 8, 8, 4), // Bob Up
+    overworld_frame(&feraligatrTiles[0], 8, 8, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Feraligatr[] = {
-    overworld_frame(&feraligatrTiles[0], 4, 4, 6),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 7),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 8),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 9),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 10),
-    overworld_frame(&feraligatrTiles[0], 4, 4, 11),
+    // Facing South
+    overworld_frame(&feraligatrTiles[0], 8, 8, 6), // Bob Up
+    overworld_frame(&feraligatrTiles[0], 8, 8, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&feraligatrTiles[0], 8, 8, 8), // Bob Up
+    overworld_frame(&feraligatrTiles[0], 8, 8, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&feraligatrTiles[0], 8, 8, 10), // Bob Up
+    overworld_frame(&feraligatrTiles[0], 8, 8, 11), // Bob Down
 };
 
-const struct SpriteTemplate sFeraligatrOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Feraligatr, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sFeraligatrOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Feraligatr, UpdateSurfMonOverlay);
+const struct SpriteTemplate sFeraligatrOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Feraligatr, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sFeraligatrOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Feraligatr, UpdateSurfMonOverlay);
 
 //=============== SENTRET
 extern const u32 sentretTiles[];
