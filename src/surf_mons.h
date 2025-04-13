@@ -4249,13 +4249,6 @@ const struct RideableMons gSurfablePokemon[] =
             .overlayGfx = &sLotadOverlay,
         },
         {
-            .species = SPECIES_HUNTAIL,
-            .palAddr = &huntailPal[0],
-            .shinyPalAddr = &huntailShinyPal[0],
-            .overworldGfx = &sHuntailOverworld,
-            .overlayGfx = &sHuntailOverlay,
-        },
-        {
             .species = SPECIES_LOMBRE,
             .palAddr = &lombrePal[0],
             .shinyPalAddr = &lombreShinyPal[0],
