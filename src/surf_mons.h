@@ -3720,17 +3720,35 @@ const struct SpriteTemplate sLatiosOverlay = surf_template(PAL_TAG_SURF_NEW, gSu
 //=============== KYOGRE
 extern const u32 kyogreTiles[];
 extern const u16 kyogrePal[];
-extern const u16 kyogreShinyPal[]; 
+extern const u16 kyogreShinyPal[];
+
 const struct SpriteFrameImage gSurfingOverworldPicTable_Kyogre[] = {
-    overworld_frame(&kyogreTiles[0], 8, 8, 2),
-    overworld_frame(&kyogreTiles[0], 8, 8, 3),
-    overworld_frame(&kyogreTiles[0], 8, 8, 0),
-    overworld_frame(&kyogreTiles[0], 8, 8, 1),
-    overworld_frame(&kyogreTiles[0], 8, 8, 4),
-    overworld_frame(&kyogreTiles[0], 8, 8, 5),
+    // Facing South
+    overworld_frame(&kyogreTiles[0], 8, 8, 0), // Bob Up
+    overworld_frame(&kyogreTiles[0], 8, 8, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&kyogreTiles[0], 8, 8, 2), // Bob Up
+    overworld_frame(&kyogreTiles[0], 8, 8, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&kyogreTiles[0], 8, 8, 4), // Bob Up
+    overworld_frame(&kyogreTiles[0], 8, 8, 5), // Bob Down
 };
 
-const struct SpriteTemplate sKyogreOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kyogre, UpdateSurfBlobFieldEffect);
+const struct SpriteFrameImage gSurfingOverlayPicTable_Kyogre[] = {
+    // Facing South
+    overworld_frame(&kyogreTiles[0], 8, 8, 6), // Bob Up
+    overworld_frame(&kyogreTiles[0], 8, 8, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&kyogreTiles[0], 8, 8, 8), // Bob Up
+    overworld_frame(&kyogreTiles[0], 8, 8, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&kyogreTiles[0], 8, 8, 10), // Bob Up
+    overworld_frame(&kyogreTiles[0], 8, 8, 11), // Bob Down
+};
 
 //=============== RAYQUAZA
 extern const u32 rayquazaTiles[];
