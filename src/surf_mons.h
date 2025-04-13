@@ -3197,21 +3197,31 @@ extern const u16 whiscashPal[];
 extern const u16 whiscashShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Whiscash[] = {
-    overworld_frame(&whiscashTiles[0], 4, 4, 1),
-    overworld_frame(&whiscashTiles[0], 4, 4, 0),
-    overworld_frame(&whiscashTiles[0], 4, 4, 3),
-    overworld_frame(&whiscashTiles[0], 4, 4, 2),
-    overworld_frame(&whiscashTiles[0], 4, 4, 5),
-    overworld_frame(&whiscashTiles[0], 4, 4, 4),
+    // Facing South
+    overworld_frame(&whiscashTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&whiscashTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&whiscashTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&whiscashTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&whiscashTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&whiscashTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Whiscash[] = {
-    overworld_frame(&whiscashTiles[0], 4, 4, 7),
-    overworld_frame(&whiscashTiles[0], 4, 4, 6),
-    overworld_frame(&whiscashTiles[0], 4, 4, 9),
-    overworld_frame(&whiscashTiles[0], 4, 4, 8),
-    overworld_frame(&whiscashTiles[0], 4, 4, 11),
-    overworld_frame(&whiscashTiles[0], 4, 4, 10),
+    // Facing South
+    overworld_frame(&whiscashTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&whiscashTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&whiscashTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&whiscashTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&whiscashTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&whiscashTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sWhiscashOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Whiscash, UpdateSurfBlobFieldEffect);
@@ -3249,21 +3259,31 @@ extern const u16 crawdauntPal[];
 extern const u16 crawdauntShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Crawdaunt[] = {
-    overworld_frame(&crawdauntTiles[0], 4, 4, 1),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 0),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 3),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 2),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 5),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 4),
+    // Facing South
+    overworld_frame(&crawdauntTiles[0], 4, 4, 0), // Bob Up
+    overworld_frame(&crawdauntTiles[0], 4, 4, 1), // Bob Down
+
+    // Facing North
+    overworld_frame(&crawdauntTiles[0], 4, 4, 2), // Bob Up
+    overworld_frame(&crawdauntTiles[0], 4, 4, 3), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&crawdauntTiles[0], 4, 4, 4), // Bob Up
+    overworld_frame(&crawdauntTiles[0], 4, 4, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Crawdaunt[] = {
-    overworld_frame(&crawdauntTiles[0], 4, 4, 7),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 6),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 9),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 8),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 11),
-    overworld_frame(&crawdauntTiles[0], 4, 4, 10),
+    // Facing South
+    overworld_frame(&crawdauntTiles[0], 4, 4, 6), // Bob Up
+    overworld_frame(&crawdauntTiles[0], 4, 4, 7), // Bob Down
+
+    // Facing North
+    overworld_frame(&crawdauntTiles[0], 4, 4, 8), // Bob Up
+    overworld_frame(&crawdauntTiles[0], 4, 4, 9), // Bob Down
+
+    // Facing East/West (Mirrored)
+    overworld_frame(&crawdauntTiles[0], 4, 4, 10), // Bob Up
+    overworld_frame(&crawdauntTiles[0], 4, 4, 11), // Bob Down
 };
 
 const struct SpriteTemplate sCrawdauntOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Crawdaunt, UpdateSurfBlobFieldEffect);
