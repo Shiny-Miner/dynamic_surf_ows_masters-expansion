@@ -3094,34 +3094,34 @@ extern const u16 wailmerShinyPal[];
 
 const struct SpriteFrameImage gSurfingOverworldPicTable_Wailmer[] = {
     // Facing South
-    overworld_frame(&wailmerTiles[0], 4, 4, 0), // Bob Up
-    overworld_frame(&wailmerTiles[0], 4, 4, 1), // Bob Down
+    overworld_frame(&wailmerTiles[0], 8, 8, 0), // Bob Up
+    overworld_frame(&wailmerTiles[0], 8, 8, 1), // Bob Down
 
     // Facing North
-    overworld_frame(&wailmerTiles[0], 4, 4, 2), // Bob Up
-    overworld_frame(&wailmerTiles[0], 4, 4, 3), // Bob Down
+    overworld_frame(&wailmerTiles[0], 8, 8, 2), // Bob Up
+    overworld_frame(&wailmerTiles[0], 8, 8, 3), // Bob Down
 
     // Facing East/West (Mirrored)
-    overworld_frame(&wailmerTiles[0], 4, 4, 4), // Bob Up
-    overworld_frame(&wailmerTiles[0], 4, 4, 5), // Bob Down
+    overworld_frame(&wailmerTiles[0], 8, 8, 4), // Bob Up
+    overworld_frame(&wailmerTiles[0], 8, 8, 5), // Bob Down
 };
 
 const struct SpriteFrameImage gSurfingOverlayPicTable_Wailmer[] = {
     // Facing South
-    overworld_frame(&wailmerTiles[0], 4, 4, 6), // Bob Up
-    overworld_frame(&wailmerTiles[0], 4, 4, 7), // Bob Down
+    overworld_frame(&wailmerTiles[0], 8, 8, 6), // Bob Up
+    overworld_frame(&wailmerTiles[0], 8, 8, 7), // Bob Down
 
     // Facing North
-    overworld_frame(&wailmerTiles[0], 4, 4, 8), // Bob Up
-    overworld_frame(&wailmerTiles[0], 4, 4, 9), // Bob Down
+    overworld_frame(&wailmerTiles[0], 8, 8, 8), // Bob Up
+    overworld_frame(&wailmerTiles[0], 8, 8, 9), // Bob Down
 
     // Facing East/West (Mirrored)
-    overworld_frame(&wailmerTiles[0], 4, 4, 10), // Bob Up
-    overworld_frame(&wailmerTiles[0], 4, 4, 11), // Bob Down
+    overworld_frame(&wailmerTiles[0], 8, 8, 10), // Bob Up
+    overworld_frame(&wailmerTiles[0], 8, 8, 11), // Bob Down
 };
 
-const struct SpriteTemplate sWailmerOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wailmer, UpdateSurfBlobFieldEffect);
-const struct SpriteTemplate sWailmerOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wailmer, UpdateSurfMonOverlay);
+const struct SpriteTemplate sWailmerOverworld = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Wailmer, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sWailmerOverlay = surf_template64x64(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Wailmer, UpdateSurfMonOverlay);
 
 //=============== WAILORD
 extern const u32 wailordTiles[];
