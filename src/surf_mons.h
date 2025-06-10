@@ -3750,6 +3750,9 @@ const struct SpriteFrameImage gSurfingOverlayPicTable_Kyogre[] = {
     overworld_frame(&kyogreTiles[0], 8, 8, 11), // Bob Down
 };
 
+const struct SpriteTemplate sKyogreOverworld = surf_template(PAL_TAG_SURF_NEW, gSurfingOverworldPicTable_Kyogre, UpdateSurfBlobFieldEffect);
+const struct SpriteTemplate sKyogreOverlay = surf_template(PAL_TAG_SURF_NEW, gSurfingOverlayPicTable_Kyogre, UpdateSurfMonOverlay);
+
 //=============== RAYQUAZA
 extern const u32 rayquazaTiles[];
 extern const u16 rayquazaPal[];
